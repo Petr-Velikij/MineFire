@@ -17,9 +17,9 @@ scoreboard players operation buf ID.Owner = @s ID.Player
 scoreboard players operation buf Power = @s Power
 execute at @s positioned ~ ~1 ~ as @e[type=arrow,tag=,sort=nearest,limit=1] run function minecraft:gun/magma/shot2
 
-scoreboard players add @s Power 20
-execute if score @s ID.module matches 1 run scoreboard players add @s Power 4
-execute if score @s Power matches 200.. run scoreboard players set @s Supply 10
+scoreboard players add @s Power 23
+execute if score @s Power matches 201.. unless score @s ID.module matches 1 run scoreboard players set @s Supply 10
+execute if score @s Power matches 231.. if score @s ID.module matches 1 run scoreboard players set @s Supply 10
 function gun/shot
 
 tp @s ~ ~ ~ ~-0.3 ~-1.5

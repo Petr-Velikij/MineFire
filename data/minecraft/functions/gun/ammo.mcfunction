@@ -38,9 +38,9 @@ execute if score Inventory ID.gun matches 41 if score @s ID.armor matches 7 run 
 #42  Саранча/24
 execute if score Inventory ID.gun matches 42 run scoreboard players set @s price_cartridge 30
 execute if score Inventory ID.gun matches 42 if score @s ID.armor matches 7 run scoreboard players set @s price_cartridge 20
-#43  Макуся/6
-execute if score Inventory ID.gun matches 43 run scoreboard players set @s price_cartridge 120
-execute if score Inventory ID.gun matches 43 if score @s ID.armor matches 7 run scoreboard players set @s price_cartridge 80
+#43  Макуся/8
+execute if score Inventory ID.gun matches 43 run scoreboard players set @s price_cartridge 90
+execute if score Inventory ID.gun matches 43 if score @s ID.armor matches 7 run scoreboard players set @s price_cartridge 60
 #51  Мрамор/120
 execute if score Inventory ID.gun matches 51 run scoreboard players set @s price_cartridge 6
 #52  Магма/144
