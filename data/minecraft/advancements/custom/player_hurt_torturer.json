@@ -1,0 +1,31 @@
+{
+    "display": {
+      "icon": {
+        "item": "minecraft:stone"
+      },
+      "title": {
+        "text": "Advancement"
+      },
+      "description": {
+        "text": "Description"
+      },
+      "background": "minecraft:textures/gui/advancements/backgrounds/stone.png",
+      "frame": "task",
+      "show_toast": false,
+      "announce_to_chat": false,
+      "hidden": true
+    },
+    "criteria": {
+      "c1": {
+        "trigger": "minecraft:player_hurt_entity",
+        "conditions": {
+          "entity": {
+          }
+        }
+      }
+    },
+    "rewards": {
+      "function": "minecraft:zxc/score/player_hurt_torturer"
+    }
+  }
+  

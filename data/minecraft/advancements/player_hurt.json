@@ -1,0 +1,24 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "damage": {
+          "dealt": {
+            "min": 3
+          }
+        },
+        "entity": {
+          "distance": {
+            "absolute": {
+              "min": 2
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "minecraft:advancements/hit_dist10"
+  }
+}
