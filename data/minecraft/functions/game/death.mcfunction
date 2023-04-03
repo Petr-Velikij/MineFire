@@ -1,5 +1,6 @@
 execute if score Стадия Zona matches 1..2 run gamemode spectator @s
 execute if score Стадия Zona matches 1..2 run tag @s add Death
+stopsound @s player custom.gun.neutron.overclocking_2d
 
 #summon item ~ ~ ~ {Glowing:1b,Item:{id:"minecraft:nether_star",Count:1b,tag:{display:{Name:'{"text":"Патроны","color":"white","italic":false}'}}}}
 #execute store result entity @e[type=item,distance=0,limit=1] Item.tag.ammo double 1 run scoreboard players get @s ammo_point

@@ -3,6 +3,7 @@ execute if score @s damage_taken matches 20.. run playsound minecraft:entity.zom
 execute if score @s damage_taken matches 20.. rotated ~ 0 positioned ~ ~2 ~ run particle minecraft:end_rod ^-0.5 ^ ^-0.5 0 0 0 0.2 30 force @a[distance=..250]
 scoreboard players operation @s module_cooldown = @s damage_taken
 scoreboard players operation @s module_cooldown *= *20 CONST
+execute if score @s module_cooldown matches ..100 run scoreboard players set @s module_cooldown 100
 
 scoreboard players operation *1 varTime = @s damage_taken
 scoreboard players operation *1 varTime *= *40 CONST
