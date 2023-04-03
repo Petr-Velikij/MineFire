@@ -36,6 +36,7 @@ execute if score Inventory ID.gun matches 4 if score SelectedItem ID.gun matches
 execute if score Inventory ID.gun matches 11 run function minecraft:gun/shtil/raspredeleniye
 execute if score Inventory ID.gun matches 12 run function minecraft:gun/armature/raspredeleniye
 execute if score Inventory ID.gun matches 13 if score SelectedItem ID.gun matches 1 run function minecraft:gun/darkness/global
+execute if score Inventory ID.gun matches 14 run function minecraft:gun/neutron/raspredeleniye
 #2 Снайперки
 execute if score Inventory ID.gun matches 21 run function minecraft:gun/anfisa/raspredeleniye
 execute if score Inventory ID.gun matches 22 if score SelectedItem ID.gun matches 1 run function minecraft:gun/sokol/global

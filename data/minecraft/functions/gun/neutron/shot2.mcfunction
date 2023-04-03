@@ -1,11 +1,12 @@
-data merge entity @s {damage:1.06d,crit:0b,PierceLevel:0b,Tags:["bullet_anfisa","particle_crit"]}
+data merge entity @s {NoGravity:1b,crit:0b,PierceLevel:1b,Color:65288,Tags:["neutron"],CustomPotionEffects:[{Id:9,Amplifier:0b,Duration:100},{Id:17,Amplifier:0b,Duration:60},{Id:19,Amplifier:0b,Duration:60}]}
+execute store result entity @s damage double 0.00565 run scoreboard players get buf Power
+execute if score buf Power matches 150.. run tag @s add up
+
 scoreboard players set @s ArrowDamage 1
 scoreboard players set @s DamageHead 180
-scoreboard players set @s DamageLegs 70
+scoreboard players set @s DamageLegs 80
 scoreboard players operation @s ID.Owner = buf ID.Owner
-scoreboard players operation @s ID.target = buf ID.target
-scoreboard players operation @s varTimeEntity1 = *XR varTime
-scoreboard players operation @s varTimeEntity2 = *YR varTime
+
 execute store result entity @s Motion[0] double 0.00085 run scoreboard players get *X varTime
 execute store result entity @s Motion[1] double 0.00085 run scoreboard players get *Y varTime
 execute store result entity @s Motion[2] double 0.00085 run scoreboard players get *Z varTime

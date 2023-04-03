@@ -1,5 +1,4 @@
 kill @s[tag=kill]
-execute if entity @s[tag=bullet_vixlop] run function gun/arrow/gun/vixlop
 execute if entity @s[tag=bullet_sokol] run function gun/arrow/gun/sokol
 execute if entity @s[tag=bullet_leaves] run function gun/arrow/gun/leaves
 execute if entity @s[tag=bullet_ripper] if score @s ArrowLive matches 5 run scoreboard players set @s DamageHead 100
@@ -10,7 +9,6 @@ execute if entity @s[tag=splitting1] run function gun/arrow/gun/splitting/bullet
 execute if entity @s[tag=splitting2] run function gun/arrow/gun/splitting/bullet2
 execute if entity @s[tag=phoenix] run function gun/arrow/gun/phoenix
 execute if entity @s[tag=grenade_launcher] run function gun/arrow/gun/grenade_launcher/bullet
-execute if entity @s[tag=locusts] run function gun/arrow/gun/locusts/bullet
 execute if entity @s[tag=makusya] run function gun/arrow/gun/makusya/bullet
 execute if entity @s[tag=marble] run function gun/arrow/gun/marble/bullet
 execute if entity @s[tag=magma] run function gun/arrow/gun/magma/bullet
@@ -18,6 +16,7 @@ execute if entity @s[tag=amper] run tag @s add kill
 execute if entity @s[tag=volt] run function gun/arrow/gun/volt
 execute if entity @s[tag=shard] run tag @s add kill
 execute if entity @s[tag=bullet_anfisa] unless score @s ID.target matches 0 run function gun/arrow/gun/anfisa/bullet
+execute if entity @s[tag=neutron] run function gun/arrow/gun/neutron/bullet
 
 execute if entity @s[tag=flame_cust] run function armor/alchemist/fire/arrow_cust
 execute if entity @s[tag=flame] run function armor/alchemist/fire/arrow
