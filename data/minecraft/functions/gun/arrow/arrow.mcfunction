@@ -17,6 +17,7 @@ execute if entity @s[tag=magma] run function gun/arrow/gun/magma/bullet
 execute if entity @s[tag=amper] run tag @s add kill
 execute if entity @s[tag=volt] run function gun/arrow/gun/volt
 execute if entity @s[tag=shard] run tag @s add kill
+execute if entity @s[tag=bullet_anfisa] unless score @s ID.target matches 0 run function gun/arrow/gun/anfisa/bullet
 
 execute if entity @s[tag=flame_cust] run function armor/alchemist/fire/arrow_cust
 execute if entity @s[tag=flame] run function armor/alchemist/fire/arrow

@@ -14,10 +14,8 @@ execute if score Inventory ID.gun matches 11 run scoreboard players set @s price
 execute if score Inventory ID.gun matches 12 run scoreboard players set @s price_cartridge 15
 #13 Мрак/45
 execute if score Inventory ID.gun matches 13 run scoreboard players set @s price_cartridge 16
-#14 Анфиса/30
-execute if score Inventory ID.gun matches 14 run scoreboard players set @s price_cartridge 24
-#21  Выхлоп/12
-execute if score Inventory ID.gun matches 21 run scoreboard players set @s price_cartridge 60
+#21  Анфиса/24
+execute if score Inventory ID.gun matches 21 run scoreboard players set @s price_cartridge 30
 #22  Сокол/9
 execute if score Inventory ID.gun matches 22 run scoreboard players set @s price_cartridge 80
 #23  Лист/20

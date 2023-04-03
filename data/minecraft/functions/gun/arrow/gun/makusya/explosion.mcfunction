@@ -11,7 +11,7 @@ kill @e[type=marker,tag=Marker]
 
 scoreboard players set OptDist varTime 30
 scoreboard players set MaxDist varTime 60
-scoreboard players set Damage varTime 250
+scoreboard players set Damage varTime 120
 scoreboard players set NameExplosion varTime 1
 execute if entity @s[tag=up] run function armor/grenadier/up
 function gun/explosion/start
