@@ -1,7 +1,10 @@
 {
 "values":[
 	"minecraft:ender_pearl",
+	"minecraft:apple",
 	"minecraft:bread",
+	"minecraft:cooked_beef",
+	"minecraft:golden_apple",
 	"minecraft:potion"
 ]
 }

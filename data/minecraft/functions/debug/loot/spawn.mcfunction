@@ -1,2 +1,2 @@
-summon armor_stand ~ ~-0.8 ~ {NoGravity:1b,Invulnerable:1b,Marker:1b,Invisible:1b,Tags:["NO","loot","there_item"],Pose:{RightArm:[0f,-120f,0f]},DisabledSlots:4144959,HandItems:[{id:'minecraft:cooked_beef',Count:1b},{}]}
+summon armor_stand ~ ~-0.8 ~ {NoGravity:1b,Invulnerable:1b,Marker:1b,Invisible:1b,Tags:["NO","loot"],Pose:{RightArm:[0f,-120f,0f]},DisabledSlots:4144959,HandItems:[{id:'minecraft:cooked_beef',Count:1b},{}]}
 function debug/loot/rotate

@@ -18,7 +18,7 @@ execute as @e[type=armor_stand,tag=turret_up] at @s run function armor/engineer/
 
 execute as @a[gamemode=!spectator,scores={Heat=1..}] at @s run function heat
 execute as @a[gamemode=!spectator] run function stamina/global
-execute as @a[gamemode=!spectator] run function game/loot/looting
+execute at @a[gamemode=!spectator] as @e[type=interaction,tag=loot_hitbox,distance=..5] if data entity @s interaction at @s run function game/loot/looting
 
 execute at @e[type=ender_pearl] run particle minecraft:reverse_portal ~ ~ ~ 0.2 0.2 0.2 0.1 10 force @a[distance=..150]
 

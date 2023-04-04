@@ -1,3 +1,6 @@
-execute at @s[gamemode=!spectator,tag=!sneak,scores={sneak_time=1}] as @e[type=armor_stand,tag=there_item,limit=1,sort=nearest,distance=..3] at @s run function game/loot/spawn_item
-execute if score @s sneak_time matches 1 run tag @s add sneak
-execute if score @s sneak_time matches 0 run tag @s remove sneak
+execute store result score UUID[0] varTime run data get entity @s interaction.player[0]
+execute store result score UUID[1] varTime run data get entity @s interaction.player[1]
+execute store result score UUID[2] varTime run data get entity @s interaction.player[2]
+execute store result score UUID[3] varTime run data get entity @s interaction.player[3]
+execute positioned ~ ~-0.7 ~ as @e[type=armor_stand,tag=loot,sort=nearest,limit=1] run function game/loot/spawn_item
+kill @s

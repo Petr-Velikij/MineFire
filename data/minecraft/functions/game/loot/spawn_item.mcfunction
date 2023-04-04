@@ -7,4 +7,5 @@ execute in minecraft:overworld run data modify block 0 -64 0 Items[0].Count set 
 
 item replace entity @s weapon.mainhand with air
 
-loot spawn ~ ~1 ~ mine 0 -64 0 air{drop_contents:1b}
+execute as @a[gamemode=!spectator,distance=..6] run function game/loot/give_item
+playsound minecraft:entity.item.pickup player @a[distance=..20] ~ ~ ~ 0.7 2
