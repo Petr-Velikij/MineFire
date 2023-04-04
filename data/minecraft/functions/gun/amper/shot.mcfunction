@@ -1,7 +1,7 @@
 scoreboard players set coefficient Random 0
 playsound minecraft:custom.gun.amper.shot_2d player @s ~ ~ ~ 1 1
 playsound minecraft:custom.gun.amper.shot_1d player @a[distance=0.1..50] ~ ~1.6 ~ 5 1
-stopsound @a[distance=..30] player minecraft:item.crossbow.shoot
+
 
 execute store result score UUID[0] varTime run data get entity @s UUID[0]
 execute store result score UUID[1] varTime run data get entity @s UUID[1]

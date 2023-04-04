@@ -1,5 +1,5 @@
 playsound custom.gun.grenade.shot_1d player @a[distance=..30] ~ ~ ~ 3.7 0.8
-stopsound @a[distance=..30] player minecraft:item.crossbow.shoot
+
 
 scoreboard players set aiming Random 20
 scoreboard players set from_hip Random 30

@@ -34,10 +34,6 @@ scoreboard players operation @s varTimeEntity2 -= Dy varTime
 scoreboard players operation *XR varTime = @s varTimeEntity1 
 scoreboard players operation *YR varTime = @s varTimeEntity2
 
-##ВРЕМЕННО
-#execute if score *XR varTime matches ..-90000 run scoreboard players add *YR varTime 180000
-#execute if score *XR varTime matches ..-90000 run scoreboard players set *XR varTime -89000
-
 execute if score *YR varTime matches ..0 run scoreboard players add *YR varTime 360000
 execute if score *YR varTime matches 360001.. run scoreboard players remove *YR varTime 360000
 

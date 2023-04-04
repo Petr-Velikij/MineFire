@@ -4,7 +4,7 @@ scoreboard players set running Random 100
 
 playsound minecraft:entity.iron_golem.repair player @a[distance=..75] ~ ~ ~ 6.5 1.7
 playsound minecraft:entity.shulker.open player @a[distance=75..130] ~ ~ ~ 8.5 1.3
-stopsound @a[distance=..30] player minecraft:item.crossbow.shoot
+
 
 function gun/scatter_modifier
 scoreboard players set *YR.correct varTime 0

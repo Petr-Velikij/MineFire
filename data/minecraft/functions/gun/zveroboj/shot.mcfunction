@@ -1,7 +1,7 @@
 playsound minecraft:entity.generic.explode player @a[distance=..75] ~ ~1 ~ 4.7 1.8
 playsound minecraft:entity.generic.explode player @a[distance=..35] ~ ~1 ~ 2 2
 playsound minecraft:entity.generic.explode player @a[distance=..35] ~ ~1 ~ 2 0.7
-stopsound @a[distance=..30] player minecraft:item.crossbow.shoot
+
 
 execute store result score UUID[0] varTime run data get entity @s UUID[0]
 execute store result score UUID[1] varTime run data get entity @s UUID[1]

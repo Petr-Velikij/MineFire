@@ -1,6 +1,6 @@
 playsound custom.gun.tessen.shot_1d player @a[distance=1..75] ~ ~1 ~ 4.7 1
 playsound custom.gun.tessen.shot_2d player @a[distance=..1] ~ ~1 ~ 2 1
-stopsound @a[distance=..30] player minecraft:item.crossbow.shoot
+
 
 execute store result score UUID[0] varTime run data get entity @s UUID[0]
 execute store result score UUID[1] varTime run data get entity @s UUID[1]

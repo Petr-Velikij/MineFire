@@ -1,6 +1,6 @@
 playsound minecraft:custom.gun.anfisa.shot_2d player @s ~ ~ ~ 1 1
 playsound minecraft:custom.gun.anfisa.shot_1d player @a[distance=0.1..75] ~ ~ ~ 4.7 0.7
-stopsound @a[distance=..30] player minecraft:item.crossbow.shoot
+
 
 scoreboard players set aiming Random 5
 scoreboard players set from_hip Random 25

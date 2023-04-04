@@ -1,6 +1,6 @@
 playsound custom.gun.neutron.shot_2d player @s ~ ~1.6 ~ 3 1
 playsound custom.gun.neutron.shot_1d player @a[distance=1..75] ~ ~1.6 ~ 4.8 1
-stopsound @a[distance=..30] player minecraft:item.crossbow.shoot
+
 stopsound @s player custom.gun.neutron.overclocking_2d
 
 scoreboard players set aiming Random 3

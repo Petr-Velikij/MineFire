@@ -1,6 +1,6 @@
 playsound custom.gun.armature.shot_2d player @s ~ ~1.6 ~ 3 1
 playsound custom.gun.armature.shot_1d player @a[distance=1..75] ~ ~1.6 ~ 4.8 1
-stopsound @a[distance=..30] player minecraft:item.crossbow.shoot
+
 
 scoreboard players set aiming Random 7
 scoreboard players set from_hip Random 40

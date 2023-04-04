@@ -1,7 +1,7 @@
 playsound minecraft:entity.generic.explode player @a[distance=..75] ~ ~1 ~ 4.7 0.6
 playsound minecraft:entity.generic.explode player @a[distance=..35] ~ ~1 ~ 2 0.8
 playsound minecraft:entity.generic.explode player @a[distance=1..35] ~ ~1 ~ 2 0.8
-stopsound @a[distance=..30] player minecraft:item.crossbow.shoot
+
 
 scoreboard players set aiming Random 30
 scoreboard players set from_hip Random 70

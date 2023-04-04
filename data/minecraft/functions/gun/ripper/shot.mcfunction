@@ -3,7 +3,7 @@ scoreboard players set from_hip Random 15
 scoreboard players set running Random 40
 playsound minecraft:custom.gun.shtil.shot_2d player @s ~ ~ ~ 1 1.3
 playsound minecraft:custom.gun.shtil.shot_1d player @a[distance=0.1..75] ~ ~ ~ 4.7 1.3
-stopsound @a[distance=..30] player minecraft:item.crossbow.shoot
+
 
 function gun/scatter_modifier
 scoreboard players set *YR.correct varTime 0

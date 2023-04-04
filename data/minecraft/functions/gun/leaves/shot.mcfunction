@@ -1,6 +1,6 @@
 playsound custom.gun.leaves.shot_1d player @a[distance=..90] ^ ^ ^1 3.7 1
 playsound custom.gun.leaves.shot_1d player @a[distance=..90] ^ ^ ^1 3.7 1
-stopsound @a[distance=..30] player minecraft:item.crossbow.shoot
+
 
 scoreboard players set aiming Random 1
 scoreboard players set from_hip Random 30

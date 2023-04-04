@@ -1,6 +1,7 @@
 scoreboard players operation buf ID.Owner = @s ID.Owner
 execute as @e[type=marker,tag=makusya_point] if score @s ID.target = buf ID.Owner run tag @s add target
 tp @s ~ ~ ~ facing entity @e[tag=target,limit=1] feet
+execute if entity @e[tag=target,distance=..1] run function gun/arrow/gun/makusya/explosion
 tag @p[tag=target] remove target
 
 execute store result score *XR varTime run data get entity @s Rotation[1] 1000
@@ -28,10 +29,6 @@ scoreboard players operation @s varTimeEntity1 -= Dx varTime
 scoreboard players operation @s varTimeEntity2 -= Dy varTime
 scoreboard players operation *XR varTime = @s varTimeEntity1 
 scoreboard players operation *YR varTime = @s varTimeEntity2
-
-##ВРЕМЕННО
-#execute if score *XR varTime matches ..-90000 run scoreboard players add *YR varTime 180000
-#execute if score *XR varTime matches ..-90000 run scoreboard players set *XR varTime -89000
 
 execute if score *YR varTime matches ..0 run scoreboard players add *YR varTime 360000
 execute if score *YR varTime matches 360001.. run scoreboard players remove *YR varTime 360000

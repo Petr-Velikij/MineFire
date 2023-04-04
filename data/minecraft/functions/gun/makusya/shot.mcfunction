@@ -1,6 +1,6 @@
 scoreboard players set coefficient Random 0
 playsound block.fire.extinguish player @a[distance=..20] ~ ~ ~ 1 0.7
-stopsound @a[distance=..30] player minecraft:item.crossbow.shoot
+
 
 scoreboard players set *YR.correct varTime 0
 function minecraft:vector/get_vec

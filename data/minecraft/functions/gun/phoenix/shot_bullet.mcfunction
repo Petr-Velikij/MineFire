@@ -1,6 +1,6 @@
 playsound custom.gun.tessen.shot_1d player @a[distance=1..75] ~ ~1 ~ 4.7 1
 playsound custom.gun.tessen.shot_2d player @a[distance=..1] ~ ~1 ~ 2 1
-stopsound @a[distance=..30] player minecraft:item.crossbow.shoot
+
 
 scoreboard players set aiming Random 15
 scoreboard players set from_hip Random 15

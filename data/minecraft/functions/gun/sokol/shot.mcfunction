@@ -3,7 +3,7 @@ playsound custom.gun.sokol.shot_2d player @s ~ ~1.6 ~ 3.7 1
 playsound custom.gun.sokol.shot_1d player @a[distance=1..75] ~ ~1.6 ~ 5.2 1
 playsound custom.gun.sokol.shot_1d player @a[distance=1..75] ~ ~1.6 ~ 5.2 1
 playsound custom.gun.sokol.echo_1d player @a[distance=..150] ^ ^ ^20 8.5 0.8
-stopsound @a[distance=..30] player minecraft:item.crossbow.shoot
+
 
 scoreboard players set aiming Random 1
 scoreboard players set from_hip Random 50

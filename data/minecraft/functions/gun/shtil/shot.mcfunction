@@ -1,7 +1,7 @@
 playsound minecraft:custom.gun.shtil.shot_2d player @s ~ ~ ~ 1 1
 playsound minecraft:custom.gun.shtil.echo_1d player @a[distance=..10] ~ ~ ~ 1 1
 playsound minecraft:custom.gun.shtil.echo_1d player @a[distance=..35] ^ ^ ^7 1 1
-stopsound @a[distance=..30] player minecraft:item.crossbow.shoot
+
 
 scoreboard players set aiming Random 3
 scoreboard players set from_hip Random 25

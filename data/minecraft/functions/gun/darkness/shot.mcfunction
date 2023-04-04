@@ -1,6 +1,6 @@
 playsound custom.gun.timetick.shot_1d player @a[distance=..75] ~ ~ ~ 4.7 1
 playsound custom.gun.timetick.shot_1d player @a[distance=..75] ~ ~ ~ 4.7 1
-stopsound @a[distance=..30] player minecraft:item.crossbow.shoot
+
 
 scoreboard players set aiming Random 3
 scoreboard players set from_hip Random 30
