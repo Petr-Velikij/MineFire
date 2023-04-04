@@ -91,6 +91,10 @@ scoreboard objectives add DamageLegs dummy
 scoreboard objectives add PlayerHead dummy
 scoreboard objectives add ArrowLive dummy
 scoreboard objectives add ex_damage dummy
+scoreboard objectives add ID.player_hit dummy
+scoreboard objectives add player_hit_x dummy
+scoreboard objectives add player_hit_y dummy
+scoreboard objectives add player_hit_z dummy
 scoreboard objectives add sqrt dummy
 scoreboard objectives add varTime dummy
 scoreboard objectives add varTimeEntity1 dummy

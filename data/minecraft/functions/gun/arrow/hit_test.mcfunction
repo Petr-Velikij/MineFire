@@ -17,12 +17,13 @@ execute store result entity @e[type=area_effect_cloud,tag=metka,limit=1] Pos[2] 
 #execute at @e[type=area_effect_cloud,tag=metka,limit=1] run particle dust 0.169 1 0 2 ~ ~ ~ 0 0 0 0 1 force @a[distance=..150]
 #tellraw Petr_l [{"text":"Bx="},{"score":{"name":"Bx","objective":"varTime"}},{"text":" Bz="},{"score":{"name":"Bz","objective":"varTime"}},{"text":" By="},{"score":{"name":"By","objective":"varTime"}}]
 
-execute at @e[distance=..10,type=area_effect_cloud,tag=metka] store result score Px varTime run data get entity @p[gamemode=!spectator] Pos[0] 100
-execute at @e[distance=..10,type=area_effect_cloud,tag=metka] store result score Py varTime run data get entity @p[gamemode=!spectator] Pos[1] 100
-execute at @e[distance=..10,type=area_effect_cloud,tag=metka] store result score Pz varTime run data get entity @p[gamemode=!spectator] Pos[2] 100
-execute at @e[distance=..10,type=area_effect_cloud,tag=metka] store result score *1 varTime run data get entity @p[gamemode=!spectator] Motion[0] 100
-execute at @e[distance=..10,type=area_effect_cloud,tag=metka] store result score *2 varTime run data get entity @p[gamemode=!spectator] Motion[1] 100
-execute at @e[distance=..10,type=area_effect_cloud,tag=metka] store result score *3 varTime run data get entity @p[gamemode=!spectator] Motion[2] 100
+execute at @e[distance=..10,type=area_effect_cloud,tag=metka] run tag @p[gamemode=!spectator] add hit_test
+execute at @e[distance=..10,type=area_effect_cloud,tag=metka] store result score Px varTime run data get entity @p[tag=hit_test] Pos[0] 100
+execute at @e[distance=..10,type=area_effect_cloud,tag=metka] store result score Py varTime run data get entity @p[tag=hit_test] Pos[1] 100
+execute at @e[distance=..10,type=area_effect_cloud,tag=metka] store result score Pz varTime run data get entity @p[tag=hit_test] Pos[2] 100
+execute at @e[distance=..10,type=area_effect_cloud,tag=metka] store result score *1 varTime run data get entity @p[tag=hit_test] Motion[0] 100
+execute at @e[distance=..10,type=area_effect_cloud,tag=metka] store result score *2 varTime run data get entity @p[tag=hit_test] Motion[1] 100
+execute at @e[distance=..10,type=area_effect_cloud,tag=metka] store result score *3 varTime run data get entity @p[tag=hit_test] Motion[2] 100
 scoreboard players operation Px varTime += *1 varTime
 scoreboard players operation Py varTime += *2 varTime
 scoreboard players operation Pz varTime += *3 varTime
@@ -72,9 +73,10 @@ scoreboard players operation dy varTime = Cy varTime
 scoreboard players operation dy varTime -= Py varTime
 
 scoreboard players set pos varTime 2
-execute at @e[distance=..10,type=area_effect_cloud,tag=metka] as @p[gamemode=!spectator] if predicate is_sneaking run scoreboard players set pos varTime 1
+execute as @p[tag=hit_test] if predicate is_sneaking run scoreboard players set pos varTime 1
 
 execute if entity @s[tag=amper] if score dx varTime matches -70..70 if score dz varTime matches -70..70 if score dy varTime matches -10..210 run function gun/arrow/gun/amper
+execute if score dx varTime matches -65..65 if score dz varTime matches -65..65 if score dy varTime matches 0..220 run function gun/arrow/hit_marcer
 
 execute if score pos varTime matches 2 unless score @s ArrowDamage matches 1 if score dx varTime matches -70..70 if score dz varTime matches -70..70 if score dy varTime matches 81..210 run function gun/arrow/hit/torss
 execute if score pos varTime matches 2 unless score @s ArrowDamage matches 2 if score dx varTime matches -50..50 if score dz varTime matches -50..50 if score dy varTime matches 140..210 run function gun/arrow/hit/head
@@ -84,6 +86,7 @@ execute if score pos varTime matches 1 unless score @s ArrowDamage matches 1 if 
 execute if score pos varTime matches 1 unless score @s ArrowDamage matches 2 if score dx varTime matches -50..50 if score dz varTime matches -50..50 if score dy varTime matches 90..160 run function gun/arrow/hit/head
 execute if score pos varTime matches 1 unless score @s ArrowDamage matches 0 if score dx varTime matches -70..70 if score dz varTime matches -70..70 if score dy varTime matches -10..50 run function gun/arrow/hit/legss
 
-execute if predicate bk if score pos varTime matches 2 if score dx varTime matches -70..70 if score dz varTime matches -70..70 if score dy varTime matches 71..90 at @e[distance=..10,type=area_effect_cloud,tag=metka] as @p[gamemode=!spectator] if score @s ID.module matches 8 at @s run function module/ammunition/explosion
-execute if predicate bk if score pos varTime matches 1 if score dx varTime matches -70..70 if score dz varTime matches -70..70 if score dy varTime matches 40..60 at @e[distance=..10,type=area_effect_cloud,tag=metka] as @p[gamemode=!spectator] if score @s ID.module matches 8 at @s run function module/ammunition/explosion
+execute if predicate bk if score pos varTime matches 2 if score dx varTime matches -70..70 if score dz varTime matches -70..70 if score dy varTime matches 71..90 as @p[tag=hit_test] if score @s ID.module matches 8 at @s run function module/ammunition/explosion
+execute if predicate bk if score pos varTime matches 1 if score dx varTime matches -70..70 if score dz varTime matches -70..70 if score dy varTime matches 40..60 as @p[tag=hit_test] if score @s ID.module matches 8 at @s run function module/ammunition/explosion
+tag @p[tag=hit_test] remove hit_test
 kill @e[distance=..10,type=area_effect_cloud,tag=metka]

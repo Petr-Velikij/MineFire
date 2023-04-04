@@ -18,8 +18,13 @@ execute as @e[type=armor_stand,tag=turret_up] at @s run function armor/engineer/
 
 execute as @a[gamemode=!spectator,scores={Heat=1..}] at @s run function heat
 execute as @a[gamemode=!spectator] run function stamina/global
+execute as @a[gamemode=!spectator] run function game/loot/looting
 
 execute at @e[type=ender_pearl] run particle minecraft:reverse_portal ~ ~ ~ 0.2 0.2 0.2 0.1 10 force @a[distance=..150]
+
+scoreboard players add Loop1k20 CONST 1
+execute if score Loop1k20 CONST matches 20 run function minecraft:loop1k20 
+execute if score Loop1k20 CONST matches 20.. run scoreboard players set Loop1k20 CONST 0
 
 scoreboard players add @a[scores={Time_PKM_2=..99}] Time_PKM_2 1
 scoreboard players set @a[scores={PKM_2=1..}] Time_PKM_2 0
@@ -32,10 +37,6 @@ scoreboard players set @a sprint_one_cm 0
 scoreboard players set @a reloadGun 0
 scoreboard players set @a jump 0
 scoreboard players set @a damage_taken 0
-
-scoreboard players add Loop1k20 CONST 1
-execute if score Loop1k20 CONST matches 20 run function minecraft:loop1k20 
-execute if score Loop1k20 CONST matches 20.. run scoreboard players set Loop1k20 CONST 0
 
 execute if score #auto Zona matches 1 if score Стадия Zona matches 0 run function game/auto/zona
 execute if score Стадия Zona matches 1..2 as @a[gamemode=!spectator,scores={deathCount=1}] run function game/death

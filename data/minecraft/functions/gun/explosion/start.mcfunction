@@ -16,6 +16,6 @@ execute as @e[distance=..10,type=!marker,type=!arrow] at @s run function gun/exp
 scoreboard players set *YR.correct varTime 0
 scoreboard players set coefficient Random 0
 execute as @e[tag=metka,sort=nearest,limit=1] at @e[type=marker,distance=..20,tag=metka_player] run function gun/explosion/summon_arrow
-execute as @e[tag=metka,sort=nearest,limit=1] at @e[type=!marker,type=!arrow,distance=..1.2] positioned ~ ~2.5 ~ run function gun/explosion/summon_arrow2
+execute as @e[tag=metka,sort=nearest,limit=1] positioned ~ ~-1 ~ at @e[type=!marker,type=!arrow,distance=..1.2] positioned ~ ~2.5 ~ run function gun/explosion/summon_arrow2
 
 kill @e[tag=metka,limit=1,sort=nearest]

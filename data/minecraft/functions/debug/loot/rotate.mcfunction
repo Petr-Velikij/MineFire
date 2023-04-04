@@ -1,0 +1,1 @@
+execute store result entity @e[type=armor_stand,tag=loot,limit=1,sort=nearest] Rotation[0] float 1 run data get entity @s Rotation[0] 1
