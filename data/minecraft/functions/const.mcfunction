@@ -21,6 +21,7 @@ scoreboard players set *3 CONST 3
 scoreboard players set *2 CONST 2
 scoreboard players set *-1 CONST -1
 
+scoreboard players set ammoStart CONST 720
 scoreboard players set upDamageEW CONST 115
 scoreboard players set marlinDamage CONST 92
 scoreboard players set magmaCooling CONST 98

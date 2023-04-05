@@ -19,6 +19,7 @@ execute as @e[type=armor_stand,tag=turret_up] at @s run function armor/engineer/
 execute as @a[gamemode=!spectator,scores={Heat=1..}] at @s run function heat
 execute as @a[gamemode=!spectator] run function stamina/global
 execute at @a[gamemode=!spectator] as @e[type=interaction,tag=loot_hitbox,distance=..5] if data entity @s interaction at @s run function game/loot/looting
+execute as @a[gamemode=!spectator,scores={PKM_1=1}] if data entity @s SelectedItem.tag.ammo at @s run function game/loot/give_ammo
 
 execute at @e[type=ender_pearl] run particle minecraft:reverse_portal ~ ~ ~ 0.2 0.2 0.2 0.1 10 force @a[distance=..150]
 
@@ -39,5 +40,5 @@ scoreboard players set @a jump 0
 scoreboard players set @a damage_taken 0
 
 execute if score #auto Zona matches 1 if score Стадия Zona matches 0 run function game/auto/zona
-execute if score Стадия Zona matches 1..2 as @a[gamemode=!spectator,scores={deathCount=1}] run function game/death
+execute if score Стадия Zona matches 1..2 as @a[gamemode=!spectator,scores={deathCount=1}] at @s run function game/death
 scoreboard players set @a deathCount 0

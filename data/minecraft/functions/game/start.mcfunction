@@ -11,6 +11,7 @@ effect clear @a[gamemode=!spectator]
 effect give @a[gamemode=!spectator] minecraft:instant_health 1 9 true
 effect give @a[gamemode=!spectator] minecraft:saturation 1 29 true
 clear @a[gamemode=!spectator] #clear_start
+clear @a[gamemode=adventure] carrot_on_a_stick{the_ammo:1b}
 give @a[gamemode=!spectator] minecraft:bread 5
 give @a[gamemode=!spectator,scores={ID.armor=8}] minecraft:ender_pearl 1
 function minecraft:restart
