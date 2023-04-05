@@ -40,6 +40,8 @@ scoreboard objectives add armor_cooldown dummy
 scoreboard players set @a armor_cooldown 0
 scoreboard objectives add armor_cooldown2 dummy
 scoreboard players set @a armor_cooldown2 0
+scoreboard objectives add ID.Zipline dummy
+kill @e[tag=zipline]
 
 scoreboard objectives add camouflage dummy
 execute as @a[scores={camouflage=1..}] run function module/chameleon/remove
@@ -91,7 +93,6 @@ scoreboard objectives add DamageLegs dummy
 scoreboard objectives add PlayerHead dummy
 scoreboard objectives add ArrowLive dummy
 scoreboard objectives add ex_damage dummy
-scoreboard objectives add ID.player_hit dummy
 scoreboard objectives add player_hit_x dummy
 scoreboard objectives add player_hit_y dummy
 scoreboard objectives add player_hit_z dummy
