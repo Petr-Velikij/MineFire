@@ -24,7 +24,7 @@ execute if entity @s[tag=flame] run function armor/alchemist/fire/arrow
 execute if entity @s[tag=distorting_grenades] run function armor/grenadier/distorting_grenades/global
 execute if score @s[tag=zipline] ArrowLive matches 10.. run function gun/arrow/zipline
 
-execute if entity @s[tag=particle_crit] run particle crit ~ ~ ~ 0 0 0 0 1 force @a[distance=..70]
+execute if entity @s[tag=particle_crit] run particle crit ~ ~ ~ 0 0 0 0 1 force @a[distance=..170]
 execute if score @s ArrowDamage matches 0..2 if entity @a[gamemode=!spectator,distance=..10] at @a[gamemode=!spectator,distance=..10,limit=1,sort=nearest] unless score @p ID.Player = @s ID.Owner run function gun/arrow/hit_test
 kill @s[nbt={inGround:1b},tag=!no_kill_arrow]
 

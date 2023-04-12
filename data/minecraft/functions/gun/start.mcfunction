@@ -40,10 +40,10 @@ execute if score Inventory ID.gun matches 14 run function minecraft:gun/neutron/
 #2 Снайперки
 execute if score Inventory ID.gun matches 21 run function minecraft:gun/anfisa/raspredeleniye
 execute if score Inventory ID.gun matches 22 if score SelectedItem ID.gun matches 1 run function minecraft:gun/sokol/global
-execute if score Inventory ID.gun matches 22 run attribute @s generic.movement_speed modifier add 6b40a35f-cfa6-4474-bccd-4a606cb26d1f "slowness" -0.1 multiply
+execute if score Inventory ID.gun matches 22 unless score @s ID.armor matches 6 run attribute @s generic.movement_speed modifier add 6b40a35f-cfa6-4474-bccd-4a606cb26d1f "slowness" -0.1 multiply
 execute if score Inventory ID.gun matches 23 if score SelectedItem ID.gun matches 1 run function minecraft:gun/leaves/global
 execute if score Inventory ID.gun matches 24 if score SelectedItem ID.gun matches 1 run function minecraft:gun/railgun/global
-execute if score Inventory ID.gun matches 24 run attribute @s generic.movement_speed modifier add 6b40a35f-cfa6-4474-bccd-4a606cb26d1f "slowness" -0.1 multiply
+execute if score Inventory ID.gun matches 24 unless score @s ID.armor matches 6 run attribute @s generic.movement_speed modifier add 6b40a35f-cfa6-4474-bccd-4a606cb26d1f "slowness" -0.1 multiply
 #3 Дробовики
 execute if score Inventory ID.gun matches 31 if score SelectedItem ID.gun matches 1 run function minecraft:gun/zveroboj/global
 execute if score Inventory ID.gun matches 32 if score SelectedItem ID.gun matches 1 run function minecraft:gun/tessen/global

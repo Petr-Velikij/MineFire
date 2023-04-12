@@ -16,12 +16,12 @@ execute as @e[type=armor_stand,tag=casing] at @s run function gun/gilza
 execute as @e[type=phantom,tag=scout] at @s run function armor/hunter/scout/global
 execute as @e[type=armor_stand,tag=turret_up] at @s run function armor/engineer/turret/global
 execute as @e[type=armor_stand,tag=start_zipline] at @s run function armor/spetsnaz/zipline/processor
-execute as @a[gamemode=!spectator,scores={jump=1,sneak_time=0}] at @s if entity @e[type=armor_stand,tag=zipline,distance=..0.7] run function armor/spetsnaz/zipline/go
+execute as @a[gamemode=!spectator,scores={jump=1,sneak_time=0}] at @s if entity @e[type=armor_stand,tag=zipline,distance=..1] run function armor/spetsnaz/zipline/go
 execute as @a[gamemode=!spectator,tag=move_zipline] at @s run function armor/spetsnaz/zipline/test_end
 
 execute as @a[gamemode=!spectator,scores={Heat=1..}] at @s run function heat
 execute as @a[gamemode=!spectator] run function stamina/global
-execute at @a[gamemode=!spectator] as @e[type=interaction,tag=loot_hitbox,distance=..5] if data entity @s interaction at @s run function game/loot/looting
+execute as @e[type=interaction,tag=loot_hitbox] if data entity @s interaction at @s run function game/loot/looting
 execute as @a[gamemode=!spectator,scores={PKM_1=1}] if data entity @s SelectedItem.tag.ammo at @s run function game/loot/give_ammo
 
 execute at @e[type=ender_pearl] run particle minecraft:reverse_portal ~ ~ ~ 0.2 0.2 0.2 0.1 10 force @a[distance=..150]

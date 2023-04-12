@@ -1,5 +1,5 @@
 execute unless score @s sneak_time matches 0 if score @s stamina matches ..0 if score @s PKM_2 matches 0 run function gun/leaves/breath
-execute unless score @s sneak_time matches 0 if score @s stamina matches -50.. unless score idModule varTime matches 6 run scoreboard players remove @s stamina 14
+execute unless score @s sneak_time matches 0 if score @s stamina matches -50.. unless score idModule varTime matches 6 run scoreboard players remove @s stamina 5
 
 execute if score @s PKM_2 matches 1.. run function minecraft:gun/leaves/shot
 

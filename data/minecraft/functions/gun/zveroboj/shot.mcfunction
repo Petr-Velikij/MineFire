@@ -20,4 +20,4 @@ execute positioned ~ ~1 ~ as @e[type=arrow,tag=,sort=nearest,limit=1] at @s run 
 
 function minecraft:gun/shot
 
-tp @s ~ ~ ~ ~ ~-10
+tp @s ~ ~ ~ ~ ~-7
