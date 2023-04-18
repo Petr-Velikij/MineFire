@@ -16,13 +16,17 @@ execute positioned ~ ~1 ~ as @e[type=arrow,tag=,sort=nearest,limit=1] run functi
 execute if score @s Power matches ..129 run scoreboard players add @s Power 2
 execute if score @s Power matches 131.. run scoreboard players set @s Power 130
 
-execute if score @s Supply matches 0 if score @s modeFire matches 2..3 run scoreboard players set @s Supply 3
+scoreboard players set @s Supply 131
+scoreboard players operation @s Supply -= @s Power
+scoreboard players operation @s Supply /= *5 CONST
+scoreboard players add @s Supply 4
 function minecraft:gun/shot
 execute if score *InHolder varTime matches 0 run scoreboard players set @s Supply 0
 scoreboard players add @s Scatter 30
 
+scoreboard players set @s Time_PKM_2 0
 function minecraft:random/number
-execute if score @s modeFire matches 1 if score Number Random matches ..32 run tp @s ~ ~ ~ ~0.8 ~-0.3
-execute if score @s modeFire matches 1 unless score Number Random matches ..32 run tp @s ~ ~ ~ ~-0.8 ~-0.3
-execute if score @s modeFire matches 2..3 if score Number Random matches ..32 run tp @s ~ ~ ~ ~1.8 ~-0.8
-execute if score @s modeFire matches 2..3 unless score Number Random matches ..32 run tp @s ~ ~ ~ ~-1.8 ~-0.8
+execute if score @s Supply matches 8.. if score Number Random matches ..32 run tp @s ~ ~ ~ ~0.8 ~-0.3
+execute if score @s Supply matches 8.. unless score Number Random matches ..32 run tp @s ~ ~ ~ ~-0.8 ~-0.3
+execute if score @s Supply matches ..8 if score Number Random matches ..32 run tp @s ~ ~ ~ ~1.8 ~-0.8
+execute if score @s Supply matches ..8 unless score Number Random matches ..32 run tp @s ~ ~ ~ ~-1.8 ~-0.8

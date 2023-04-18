@@ -24,6 +24,11 @@ execute as @a[gamemode=!spectator] run function stamina/global
 execute as @e[type=interaction,tag=loot_hitbox] if data entity @s interaction at @s run function game/loot/looting
 execute as @a[gamemode=!spectator,scores={PKM_1=1}] if data entity @s SelectedItem.tag.ammo at @s run function game/loot/give_ammo
 
+execute if score footprint_new Loop matches ..0 run scoreboard players set footprint_new Loop 24
+execute if score footprint_new Loop matches 1 as @a[gamemode=!spectator,scores={Pos_delta=10..,sneak_time=0}] at @s run function armor/predator/footprint/new
+execute as @e[type=marker,tag=footprint] at @s run function armor/predator/footprint/tick
+scoreboard players remove footprint_new Loop 1
+
 execute at @e[type=ender_pearl] run particle minecraft:reverse_portal ~ ~ ~ 0.2 0.2 0.2 0.1 10 force @a[distance=..150]
 
 scoreboard players add Loop1k20 CONST 1

@@ -1,5 +1,5 @@
 data merge entity @s {crit:0b,PierceLevel:1b,Tags:["bullet_chastiser","particle_crit"],SoundEvent:"minecraft:entity.shulker.close"}
-execute store result entity @s damage double 0.0069 run scoreboard players get *1 varTime
+execute store result entity @s damage double 0.00875 run scoreboard players get *1 varTime
 scoreboard players set @s ArrowDamage 1
 scoreboard players set @s DamageHead 130
 scoreboard players set @s DamageLegs 50

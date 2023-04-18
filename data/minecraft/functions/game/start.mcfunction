@@ -23,6 +23,7 @@ kill @e[type=minecraft:item,tag=!NO]
 kill @e[type=minecraft:husk,tag=!NO]
 kill @e[type=minecraft:chicken,tag=!NO]
 kill @e[type=minecraft:phantom,tag=!NO]
+kill @e[type=marker,tag=footprint]
 
 worldborder set 350
 

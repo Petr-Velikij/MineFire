@@ -1,8 +1,8 @@
 scoreboard players set aiming Random 10
 scoreboard players set from_hip Random 15
 scoreboard players set running Random 40
-playsound minecraft:custom.gun.shtil.shot_2d player @s ~ ~ ~ 1 1.3
-playsound minecraft:custom.gun.shtil.shot_1d player @a[distance=0.1..75] ~ ~ ~ 4.7 1.3
+playsound minecraft:custom.gun.ripper.shot_2d player @s ~ ~ ~ 1 1
+playsound minecraft:custom.gun.ripper.shot_1d player @a[distance=0.1..75] ~ ~ ~ 4.7 1
 
 
 function gun/scatter_modifier
