@@ -26,7 +26,7 @@ scoreboard players add @s Scatter 30
 
 scoreboard players set @s Time_PKM_2 0
 function minecraft:random/number
-execute if score @s Supply matches 8.. if score Number Random matches ..32 run tp @s ~ ~ ~ ~0.8 ~-0.3
-execute if score @s Supply matches 8.. unless score Number Random matches ..32 run tp @s ~ ~ ~ ~-0.8 ~-0.3
-execute if score @s Supply matches ..8 if score Number Random matches ..32 run tp @s ~ ~ ~ ~1.8 ~-0.8
-execute if score @s Supply matches ..8 unless score Number Random matches ..32 run tp @s ~ ~ ~ ~-1.8 ~-0.8
+execute if score Number Random matches ..32 run tp @s ~ ~ ~ ~1 ~-0.4
+execute unless score Number Random matches ..32 run tp @s ~ ~ ~ ~-1 ~-0.4
+#execute if score @s Supply matches ..8 if score Number Random matches ..32 run tp @s ~ ~ ~ ~1.8 ~-0.8
+#execute if score @s Supply matches ..8 unless score Number Random matches ..32 run tp @s ~ ~ ~ ~-1.8 ~-0.8

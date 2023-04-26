@@ -6,16 +6,13 @@ playsound minecraft:custom.gun.volt.shot_1d player @a[distance=0.1..50] ~ ~1.6 ~
 execute if score @s ID.module matches 1 run stopsound @s player minecraft:custom.gun.volt.end_2d
 execute if score @s ID.module matches 1 run stopsound @a[distance=0.1..10] player minecraft:custom.gun.volt.end_1d
 
-scoreboard players set aiming Random 10
-scoreboard players set from_hip Random 20
-scoreboard players set running Random 50
-function gun/scatter_modifier
+execute at @s positioned ~ ~1 ~ as @e[type=arrow,tag=,sort=nearest,limit=1] run kill @s
 
-scoreboard players set *YR.correct varTime 0
-function minecraft:vector/get_vec
-execute store result score *1 varTime run data get entity @s Rotation[0] 1000
-scoreboard players operation buf ID.Owner = @s ID.Player
-execute at @s positioned ~ ~1 ~ as @e[type=arrow,tag=,sort=nearest,limit=1] run function minecraft:gun/volt/shot2
+tag @s add Owner
+execute if score @s sneak_time matches 0 positioned ~ ~1.5 ~ run function gun/volt/discharge/search
+execute unless score @s sneak_time matches 0 positioned ~ ~1.1 ~ run function gun/volt/discharge/search
+tag @s remove Owner
+tag @e[type=#target,distance=..50] remove Electro
 
 function minecraft:gun/shot
 
