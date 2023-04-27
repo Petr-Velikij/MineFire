@@ -21,10 +21,10 @@ scoreboard players operation @s Supply -= @s Power
 scoreboard players operation @s Supply /= *5 CONST
 scoreboard players add @s Supply 4
 function minecraft:gun/shot
+execute unless score *InHolder varTime matches 0 run function minecraft:gun/no_arrow
 execute if score *InHolder varTime matches 0 run scoreboard players set @s Supply 0
 scoreboard players add @s Scatter 30
 
-scoreboard players set @s Time_PKM_2 0
 function minecraft:random/number
 execute if score Number Random matches ..32 run tp @s ~ ~ ~ ~1 ~-0.4
 execute unless score Number Random matches ..32 run tp @s ~ ~ ~ ~-1 ~-0.4

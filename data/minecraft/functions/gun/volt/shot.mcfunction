@@ -6,8 +6,6 @@ playsound minecraft:custom.gun.volt.shot_1d player @a[distance=0.1..50] ~ ~1.6 ~
 execute if score @s ID.module matches 1 run stopsound @s player minecraft:custom.gun.volt.end_2d
 execute if score @s ID.module matches 1 run stopsound @a[distance=0.1..10] player minecraft:custom.gun.volt.end_1d
 
-execute at @s positioned ~ ~1 ~ as @e[type=arrow,tag=,sort=nearest,limit=1] run kill @s
-
 tag @s add Owner
 execute if score @s sneak_time matches 0 positioned ~ ~1.5 ~ run function gun/volt/discharge/search
 execute unless score @s sneak_time matches 0 positioned ~ ~1.1 ~ run function gun/volt/discharge/search
