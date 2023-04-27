@@ -1,0 +1,2 @@
+execute as @e[type=marker,tag=zone] at @s run particle dust 0 1 0 5 ~ 90 ~ 0 8 0 0 3 force @a[gamemode=creative,distance=..250]
+execute as @e[type=marker,tag=game_zone] at @s run particle dust 1 0 1 5 ~ 90 ~ 0 8 0 0 3 force @a[gamemode=creative,distance=..250]

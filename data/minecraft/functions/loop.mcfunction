@@ -48,5 +48,6 @@ scoreboard players set @a jump 0
 scoreboard players set @a damage_taken 0
 
 execute if score #auto Zona matches 1 if score Стадия Zona matches 0 run function game/auto/zona
+execute if score Стадия Zona matches 2 as @e[type=marker,tag=game_zone,limit=1] at @s run function minecraft:game/zona/move
 execute if score Стадия Zona matches 1..2 as @a[gamemode=!spectator,scores={deathCount=1}] at @s run function game/death
 scoreboard players set @a deathCount 0

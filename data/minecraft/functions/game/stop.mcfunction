@@ -1,3 +1,4 @@
+kill @e[tag=game_zone]
 worldborder center 0 0
 worldborder set 550
 scoreboard players set Время Zona 0

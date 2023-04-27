@@ -1,11 +1,27 @@
-summon minecraft:armor_stand ~ ~ ~ {NoGravity:1b,Invulnerable:1b,Small:1b,Marker:1b,Invisible:1b,Tags:["zona","NO"]}
-spreadplayers 0 0 0 175 false @e[tag=zona]
+kill @e[tag=game_zone]
+summon minecraft:marker ~ ~ ~ {Tags:["game_zone"]}
+tp @e[type=marker,tag=game_zone] @e[type=marker,tag=zone,sort=random,limit=1]
+execute as @e[type=marker,tag=game_zone] at @s run spreadplayers ~ ~ 0 25 true @s
 
-worldborder center 0 0
-worldborder set 768 
+execute as @e[type=marker,tag=game_zone] at @s run worldborder center ~ ~
+worldborder set 350
 
-execute as @e[tag=zona] at @s run worldborder center ~ ~
-execute as @e[tag=zona] at @s run spreadplayers ~ ~ 150 175 true @a[gamemode=adventure]
+execute if score Игроков Zona matches ..2 run scoreboard players set Размер Zona 3
+execute if score Игроков Zona matches 3..4 run scoreboard players set Размер Zona 4
+execute if score Игроков Zona matches 5.. run scoreboard players set Размер Zona 5
+execute if score Игроков Zona matches ..2 run worldborder set 210
+execute if score Игроков Zona matches 3..4 run worldborder set 280
+execute if score Игроков Zona matches 5.. run worldborder set 350
+execute if score Игроков Zona matches ..2 at @e[type=marker,tag=game_zone] run spreadplayers ~ ~ 80 105 true @a[gamemode=adventure]
+execute if score Игроков Zona matches 3..4 at @e[type=marker,tag=game_zone] run spreadplayers ~ ~ 120 140 true @a[gamemode=adventure]
+execute if score Игроков Zona matches 5.. at @e[type=marker,tag=game_zone] run spreadplayers ~ ~ 150 175 true @a[gamemode=adventure]
+scoreboard players set Время Zona 60
+scoreboard players set Стадия Zona 1
+# 0 - Игра не запущена
+# 1 - Зона стоит
+# 2 - Зона сужается
+# 3 - Игра кончена
+# 4 - Запуск игры
 
 effect clear @a[gamemode=!spectator]
 effect give @a[gamemode=!spectator] minecraft:instant_health 1 9 true
@@ -25,17 +41,6 @@ kill @e[type=minecraft:chicken,tag=!NO]
 kill @e[type=minecraft:phantom,tag=!NO]
 kill @e[type=marker,tag=footprint]
 
-worldborder set 350
-
-scoreboard players set Размер Zona 5
-scoreboard players set Время Zona 60
-scoreboard players set Стадия Zona 1
-# 0 - Игра не запущена
-# 1 - Зона стоит
-# 2 - Зона сужается
-# 3 - Игра кончена
-# 4 - Запуск игры
-
 execute if entity @s run tellraw @a ["",{"text":"\u0418\u0433\u0440\u043e\u043a ","bold":true,"color":"green"},{"selector":"@s","bold":true},{"text":" \u0437\u0430\u043f\u0443\u0441\u0442\u0438\u043b \u0438\u0433\u0440\u0443","bold":true,"color":"green"}]
 execute unless entity @s run tellraw @a {"text":"\u0418\u0433\u0440\u0430 \u0437\u0430\u043f\u0443\u0449\u0435\u043d\u0430","bold":true,"color":"green"}
 
@@ -45,4 +50,3 @@ title @a subtitle {"text":"Удачи :)","color":"green","bold":false,"italic":
 
 execute as @a at @s run playsound minecraft:entity.player.levelup master @s ~ ~100 ~ 100 0
 function game/loot/spawn
-kill @e[tag=zona]

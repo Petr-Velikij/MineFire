@@ -1,0 +1,1 @@
+summon marker ~ 100 ~ {Tags:["NO","zone"]}
