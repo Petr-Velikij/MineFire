@@ -1,5 +1,8 @@
 scoreboard players set *1 varTime 0
-execute as @a[x=-4,y=78,z=16,dx=8,dy=3,dz=3,gamemode=adventure] run tag @s add Ready
+execute as @a[x=-4,y=78,z=16,dx=8,dy=3,dz=3,gamemode=adventure,team=A] run tag @s add Ready
+execute as @a[x=-4,y=78,z=16,dx=8,dy=3,dz=3,gamemode=adventure,team=B] run tag @s add Ready
+execute as @a[x=-4,y=78,z=16,dx=8,dy=3,dz=3,gamemode=adventure,team=C] run tag @s add Ready
+execute as @a[x=-4,y=78,z=16,dx=8,dy=3,dz=3,gamemode=adventure,team=D] run tag @s add Ready
 execute at @a[tag=Ready] run scoreboard players add *1 varTime 1
 title @a times 0 30 0
 title @a title {"text":""}

@@ -12,8 +12,8 @@ execute if score Игроков Zona matches 5.. run scoreboard players set Ра
 execute if score Игроков Zona matches ..2 run worldborder set 210
 execute if score Игроков Zona matches 3..4 run worldborder set 280
 execute if score Игроков Zona matches 5.. run worldborder set 350
-execute if score Игроков Zona matches ..2 at @e[type=marker,tag=game_zone] run spreadplayers ~ ~ 80 105 true @a[gamemode=adventure]
-execute if score Игроков Zona matches 3..4 at @e[type=marker,tag=game_zone] run spreadplayers ~ ~ 120 140 true @a[gamemode=adventure]
+execute if score Игроков Zona matches ..2 at @e[type=marker,tag=game_zone] run spreadplayers ~ ~ 100 105 true @a[gamemode=adventure]
+execute if score Игроков Zona matches 3..4 at @e[type=marker,tag=game_zone] run spreadplayers ~ ~ 130 140 true @a[gamemode=adventure]
 execute if score Игроков Zona matches 5.. at @e[type=marker,tag=game_zone] run spreadplayers ~ ~ 150 175 true @a[gamemode=adventure]
 scoreboard players set Время Zona 60
 scoreboard players set Стадия Zona 1
@@ -50,3 +50,10 @@ title @a subtitle {"text":"Удачи :)","color":"green","bold":false,"italic":
 
 execute as @a at @s run playsound minecraft:entity.player.levelup master @s ~ ~100 ~ 100 0
 function game/loot/spawn
+
+setblock -3 75 14 air
+setblock -5 75 14 air
+setblock -3 74 14 air
+setblock -5 74 14 air
+data merge block 4 74 14 {Lock:"locl"}
+data merge block 6 74 14 {Lock:"locl"}
