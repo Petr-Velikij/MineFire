@@ -2,8 +2,8 @@
 # Делители числа  720: 1, 2, 3, 4, 5, 6, 8, 9, 10, 12, 15, 16, 18, 20, 24, 30, 36, 40, 45, 48, 60, 72, 80, 90, 120, 144, 180, 240, 360, 720
 #01 Волк-М30/90
 execute if score Inventory ID.gun matches 1 run scoreboard players set @s price_cartridge 8
-#02 Медведь-К70/60
-execute if score Inventory ID.gun matches 2 run scoreboard players set @s price_cartridge 12
+#02 Медведь-К70/80
+execute if score Inventory ID.gun matches 2 run scoreboard players set @s price_cartridge 9
 #03 Каратель/240
 execute if score Inventory ID.gun matches 3 run scoreboard players set @s price_cartridge 3
 #04 Потрошитель/120

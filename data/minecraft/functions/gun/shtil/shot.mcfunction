@@ -21,8 +21,6 @@ execute unless score @s sneak_time matches 0 positioned ~ ~1.3 ~ run particle mi
 execute if score @s sneak_time matches 0 positioned ~ ~1.6 ~ run particle minecraft:smoke ^ ^ ^0.7 0 0 0 0.01 3 force @a[distance=2..100]
 execute unless score @s sneak_time matches 0 positioned ~ ~1.3 ~ run particle minecraft:smoke ^ ^ ^0.7 0 0 0 0.01 3 force @a[distance=2..100]
 
-execute if score @s Supply matches 0 if score @s modeFire matches 2 run scoreboard players set @s Supply 3
 function minecraft:gun/shot
-execute if score *InHolder varTime matches 0 run scoreboard players set @s Supply 0
 
 tp @s ~ ~ ~ ~ ~-2.3

@@ -29,12 +29,12 @@ function minecraft:gun/scatter
 attribute @s generic.movement_speed modifier remove 6b40a35f-cfa6-4474-bccd-4a606cb26d1f
 #0 Автоматы
 execute if score Inventory ID.gun matches 1 if score SelectedItem ID.gun matches 1 run function minecraft:gun/assault_rifle/global
-execute if score Inventory ID.gun matches 2 if score SelectedItem ID.gun matches 1 run function minecraft:gun/bear/global
+execute if score Inventory ID.gun matches 2 run function minecraft:gun/bear/raspredeleniye
 execute if score Inventory ID.gun matches 3 run function minecraft:gun/chastiser/raspredeleniye
 execute if score Inventory ID.gun matches 3 unless score @s ID.armor matches 6 run attribute @s generic.movement_speed modifier add 6b40a35f-cfa6-4474-bccd-4a606cb26d1f "slowness" -0.1 multiply
 execute if score Inventory ID.gun matches 4 if score SelectedItem ID.gun matches 1 run function minecraft:gun/ripper/global
 #1 Марксманские
-execute if score Inventory ID.gun matches 11 run function minecraft:gun/shtil/raspredeleniye
+execute if score Inventory ID.gun matches 11 if score SelectedItem ID.gun matches 1 run function minecraft:gun/shtil/global
 execute if score Inventory ID.gun matches 12 run function minecraft:gun/armature/raspredeleniye
 execute if score Inventory ID.gun matches 13 if score SelectedItem ID.gun matches 1 run function minecraft:gun/darkness/global
 execute if score Inventory ID.gun matches 14 run function minecraft:gun/neutron/raspredeleniye
