@@ -17,4 +17,4 @@ execute at @s positioned ~ ~1 ~ as @e[type=arrow,tag=,sort=nearest,limit=1] run 
 scoreboard players set @s Supply 7
 function minecraft:gun/shot
 
-tp @s ~ ~ ~ ~0.2 ~-1.7
+tp @s ~ ~ ~ ~0.3 ~-2.7

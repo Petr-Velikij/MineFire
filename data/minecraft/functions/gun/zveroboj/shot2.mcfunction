@@ -1,4 +1,4 @@
-data merge entity @s {damage:1.5d,crit:0b,PierceLevel:0b,Tags:["zveroboj","particle_crit"],Owner:[I;0,0,0,0]}
+data merge entity @s {damage:1.0d,crit:0b,PierceLevel:0b,Tags:["zveroboj","particle_crit"],Owner:[I;0,0,0,0]}
 scoreboard players set @s Loop 0
 scoreboard players set @s ArrowDamage 1
 scoreboard players set @s DamageHead 120

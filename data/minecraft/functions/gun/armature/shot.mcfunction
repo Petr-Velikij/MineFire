@@ -17,7 +17,8 @@ execute positioned ~ ~1 ~ as @e[type=arrow,tag=,sort=nearest,limit=1] run functi
 scoreboard players set @s Supply 3
 function minecraft:gun/shot
 scoreboard players operation *1 varTime = @s Power
-scoreboard players operation *1 varTime *= *20 CONST
+execute unless score @s ID.module matches 1 run scoreboard players operation *1 varTime *= *20 CONST
+execute if score @s ID.module matches 1 run scoreboard players operation *1 varTime *= *26 CONST
 scoreboard players operation *1 varTime /= *100 CONST
 scoreboard players operation @s Power -= *1 varTime
 

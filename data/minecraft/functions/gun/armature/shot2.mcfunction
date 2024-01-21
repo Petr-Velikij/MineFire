@@ -1,4 +1,4 @@
-data merge entity @s {damage:1.32d,crit:0b,PierceLevel:1b,Tags:["armature","particle_crit"]}
+data merge entity @s {damage:1.24d,crit:0b,PierceLevel:1b,Tags:["armature","particle_crit"]}
 
 scoreboard players set @s ArrowDamage 1
 scoreboard players set @s DamageHead 180

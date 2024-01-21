@@ -1,4 +1,5 @@
 execute if score @s[tag=SelectedGun] reloadGun matches 1 run function gun/reload
+execute if score @s[tag=SelectedGun] reloadGun matches 1 if score @s ID.module matches 8 if score @s reload matches 1.. if score @s module_cooldown matches 0 run function module/reload/fast
 
 execute store result score Inventory ID.gun run data get entity @s Inventory[{}].tag.gunID
 scoreboard players set Offhand ID.gun 0
@@ -22,7 +23,7 @@ execute if score SelectedItem ID.gun matches 1 if entity @s[scores={invisibility
 execute if score SelectedItem ID.gun matches 1 if score @s Supply matches 1 run function minecraft:gun/supply
 execute if score SelectedItem ID.gun matches 1 unless score @s reload matches 0 run function minecraft:gun/ammo
 
-scoreboard players remove @a[scores={no_reload=1..}] no_reload 1
+execute if score @s no_reload matches 1.. run scoreboard players remove @s no_reload 1
 
 function minecraft:mat/pos_delta
 function minecraft:gun/scatter
@@ -52,8 +53,7 @@ execute if score Inventory ID.gun matches 33 if score SelectedItem ID.gun matche
 execute if score Inventory ID.gun matches 34 if score SelectedItem ID.gun matches 1 run function minecraft:gun/phoenix/global
 #4 Гранатомёты и тд
 execute if score Inventory ID.gun matches 41 if score SelectedItem ID.gun matches 1 run function minecraft:gun/grenade_launcher/global
-execute if score Inventory ID.gun matches 42 run function minecraft:gun/locusts/raspredeleniye
-execute if score Inventory ID.gun matches 43 if score SelectedItem ID.gun matches 1 run function minecraft:gun/makusya/global
+execute if score Inventory ID.gun matches 43 run function minecraft:gun/makusya/raspredeleniye
 #5 Энергетическое
 execute if score Inventory ID.gun matches 51 run function minecraft:gun/marble/raspredeleniye
 execute if score Inventory ID.gun matches 52 run function minecraft:gun/magma/raspredeleniye

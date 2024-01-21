@@ -23,11 +23,13 @@ scoreboard players set @a Supply 0
 scoreboard objectives add ammo dummy
 scoreboard objectives add ammo_point dummy
 scoreboard players set @a ammo_point 720
-scoreboard players set @a[scores={ID.module=7}] ammo_point 1260
-scoreboard players set @a[scores={ID.module=8}] ammo_point 2160
+scoreboard players set @a[scores={ID.module=7}] ammo_point 2160
+execute as @a[gamemode=!spectator] run function gun/ammo
 scoreboard objectives add price_cartridge dummy
 scoreboard objectives add reload dummy
 scoreboard players set @a reload 0
+scoreboard objectives add no_reload dummy
+scoreboard players set @a no_reload 0
 scoreboard objectives add modeFire dummy
 scoreboard players set @a modeFire 1
 scoreboard objectives add Loop dummy
@@ -35,6 +37,8 @@ scoreboard objectives add Power dummy
 scoreboard players set @a Power 100
 scoreboard objectives add Heat dummy
 scoreboard players set @a Heat 0
+scoreboard objectives add health_cooldown dummy
+scoreboard players set @a health_cooldown 0
 scoreboard objectives add color_camouflage dummy
 scoreboard objectives add armor_cooldown dummy
 scoreboard players set @a armor_cooldown 0
@@ -81,6 +85,8 @@ scoreboard objectives add sprint_one_cm minecraft.custom:minecraft.sprint_one_cm
 scoreboard objectives add jump minecraft.custom:minecraft.jump
 scoreboard objectives add damage_taken minecraft.custom:damage_taken
 scoreboard objectives add damage_absorbed minecraft.custom:damage_absorbed
+scoreboard objectives add food food
+scoreboard objectives add health health
 scoreboard objectives add PKM_1 minecraft.used:minecraft.carrot_on_a_stick
 scoreboard objectives add PKM_2 minecraft.used:minecraft.crossbow
 scoreboard objectives add Time_PKM_2 dummy 

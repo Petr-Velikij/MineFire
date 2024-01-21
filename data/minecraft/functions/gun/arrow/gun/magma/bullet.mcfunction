@@ -1,3 +1,3 @@
 execute if entity @s[tag=up] run function gun/arrow/gun/magma/up
 execute if entity @s[tag=!up] run particle dust 1 0 0 1 ~ ~ ~ 0 0 0 0 1 force @a[distance=..250]
-execute if score @s ArrowLive matches 50 run kill @s
+execute if score @s ArrowLive matches 15 run kill @s

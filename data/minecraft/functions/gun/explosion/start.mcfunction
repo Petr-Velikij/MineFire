@@ -2,7 +2,7 @@
 #scoreboard players set OptDist varTime 20
 #Максимальная дистанция (1бл=10), это дистанция до которой можнр нанести урон
 #scoreboard players set MaxDist varTime 50
-#Урон, наносимый урон от взрыва x/100
+#Урон, наносимый урон от взрыва x/10
 #scoreboard players set Damage varTime 100
 #Копировать название true/false
 #scoreboard players set NameExplosion varTime 1

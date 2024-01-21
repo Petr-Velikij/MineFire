@@ -1,4 +1,4 @@
-scoreboard players add @s Power 10
+scoreboard players set @s Power 100
 
 execute in minecraft:overworld run data modify block 0 -64 0 Items set value [{Slot:0b,Count:1,id:stone}]
 execute in minecraft:overworld run data modify block 0 -64 0 Items[0].id set from entity @s SelectedItem.id

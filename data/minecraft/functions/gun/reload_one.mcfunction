@@ -5,6 +5,7 @@ execute in minecraft:overworld run data modify block 0 -64 0 Items[0].tag set fr
 execute in minecraft:overworld store result score *InHolder varTime run data get block 0 -64 0 Items[{Slot:0b}].tag.InHolder 100
 execute in minecraft:overworld store result score *Holder varTime run data get block 0 -64 0 Items[{Slot:0b}].tag.Holder 1
 scoreboard players operation @s ammo_point -= @s price_cartridge
+function gun/mat
 
 scoreboard players add *InHolder varTime 100
 scoreboard players set *Max varTime 465

@@ -23,4 +23,4 @@ execute unless score @s sneak_time matches 0 positioned ~ ~1.3 ~ run particle mi
 
 function minecraft:gun/shot
 
-tp @s ~ ~ ~ ~ ~-2.3
+tp @s ~ ~ ~ ~ ~-1.8

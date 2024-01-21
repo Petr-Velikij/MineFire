@@ -15,6 +15,7 @@ scoreboard players operation buf ID.Owner = @s ID.Player
 execute at @s positioned ~ ~1 ~ as @e[type=arrow,tag=,sort=nearest,limit=1] run function minecraft:gun/marble/shot2
 
 scoreboard players remove @s Power 10
+execute if score @s ID.module matches 1 run scoreboard players remove @s Power 3
 execute if score @s Power matches ..0 run scoreboard players set @s Power 0
 function gun/marble/shot_mat
 

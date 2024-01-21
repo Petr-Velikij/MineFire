@@ -4,10 +4,6 @@ execute unless entity @a[tag=target] run function armor/hunter/scout/owner_run
 execute if entity @a[tag=Owner,distance=170..] run function armor/hunter/scout/owner_run
 
 scoreboard players operation *2 varTime = @s Loop
-scoreboard players operation *2 varTime %= *20 CONST
-execute if score *2 varTime matches 0 if entity @a[tag=target,distance=..50] run function armor/hunter/scout/marker_start
-
-scoreboard players operation *2 varTime = @s Loop
 scoreboard players operation *2 varTime %= *270 CONST
 execute if score *2 varTime matches 0 run playsound minecraft:entity.phantom.ambient player @a[distance=..40] ~ ~ ~ 2 0
 scoreboard players operation *2 varTime = @s Loop

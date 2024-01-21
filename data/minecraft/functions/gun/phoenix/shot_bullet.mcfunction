@@ -3,8 +3,8 @@ playsound custom.gun.tessen.shot_2d player @a[distance=..1] ~ ~1 ~ 2 1
 
 
 scoreboard players set aiming Random 15
-scoreboard players set from_hip Random 15
-scoreboard players set running Random 50
+scoreboard players set from_hip Random 30
+scoreboard players set running Random 90
 function gun/scatter_modifier
 
 scoreboard players set *YR.correct varTime 0

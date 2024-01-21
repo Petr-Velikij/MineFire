@@ -18,11 +18,13 @@ execute as @e[type=armor_stand,tag=turret_up] at @s run function armor/engineer/
 execute as @e[type=armor_stand,tag=start_zipline] at @s run function armor/spetsnaz/zipline/processor
 execute as @a[gamemode=!spectator,scores={jump=1,sneak_time=0}] at @s if entity @e[type=armor_stand,tag=zipline,distance=..1] run function armor/spetsnaz/zipline/go
 execute as @a[gamemode=!spectator,tag=move_zipline] at @s run function armor/spetsnaz/zipline/test_end
+execute as @e[type=armor_stand,tag=shield] at @s run function module/shield/module/test_end
 
 execute as @a[gamemode=!spectator,scores={Heat=1..}] at @s run function heat
 execute as @a[gamemode=!spectator] run function stamina/global
 execute as @e[type=interaction,tag=loot_hitbox] if data entity @s interaction at @s run function game/loot/looting
 execute as @a[gamemode=!spectator,scores={PKM_1=1}] if data entity @s SelectedItem.tag.ammo at @s run function game/loot/give_ammo
+execute as @a[gamemode=!spectator] run function health/global
 
 execute if score footprint_new Loop matches ..0 run scoreboard players set footprint_new Loop 24
 execute if score footprint_new Loop matches 1 as @a[gamemode=!spectator,scores={Pos_delta=10..,sneak_time=0}] at @s run function armor/predator/footprint/new

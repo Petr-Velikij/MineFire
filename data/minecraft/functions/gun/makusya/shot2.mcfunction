@@ -1,5 +1,4 @@
-data merge entity @s {NoGravity:1b,damage:12.5d,crit:0b,PierceLevel:2b,Tags:["makusya"]}
-scoreboard players set @s ArrowDamage 1
+data merge entity @s {NoGravity:1b,damage:2d,crit:0b,PierceLevel:2b,Tags:["makusya"]}
 scoreboard players operation @s ID.Owner = buf ID.Owner
 scoreboard players operation @s ID.target = buf ID.target
 scoreboard players operation @s varTimeEntity1 = *XR varTime

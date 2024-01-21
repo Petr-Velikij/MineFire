@@ -5,8 +5,8 @@ setblock 0 -63 0 oak_sign{Color:"-1",Text1:'[{"selector":"@p[tag=Owner]"},{"text
 tag @a remove Owner
 
 scoreboard players set OptDist varTime 20
-scoreboard players set MaxDist varTime 50
-scoreboard players set Damage varTime 140
+scoreboard players set MaxDist varTime 40
+scoreboard players set Damage varTime 80
 scoreboard players set NameExplosion varTime 1
 execute if entity @s[tag=up] run function armor/grenadier/up
 function gun/explosion/start

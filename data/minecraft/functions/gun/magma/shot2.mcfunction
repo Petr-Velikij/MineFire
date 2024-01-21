@@ -3,7 +3,7 @@ execute store result entity @s damage double 0.00565 run scoreboard players get 
 
 execute if score buf Power matches 150.. run data modify entity @s Fire set value 30
 execute if score idModule varTime matches 1 run tag @s add up
-execute if score idModule varTime matches 1 run data modify entity @s Fire set value 30
+execute if score idModule varTime matches 1 run function module/energy/up_damage
 
 scoreboard players set @s ArrowDamage 1
 scoreboard players set @s DamageHead 130
