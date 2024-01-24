@@ -14,7 +14,7 @@ function minecraft:vector/get_vec
 scoreboard players operation buf ID.Owner = @s ID.Player
 execute as @e[type=arrow,tag=,sort=nearest,limit=1] run function minecraft:gun/leaves/shot2
 
-scoreboard players set @s Supply 20
+scoreboard players set @s Supply 30
 function minecraft:gun/shot
 
 tp @s ~ ~ ~ ~0.2 ~-2

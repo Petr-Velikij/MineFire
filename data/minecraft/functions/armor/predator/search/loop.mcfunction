@@ -1,5 +1,3 @@
-scoreboard players remove @s Loop 1
-
-execute positioned ~ ~-1 ~ if entity @s[distance=..1.5] run scoreboard players set *1 varTime 1
-
-execute if score @s Loop matches 1.. if score *1 varTime matches 0 if block ~ ~ ~ #no_collider positioned ^ ^ ^0.5 run function armor/predator/search/loop
+scoreboard players remove distance varTime 1
+execute positioned ~ ~-1.2 ~ if entity @e[tag=select,distance=..1.5] run scoreboard players set detection varTime 1
+execute if score distance varTime matches 1.. if score detection varTime matches 0 positioned ^ ^ ^0.5 if block ~ ~ ~ #no_collider run function armor/predator/search/loop

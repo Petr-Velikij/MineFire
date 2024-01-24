@@ -5,5 +5,6 @@ execute store result entity @s Motion[1] double 0.0001 run scoreboard players ge
 particle minecraft:smoke ~ ~ ~ 0 0 0 0.02 3 force @a[distance=..75]
 particle minecraft:flame ~ ~ ~ 0 0 0 0 1 force @a[distance=..75]
 
+execute if score @s ArrowLive matches 30 run function armor/alchemist/fire/arrow_spawn
 execute positioned ~ ~-1 ~ if entity @e[nbt={HurtTime:9s},distance=..2,sort=nearest] positioned ~ ~1 ~ run function armor/alchemist/fire/arrow_spawn
 execute if entity @s[nbt={inGround:1b}] run function armor/alchemist/fire/arrow_spawn

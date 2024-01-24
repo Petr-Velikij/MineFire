@@ -1,6 +1,4 @@
-execute if score @s Supply matches 1 run function minecraft:gun/ripper/shot3
 execute if score @s Supply matches 2 run function minecraft:gun/ripper/shot3
-execute if score @s Supply matches 3 run function minecraft:gun/ripper/shot3
 execute if score @s Supply matches 1.. run scoreboard players remove @s Supply 1
 
 execute if score @s PKM_2 matches 1.. run function minecraft:gun/ripper/shot

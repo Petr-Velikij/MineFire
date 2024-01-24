@@ -1,5 +1,5 @@
-scoreboard players set distance varTime 40
-execute positioned ~ ~0.25 ~ facing entity @p[gamemode=!spectator,tag=owner,distance=..20] feet run function armor/engineer/turret/ray_owner
+scoreboard players set distance varTime 60
+execute positioned ~ ~0.25 ~ facing entity @p[gamemode=!spectator,tag=owner,distance=..30] feet run function armor/engineer/turret/ray_owner
 
 execute positioned ~ ~0.5 ~ if entity @a[gamemode=!spectator,distance=..30,tag=!owner,tag=!no_target,scores={invisibility=0}] run function armor/engineer/turret/search_enemy
 execute unless entity @a[gamemode=!spectator,tag=target,distance=..50] run tag @p[tag=owner,distance=..5] add target

@@ -7,7 +7,7 @@ execute if score *1 varTime matches ..10 if predicate random20 run particle lava
 execute if score @s Loop matches 0 run function armor/engineer/turret/start
 
 function armor/engineer/turret/owner
-execute if score @s Loop matches 1.. if entity @a[gamemode=!spectator,tag=owner,distance=..20] run function armor/engineer/turret/ii
+execute if score @s Loop matches 1.. if entity @a[gamemode=!spectator,tag=owner,distance=..30] run function armor/engineer/turret/ii
 tag @a remove owner
 
 scoreboard players add @s Loop 1

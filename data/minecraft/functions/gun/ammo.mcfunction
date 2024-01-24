@@ -4,8 +4,8 @@
 execute if score Inventory ID.gun matches 1 run scoreboard players set @s price_cartridge 8
 #02 Медведь-К70/80
 execute if score Inventory ID.gun matches 2 run scoreboard players set @s price_cartridge 9
-#03 Каратель/240
-execute if score Inventory ID.gun matches 3 run scoreboard players set @s price_cartridge 3
+#03 Каратель/360
+execute if score Inventory ID.gun matches 3 run scoreboard players set @s price_cartridge 2
 #04 Потрошитель/120
 execute if score Inventory ID.gun matches 4 run scoreboard players set @s price_cartridge 6
 #11 Штиль/72
