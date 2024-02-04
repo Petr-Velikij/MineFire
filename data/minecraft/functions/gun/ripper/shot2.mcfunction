@@ -1,6 +1,6 @@
-data merge entity @s {damage:0.58d,crit:0b,PierceLevel:0b,Tags:["bullet_ripper","particle_crit"]}
+data merge entity @s {damage:0.43d,crit:0b,PierceLevel:0b,Tags:["bullet_ripper","particle_crit"]}
 scoreboard players set @s ArrowDamage 1
-scoreboard players set @s DamageHead 200
+scoreboard players set @s DamageHead 150
 scoreboard players set @s DamageLegs 70
 scoreboard players operation @s ID.Owner = buf ID.Owner
 execute store result entity @s Motion[0] double 0.0007 run scoreboard players get *X varTime

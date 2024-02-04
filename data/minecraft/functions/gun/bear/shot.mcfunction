@@ -15,8 +15,8 @@ function minecraft:gun/shot
 execute if score *InHolder varTime matches 0 run tp @s ~ ~ ~ ~2 ~-7
 execute if score *InHolder varTime matches 0 run scoreboard players set @s Supply 0
 
-execute if score @s modeFire matches 1 if score @s Power matches 100..102 run tp @s ~ ~ ~ ~-2 ~-7
-execute if score @s modeFire matches 1 if score @s Power matches 103..115 run tp @s ~ ~ ~ ~3 ~1
+execute if score @s modeFire matches 1 if score @s Power matches 100..102 run tp @s ~ ~ ~ ~-1 ~-3
+execute if score @s modeFire matches 1 if score @s Power matches 103..115 run tp @s ~ ~ ~ ~0.2 ~-2
 execute if score @s modeFire matches 1 if score @s Power matches 116.. run tp @s ~ ~ ~ ~-0.4 ~-1.2
 
 execute if score @s modeFire matches 2 if score @s Supply matches 5.. run tp @s ~ ~ ~ ~ ~-0.3

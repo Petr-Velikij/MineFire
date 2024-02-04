@@ -11,10 +11,10 @@ execute at @a[gamemode=!spectator,distance=..175,scores={invisibility=0},tag=!te
 execute if score @s armor_cooldown2 matches 1 at @a[distance=0.1..20,gamemode=!spectator,scores={invisibility=0},tag=!team] run playsound custom.armor.predator.heartbeat player @s ~ ~ ~ 2 1
 
 tag @e[type=armor_stand,tag=marcer_enemy,distance=..5] remove detected_enemy
-execute unless predicate is_sneaking if score @s Pos_delta matches 0..2 if entity @a[gamemode=!spectator,distance=10..80,tag=!team,scores={invisibility=0}] positioned ~ ~1.62 ~ run function armor/predator/search/start
-execute if predicate is_sneaking if score @s Pos_delta matches 0..2 if entity @a[gamemode=!spectator,distance=10..80,tag=!team,scores={invisibility=0}] positioned ~ ~1.27 ~ run function armor/predator/search/start
+execute unless predicate is_sneaking if score @s Pos_delta matches 0..2 if entity @a[gamemode=!spectator,distance=10..160,tag=!team,scores={invisibility=0}] positioned ~ ~1.62 ~ run function armor/predator/search/start
+execute if predicate is_sneaking if score @s Pos_delta matches 0..2 if entity @a[gamemode=!spectator,distance=10..160,tag=!team,scores={invisibility=0}] positioned ~ ~1.27 ~ run function armor/predator/search/start
 kill @e[type=armor_stand,tag=marcer_enemy,tag=!detected_enemy,distance=..5]
-tag @a[gamemode=!spectator,distance=10..80,tag=tested] remove tested
+tag @a[gamemode=!spectator,distance=10..160,tag=tested] remove tested
 
 
 
