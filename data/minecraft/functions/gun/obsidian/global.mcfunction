@@ -1,7 +1,4 @@
-execute if score @s modeFire matches 2 if score @s sneak_time matches 1 store result score *1 varTime run data get entity @s SelectedItem.tag.InHolder
-execute if score @s modeFire matches 2 if score @s sneak_time matches 1 if score @s Power matches 150..174 if score *1 varTime matches 4.. run scoreboard players add @s Power 1
-execute if score @s modeFire matches 2 if score @s sneak_time matches 1 if score @s Power matches 125..149 if score *1 varTime matches 3.. run scoreboard players add @s Power 1
-execute if score @s modeFire matches 2 if score @s sneak_time matches 1 if score @s Power matches ..124 if score *1 varTime matches 2.. run scoreboard players add @s Power 1
+execute if score @s modeFire matches 2 if score @s sneak_time matches 1 run function gun/obsidian/add_power
 execute if score @s sneak_time matches 0 unless score @s Power matches 100 run scoreboard players set @s Power 100
 execute if score @s Power matches 101.. run function minecraft:gun/obsidian/print
 
