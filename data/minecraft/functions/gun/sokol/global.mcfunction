@@ -1,7 +1,7 @@
 execute unless score @s sneak_time matches 0 run effect give @s slowness 1 5 true
 execute if score @s sneak_time matches 0 if entity @s[nbt={ActiveEffects:[{Id:2,Amplifier:5b}]}] run effect clear @s slowness
 execute unless score @s sneak_time matches 0 if score @s stamina matches ..0 if score @s PKM_2 matches 0 run function gun/sokol/breath
-execute unless score @s sneak_time matches 0 if score @s stamina matches -50.. unless score idModule varTime matches 6 run scoreboard players remove @s stamina 7
+execute unless score @s sneak_time matches 0 if score @s stamina matches -50.. unless score buf ID.module matches 6 run scoreboard players remove @s stamina 7
 
 execute if score @s PKM_2 matches 1.. run function minecraft:gun/sokol/shot
 

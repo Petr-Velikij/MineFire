@@ -9,4 +9,4 @@ scoreboard players set @s DamageLegs 100
 execute store result entity @s Motion[0] double 0.0004 run scoreboard players get *X varTime
 execute store result entity @s Motion[1] double 0.0004 run scoreboard players get *Y varTime
 execute store result entity @s Motion[2] double 0.0004 run scoreboard players get *Z varTime
-execute if score idModule varTime matches 5 run function module/overclocking/up_speed
+execute if score buf ID.module matches 5 run function module/overclocking/up_speed

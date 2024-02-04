@@ -1,5 +1,5 @@
 data merge entity @s {NoGravity:1b,damage:0.685d,crit:0b,PierceLevel:0b,Tags:["marble"],SoundEvent:"block.snow.hit",Color:65535,CustomPotionEffects:[{Id:2,Amplifier:2b,Duration:30},{Id:15,Amplifier:0b,Duration:10}]}
-execute if score idModule varTime matches 1 run function module/energy/up_damage
+execute if score buf ID.module matches 1 run function module/energy/up_damage
 scoreboard players set @s ArrowDamage 1
 scoreboard players set @s DamageHead 200
 scoreboard players set @s DamageLegs 80

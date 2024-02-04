@@ -10,6 +10,7 @@
 summon marker ~ ~ ~ {Tags:["metka"]}
 execute store result score Ax varTime run data get entity @e[tag=metka,sort=nearest,limit=1] Pos[0] 10
 execute store result score Ay varTime run data get entity @e[tag=metka,sort=nearest,limit=1] Pos[1] 10
+scoreboard players remove Ay varTime 15
 execute store result score Az varTime run data get entity @e[tag=metka,sort=nearest,limit=1] Pos[2] 10
 
 execute as @e[distance=..10,type=!marker,type=!arrow] at @s run function gun/explosion/test_dist

@@ -47,7 +47,8 @@ execute if score Inventory ID.gun matches 51 run scoreboard players set @s price
 execute if score Inventory ID.gun matches 52 run scoreboard players set @s price_cartridge 5
 #53  Ампер/36
 execute if score Inventory ID.gun matches 53 run scoreboard players set @s price_cartridge 20
-#54  Вольт/48
+#54  Обсидиан/48
 execute if score Inventory ID.gun matches 54 run scoreboard players set @s price_cartridge 15
+execute if score Inventory ID.gun matches 54 if score @s ID.armor matches 7 run scoreboard players set @s price_cartridge 11
 
 execute unless score @s price_cartridge matches -1 run function gun/mat

@@ -12,7 +12,8 @@ execute if score SelectedItem ID.gun matches 1 unless entity @s[tag=SelectedGun]
 tag @s remove SelectedGun
 execute if score SelectedItem ID.gun matches 1 run tag @s add SelectedGun
 
-scoreboard players operation idModule varTime = @s ID.module
+scoreboard players operation buf ID.module = @s ID.module
+scoreboard players operation buf ID.armor = @s ID.armor
 
 execute if score SelectedItem ID.gun matches 1 if entity @s[nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick"}}] run function minecraft:gun/id_to_crossbow
 execute if score Offhand ID.gun matches 1 if entity @s[nbt={Inventory:[{Slot:-106b,id:"minecraft:crossbow"}]}] run function minecraft:gun/id_to_stick
@@ -58,6 +59,6 @@ execute if score Inventory ID.gun matches 43 run function minecraft:gun/makusya/
 execute if score Inventory ID.gun matches 51 run function minecraft:gun/marble/raspredeleniye
 execute if score Inventory ID.gun matches 52 run function minecraft:gun/magma/raspredeleniye
 execute if score Inventory ID.gun matches 53 run function minecraft:gun/amper/raspredeleniye
-execute if score Inventory ID.gun matches 54 if score SelectedItem ID.gun matches 1 run function minecraft:gun/volt/global
+execute if score Inventory ID.gun matches 54 run function minecraft:gun/obsidian/raspredeleniye
 
 execute if score @s reload matches -1 run scoreboard players set @s reload 0
