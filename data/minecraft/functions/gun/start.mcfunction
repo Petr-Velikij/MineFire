@@ -51,7 +51,6 @@ execute if score Inventory ID.gun matches 24 unless score @s ID.armor matches 6 
 execute if score Inventory ID.gun matches 31 if score SelectedItem ID.gun matches 1 run function minecraft:gun/zveroboj/global
 execute if score Inventory ID.gun matches 32 if score SelectedItem ID.gun matches 1 run function minecraft:gun/tessen/global
 execute if score Inventory ID.gun matches 33 if score SelectedItem ID.gun matches 1 run function minecraft:gun/splitting/global
-execute if score Inventory ID.gun matches 34 if score SelectedItem ID.gun matches 1 run function minecraft:gun/phoenix/global
 #4 Гранатомёты и тд
 execute if score Inventory ID.gun matches 41 if score SelectedItem ID.gun matches 1 run function minecraft:gun/grenade_launcher/global
 execute if score Inventory ID.gun matches 43 run function minecraft:gun/makusya/raspredeleniye

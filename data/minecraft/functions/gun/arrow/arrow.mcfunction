@@ -8,7 +8,6 @@ execute if entity @s[tag=zveroboj] run function gun/arrow/gun/zveroboj
 execute if entity @s[tag=tessen] run function gun/arrow/gun/tessen
 execute if entity @s[tag=splitting1] run function gun/arrow/gun/splitting/bullet1
 execute if entity @s[tag=splitting2] run function gun/arrow/gun/splitting/bullet2
-execute if entity @s[tag=phoenix] run function gun/arrow/gun/phoenix
 execute if entity @s[tag=grenade_launcher] run function gun/arrow/gun/grenade_launcher/bullet
 execute if entity @s[tag=makusya] run function gun/arrow/gun/makusya/bullet
 execute if entity @s[tag=marble] run function gun/arrow/gun/marble/bullet
