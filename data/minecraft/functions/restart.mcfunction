@@ -47,9 +47,6 @@ scoreboard players set @a armor_cooldown2 0
 scoreboard objectives add ID.Zipline dummy
 kill @e[tag=zipline]
 
-scoreboard objectives add camouflage dummy
-execute as @a[scores={camouflage=1..}] run function module/chameleon/remove
-scoreboard players set @a camouflage 0
 scoreboard objectives add invisibility dummy
 execute as @a[scores={invisibility=1..}] run function module/invisibility/remove
 scoreboard players set @a invisibility 0
