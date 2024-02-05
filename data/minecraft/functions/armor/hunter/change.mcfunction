@@ -1,5 +1,5 @@
 execute if block ~ ~-1 ~ oak_leaves run scoreboard players set @s color_camouflage 8832603
-execute if block ~ ~-1 ~ spruce_leaves run scoreboard players set @s color_camouflage 5406546
+execute if block ~ ~-1 ~ spruce_leaves run scoreboard players set @s color_camouflage 6789991
 execute if block ~ ~-1 ~ grass_block run scoreboard players set @s color_camouflage 13041566
 
 execute in minecraft:overworld run data modify block 0 -64 0 Items set value [{Slot:0b,Count:1,id:stone}]

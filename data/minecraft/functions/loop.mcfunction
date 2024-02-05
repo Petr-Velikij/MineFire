@@ -17,9 +17,7 @@ execute as @e[type=armor_stand,tag=turret_up] at @s run function armor/engineer/
 execute as @e[type=armor_stand,tag=start_zipline] at @s run function armor/spetsnaz/zipline/processor
 execute as @a[gamemode=!spectator,scores={jump=1,sneak_time=0}] at @s if entity @e[type=armor_stand,tag=zipline,distance=..1] run function armor/spetsnaz/zipline/go
 execute as @a[gamemode=!spectator,tag=move_zipline] at @s run function armor/spetsnaz/zipline/test_end
-
 execute as @e[type=armor_stand,tag=Mshild] at @s run function armor/guardian/shild/global 
-
 execute as @e[type=armor_stand,tag=shield] at @s run function module/shield/module/test_end
 
 execute as @a[gamemode=!spectator,scores={Heat=1..}] at @s run function heat
@@ -27,8 +25,6 @@ execute as @a[gamemode=!spectator] run function stamina/global
 execute as @e[type=interaction,tag=loot_hitbox] if data entity @s interaction at @s run function game/loot/looting
 execute as @a[gamemode=!spectator,scores={PKM_1=1}] if data entity @s SelectedItem.tag.ammo at @s run function game/loot/give_ammo
 execute as @a[gamemode=!spectator] run function health/global
-
-execute at @e[type=ender_pearl] run particle minecraft:reverse_portal ~ ~ ~ 0.2 0.2 0.2 0.1 10 force @a[distance=..150]
 
 scoreboard players add Loop1k20 CONST 1
 execute if score Loop1k20 CONST matches 20 run function minecraft:loop1k20 

@@ -46,6 +46,7 @@ scoreboard objectives add armor_cooldown2 dummy
 scoreboard players set @a armor_cooldown2 0
 scoreboard objectives add ID.Zipline dummy
 kill @e[tag=zipline]
+kill @e[tag=Mshild]
 
 scoreboard objectives add invisibility dummy
 execute as @a[scores={invisibility=1..}] run function module/invisibility/remove
@@ -87,7 +88,7 @@ scoreboard objectives add health health
 scoreboard objectives add PKM_1 minecraft.used:minecraft.carrot_on_a_stick
 scoreboard objectives add PKM_2 minecraft.used:minecraft.crossbow
 scoreboard objectives add Time_PKM_2 dummy 
-scoreboard players set @a Time_PKM_2 100
+scoreboard players set @a Time_PKM_2 99
 scoreboard objectives add player_hurt dummy
 scoreboard objectives add reloadGun minecraft.dropped:minecraft.crossbow
 scoreboard objectives add ArrowDamage dummy
