@@ -39,6 +39,7 @@ scoreboard players set @a player_hurt 0
 scoreboard players set @a sneak_time 0
 scoreboard players set @a crouch_one_cm 0
 scoreboard players set @a sprint_one_cm 0
+scoreboard players set @a aviate_one_cm 0
 scoreboard players set @a reloadGun 0
 scoreboard players set @a jump 0
 scoreboard players set @a damage_taken 0

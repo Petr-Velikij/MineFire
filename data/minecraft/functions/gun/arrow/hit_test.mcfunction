@@ -17,7 +17,10 @@ execute store result entity @e[type=area_effect_cloud,tag=metka,limit=1] Pos[2] 
 #execute at @e[type=area_effect_cloud,tag=metka,limit=1] run particle dust 0.169 1 0 2 ~ ~ ~ 0 0 0 0 1 force @a[distance=..150]
 #tellraw Petr_l [{"text":"Bx="},{"score":{"name":"Bx","objective":"varTime"}},{"text":" Bz="},{"score":{"name":"Bz","objective":"varTime"}},{"text":" By="},{"score":{"name":"By","objective":"varTime"}}]
 
-execute at @e[distance=..10,type=area_effect_cloud,tag=metka] run tag @p[gamemode=!spectator] add hit_test
+scoreboard players operation buf ID.Owner = @s ID.Owner
+execute as @a[distance=..20] if score @s ID.Player = buf ID.Owner run tag @s add Owner
+execute at @e[distance=..10,type=area_effect_cloud,tag=metka] run tag @p[gamemode=!spectator,tag=!Owner] add hit_test
+tag @a[distance=..20] remove Owner
 execute at @e[distance=..10,type=area_effect_cloud,tag=metka] store result score Px varTime run data get entity @p[tag=hit_test] Pos[0] 100
 execute at @e[distance=..10,type=area_effect_cloud,tag=metka] store result score Py varTime run data get entity @p[tag=hit_test] Pos[1] 100
 execute at @e[distance=..10,type=area_effect_cloud,tag=metka] store result score Pz varTime run data get entity @p[tag=hit_test] Pos[2] 100
@@ -88,5 +91,7 @@ execute if score pos varTime matches 1 unless score @s ArrowDamage matches 0 if 
 
 execute if predicate bk if score pos varTime matches 2 if score dx varTime matches -70..70 if score dz varTime matches -70..70 if score dy varTime matches 71..90 as @p[tag=hit_test] if score @s ID.module matches 7 at @s run function module/ammunition/explosion
 execute if predicate bk if score pos varTime matches 1 if score dx varTime matches -70..70 if score dz varTime matches -70..70 if score dy varTime matches 40..60 as @p[tag=hit_test] if score @s ID.module matches 7 at @s run function module/ammunition/explosion
+execute if score @p[tag=hit_test] aviate_one_cm matches 1.. run function gun/arrow/hit/head
+
 tag @p[tag=hit_test] remove hit_test
 kill @e[distance=..10,type=area_effect_cloud,tag=metka]

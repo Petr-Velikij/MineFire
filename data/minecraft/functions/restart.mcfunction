@@ -49,7 +49,6 @@ scoreboard objectives add Stun dummy
 scoreboard players set @a Stun 0
 scoreboard objectives add StunGun dummy
 scoreboard players set @a StunGun 0
-tag @a remove StunGun
 kill @e[tag=zipline]
 kill @e[tag=Mshild]
 
@@ -88,6 +87,7 @@ scoreboard objectives add sprint_one_cm minecraft.custom:minecraft.sprint_one_cm
 scoreboard objectives add jump minecraft.custom:minecraft.jump
 scoreboard objectives add damage_taken minecraft.custom:damage_taken
 scoreboard objectives add damage_absorbed minecraft.custom:damage_absorbed
+scoreboard objectives add aviate_one_cm minecraft.custom:minecraft.aviate_one_cm
 scoreboard objectives add food food
 scoreboard objectives add health health
 scoreboard objectives add PKM_1 minecraft.used:minecraft.carrot_on_a_stick
@@ -123,3 +123,4 @@ tag @a remove camouflage_gun
 tag @a remove no_scope
 tag @a remove armor
 tag @a remove crawl
+tag @a remove StunGun

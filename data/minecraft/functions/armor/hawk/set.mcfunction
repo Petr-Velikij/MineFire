@@ -1,0 +1,3 @@
+item replace entity @s armor.head with leather_helmet{display:{Name:'{"text":"Лётный шлем","color":"white","italic":false}',color:16777215},HideFlags:71,Unbreakable:1b,CustomModelData:804,armor:4b,AttributeModifiers:[{AttributeName:"generic.armor",Name:"generic.armor",Amount:0,Operation:0,UUID:[I;1492255655,2014200809,-1871424476,-834171715]}]} 1
+item replace entity @s armor.chest with elytra{display:{Name:'{"text":"Крылья","color":"white","italic":false}'},HideFlags:71,Unbreakable:1b,CustomModelData:804,armor:4b,AttributeModifiers:[{AttributeName:"generic.armor",Name:"generic.armor",Amount:0,Operation:0,UUID:[I;1492255655,2014200809,-1871424476,-834171715]}]} 1
+tag @s add armor
