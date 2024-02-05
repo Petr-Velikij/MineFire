@@ -45,6 +45,11 @@ scoreboard players set @a armor_cooldown 0
 scoreboard objectives add armor_cooldown2 dummy
 scoreboard players set @a armor_cooldown2 0
 scoreboard objectives add ID.Zipline dummy
+scoreboard objectives add Stun dummy
+scoreboard players set @a Stun 0
+scoreboard objectives add StunGun dummy
+scoreboard players set @a StunGun 0
+tag @a remove StunGun
 kill @e[tag=zipline]
 kill @e[tag=Mshild]
 

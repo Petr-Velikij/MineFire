@@ -24,6 +24,9 @@ execute if score SelectedItem ID.gun matches 1 if entity @s[scores={invisibility
 execute if score SelectedItem ID.gun matches 1 if score @s Supply matches 1 run function minecraft:gun/supply
 execute if score SelectedItem ID.gun matches 1 unless score @s reload matches 0 run function minecraft:gun/ammo
 
+execute if score SelectedItem ID.gun matches 1 if score @s StunGun matches 1.. run function gun/no_charged
+execute if score SelectedItem ID.gun matches 1 if score @s[tag=StunGun] StunGun matches 0 run function module/energy/end_stun_gun
+
 execute if score @s no_reload matches 1.. run scoreboard players remove @s no_reload 1
 
 function minecraft:mat/pos_delta
