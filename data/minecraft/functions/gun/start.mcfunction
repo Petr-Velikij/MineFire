@@ -29,6 +29,8 @@ execute if score SelectedItem ID.gun matches 1 if score @s[tag=StunGun] StunGun 
 
 execute if score @s no_reload matches 1.. run scoreboard players remove @s no_reload 1
 
+execute if score @s ID.module matches 1 if score Inventory ID.gun matches 51..54 if score SelectedItem ID.gun matches 1 if score @s reloadGun matches 1 if score @s module_cooldown matches 0 if entity @s[nbt={SelectedItem:{tag:{Damage:465}}}] run function module/energy/cast
+
 function minecraft:mat/pos_delta
 function minecraft:gun/scatter
 attribute @s generic.movement_speed modifier remove 6b40a35f-cfa6-4474-bccd-4a606cb26d1f

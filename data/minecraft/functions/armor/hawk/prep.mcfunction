@@ -1,5 +1,5 @@
 execute unless score @s armor_cooldown2 matches 0 run scoreboard players remove @s armor_cooldown2 1
-particle cloud ~ ~1 ~ 0 0 0 0.2 2 force @a[distance=..75]
+particle cloud ~ ~0.2 ~ 0 0 0 0.2 2 force @a[distance=..75]
 
 scoreboard players operation *1 varTime = @s armor_cooldown2
 scoreboard players operation *1 varTime /= *20 CONST
