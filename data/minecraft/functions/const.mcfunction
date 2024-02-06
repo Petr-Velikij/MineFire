@@ -10,6 +10,7 @@ scoreboard players set *200 CONST 200
 scoreboard players set *100 CONST 100
 scoreboard players set *90 CONST 90
 scoreboard players set *82 CONST 82
+scoreboard players set *50 CONST 50
 scoreboard players set *40 CONST 40
 scoreboard players set *26 CONST 26
 scoreboard players set *25 CONST 25

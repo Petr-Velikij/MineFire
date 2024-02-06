@@ -12,15 +12,14 @@ function minecraft:vector/get_vec
 
 scoreboard players operation buf ID.Owner = @s ID.Player
 scoreboard players operation buf Power = @s Power
-execute if score @s Power matches 100 as @e[type=arrow,tag=,sort=nearest,limit=1] run function minecraft:gun/obsidian/shot2
-execute if score @s Power matches 101.. as @e[type=arrow,tag=,sort=nearest,limit=1] run function minecraft:gun/obsidian/shot2exp
+execute if score @s Power matches 100..124 as @e[type=arrow,tag=,sort=nearest,limit=1] run function minecraft:gun/obsidian/shot2
+execute if score @s Power matches 125.. as @e[type=arrow,tag=,sort=nearest,limit=1] run function minecraft:gun/obsidian/shot2exp
 
-scoreboard players set @s Power 100
-
-execute if score @s modeFire matches 1 run scoreboard players set @s Supply 0
-execute if score @s modeFire matches 2 run scoreboard players set @s Supply 20
+execute if score @s Power matches 125.. run scoreboard players set @s Supply 20
 execute if score buf ID.module matches 1 run scoreboard players add @s Supply 5
 function minecraft:gun/obsidian/remove_ammo
+
+scoreboard players set @s Power 100
 
 execute if score @s modeFire matches 1 run tp @s ~ ~ ~ ~ ~-1
 execute if score @s modeFire matches 2 run tp @s ~ ~ ~ ~2 ~-7

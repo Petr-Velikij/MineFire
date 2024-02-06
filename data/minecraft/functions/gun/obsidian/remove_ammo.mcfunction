@@ -4,7 +4,7 @@ execute in minecraft:overworld run data modify block 0 -64 0 Items[0].tag set fr
 
 execute in minecraft:overworld store result score *InHolder varTime run data get block 0 -64 0 Items[{Slot:0b}].tag.InHolder 1
 scoreboard players operation *1 varTime = buf Power
-scoreboard players remove *1 varTime 51
+scoreboard players remove *1 varTime 74
 scoreboard players operation *1 varTime /= *25 CONST
 scoreboard players operation *InHolder varTime -= *1 varTime
 

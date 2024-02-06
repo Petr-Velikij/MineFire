@@ -7,3 +7,4 @@ scoreboard players set @e[tag=turret_new,distance=..1,tag=turret_up] Loop -60
 tag @e[tag=turret_new,distance=..1] remove turret_new
 
 scoreboard players set @s armor_cooldown 1800
+scoreboard players set @s PKM_1 0
