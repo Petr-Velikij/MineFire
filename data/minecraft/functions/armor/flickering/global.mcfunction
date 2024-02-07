@@ -1,0 +1,11 @@
+execute if data entity @s SelectedItem.tag.armor_active if score @s armor_cooldown matches 0 if score @s sneak_time matches 0 run function armor/flickering/blink/start
+execute if data entity @s SelectedItem.tag.armor_active if score @s armor_cooldown matches 0 unless score @s sneak_time matches 0 run function armor/flickering/blink/start_r
+
+execute if data entity @s SelectedItem.tag.armor_active if score @s armor_cooldown matches 1.. run function armor/cd
+
+execute if score @s damage_taken matches 10.. run function armor/flickering/give_invisibility
+execute if score @s[tag=custom_invisibility] invisibility matches 1 run function armor/flickering/remove_invisibility
+execute if score @s[tag=custom_invisibility] invisibility matches 1.. unless score @s ID.module matches 3 run function module/invisibility/effect
+
+scoreboard players remove @s[scores={armor_cooldown=1..}] armor_cooldown 1
+scoreboard players remove @s[scores={armor_cooldown2=1..}] armor_cooldown2 1
