@@ -25,5 +25,5 @@ execute as @e[type=arrow,distance=0,limit=15,tag=flame] run data modify entity @
 execute as @e[type=arrow,distance=0,limit=15,tag=flame] run scoreboard players operation @s ID.Owner = buf ID.Owner
 execute as @e[type=arrow,distance=0,limit=15,tag=flame] run scoreboard players set @s ArrowLive 100
 execute at @e[type=arrow,distance=0,limit=15,tag=flame] as @e[type=arrow,distance=0,limit=2,tag=flame,sort=random] run scoreboard players add @s ArrowLive 10
-execute as @e[type=arrow,distance=0,limit=15,tag=flame] run function armor/alchemist/fire/mat
+execute as @e[type=arrow,distance=0,limit=15,tag=flame] run function armor/phoenix/fire/mat
 kill @s

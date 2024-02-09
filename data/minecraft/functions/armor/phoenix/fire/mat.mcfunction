@@ -22,4 +22,4 @@ scoreboard players operation *Z varTime /= *10000 CONST
 scoreboard players operation *Y varTime = *SINX varTime
 execute if score *Y varTime matches ..-1 run scoreboard players operation *Y varTime *= *-1 CONST
 
-function armor/alchemist/fire/motion
+function armor/phoenix/fire/motion

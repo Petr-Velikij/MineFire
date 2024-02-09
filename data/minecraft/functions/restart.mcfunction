@@ -90,6 +90,7 @@ scoreboard objectives add damage_absorbed minecraft.custom:damage_absorbed
 scoreboard objectives add aviate_one_cm minecraft.custom:minecraft.aviate_one_cm
 scoreboard objectives add food food
 scoreboard objectives add health health
+scoreboard objectives add deathCount deathCount
 scoreboard objectives add PKM_1 minecraft.used:minecraft.carrot_on_a_stick
 scoreboard objectives add PKM_2 minecraft.used:minecraft.crossbow
 scoreboard objectives add Time_PKM_2 dummy 

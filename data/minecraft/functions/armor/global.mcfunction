@@ -6,3 +6,4 @@ execute if score @s ID.armor matches 5 run function armor/engineer/global
 execute if score @s ID.armor matches 6 run function armor/guardian/global
 execute if score @s ID.armor matches 7 run function armor/grenadier/global
 execute if score @s ID.armor matches 8 run function armor/flickering/global
+execute if score @s ID.armor matches 9 run function armor/phoenix/global

@@ -52,7 +52,7 @@ execute as @e[type=item,distance=..1] if data entity @s Item.tag.moduleID run ki
 execute as @e[type=item,distance=..1] if data entity @s Item.tag.gunID run kill @s
 execute as @e[type=item,distance=..1] if data entity @s Item.tag.armor run kill @s
 execute as @e[type=item,distance=..1] if data entity @s Item.tag.armor_active run kill @s
-scoreboard players operation *1 varTime = @s Pos_x2
-scoreboard players operation *2 varTime = @s Pos_y2
-scoreboard players operation *3 varTime = @s Pos_z2
-execute as @e[type=item,distance=..1] run function game/loot/pos
+#scoreboard players operation *1 varTime = @s Pos_x3
+#scoreboard players operation *2 varTime = @s Pos_y3
+#scoreboard players operation *3 varTime = @s Pos_z3
+#execute as @e[type=item,distance=..1] run function game/loot/pos

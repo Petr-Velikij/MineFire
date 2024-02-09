@@ -6,3 +6,4 @@ execute if score @s ID.armor matches 5 run function armor/engineer/set
 execute if score @s ID.armor matches 6 run function armor/guardian/set
 execute if score @s ID.armor matches 7 run function armor/grenadier/set
 execute if score @s ID.armor matches 8 run function armor/flickering/set
+execute if score @s ID.armor matches 9 run function armor/phoenix/set
