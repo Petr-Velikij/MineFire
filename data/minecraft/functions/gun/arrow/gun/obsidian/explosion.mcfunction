@@ -1,7 +1,7 @@
 scoreboard players operation buf ID.Owner = @s ID.Owner
 execute as @a if score @s ID.Player = buf ID.Owner run tag @s add Owner
 setblock 0 -63 0 air
-setblock 0 -63 0 oak_sign{Color:"-1",Text1:'[{"selector":"@p[tag=Owner]"},{"text":" используя "},{"text":"[Обсидиан]","color":"yellow"}]'} replace
+setblock 0 -63 0 oak_sign{Color:"-1",Text1:'[{"selector":"@p[tag=Owner]"},{"text":" используя "},{"text":"[","color":"yellow"},{"translate":"gun[54].name","color":"yellow"},{"text":"] ","color":"yellow"}]'} replace
 tag @a remove Owner
 
 scoreboard players set OptDist varTime 25
