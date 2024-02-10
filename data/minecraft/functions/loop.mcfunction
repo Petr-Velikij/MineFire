@@ -7,7 +7,7 @@ scoreboard players set @a damage_absorbed 0
 execute as @a[gamemode=!spectator,scores={PlayerHead=1,player_hurt=1..}] at @s run playsound entity.player.attack.crit player @s ~ ~100 ~ 100 1
 scoreboard players set @a PlayerHead 0
 
-execute as @a[gamemode=!spectator] at @s run spawnpoint @s ~ ~ ~ ~ 
+execute as @a[gamemode=!spectator] at @s if block ~ ~ ~ #no_collider run spawnpoint @s ~ ~ ~ ~ 
 
 execute as @a[gamemode=!spectator,scores={Stun=1..}] at @s run function module/energy/stun
 execute as @a[gamemode=!spectator,scores={Stun=0}] at @s run function module/start
