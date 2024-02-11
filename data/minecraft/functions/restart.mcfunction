@@ -47,13 +47,12 @@ scoreboard players set @a armor_cooldown2 0
 scoreboard objectives add armor_cooldown3 dummy
 scoreboard players set @a armor_cooldown3 0
 execute as @a run attribute @s generic.max_health modifier remove 57bf3738-52d8-452d-8ceb-99973f78148c
-scoreboard objectives add ID.Zipline dummy
 scoreboard objectives add Stun dummy
 scoreboard players set @a Stun 0
 scoreboard objectives add StunGun dummy
 scoreboard players set @a StunGun 0
-kill @e[tag=zipline]
 kill @e[tag=Mshild]
+kill @e[type=armor_stand,tag=knife]
 
 scoreboard objectives add invisibility dummy
 execute as @a[scores={invisibility=1..}] run function module/invisibility/remove

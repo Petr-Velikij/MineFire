@@ -1,2 +1,0 @@
-particle dust 0.267 0.267 0.267 1 ~ ~ ~ 0 0 0 0 1 force @a[distance=..150]
-execute positioned ~ ~-2 ~ unless entity @e[type=armor_stand,tag=my_end_zipline,distance=..0.3,limit=1] positioned ~ ~2 ~ positioned ^ ^ ^0.3 run function armor/spetsnaz/zipline/rendering

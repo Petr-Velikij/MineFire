@@ -1,0 +1,1 @@
+execute unless entity @e[type=arrow,tag=knife,distance=..5] run kill @s

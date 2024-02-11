@@ -7,6 +7,7 @@ scoreboard players set *1080 CONST 1080
 scoreboard players set *1000 CONST 1000
 scoreboard players set *270 CONST 270
 scoreboard players set *200 CONST 200
+scoreboard players set *180 CONST 180
 scoreboard players set *100 CONST 100
 scoreboard players set *90 CONST 90
 scoreboard players set *82 CONST 82

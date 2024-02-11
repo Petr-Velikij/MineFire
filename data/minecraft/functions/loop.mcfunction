@@ -17,11 +17,9 @@ execute as @a[gamemode=!spectator] at @s run function armor/start
 execute as @e[type=marker,tag=makusya_point] at @s run function gun/makusya/point
 execute as @e[type=phantom,tag=scout] at @s run function armor/hunter/scout/global
 execute as @e[type=armor_stand,tag=turret_up] at @s run function armor/engineer/turret/global
-execute as @e[type=armor_stand,tag=start_zipline] at @s run function armor/spetsnaz/zipline/processor
-execute as @a[gamemode=!spectator,scores={jump=1,sneak_time=0}] at @s if entity @e[type=armor_stand,tag=zipline,distance=..1] run function armor/spetsnaz/zipline/go
-execute as @a[gamemode=!spectator,tag=move_zipline] at @s run function armor/spetsnaz/zipline/test_end
 execute as @e[type=armor_stand,tag=Mshild] at @s run function armor/guardian/shild/global 
 execute as @e[type=armor_stand,tag=shield] at @s run function module/shield/module/test_end
+execute as @e[type=armor_stand,tag=knife] at @s run function armor/spetsnaz/knife/armor_stand
 
 execute as @a[gamemode=!spectator,scores={Heat=1..}] at @s run function heat
 execute as @a[gamemode=!spectator] run function stamina/global
