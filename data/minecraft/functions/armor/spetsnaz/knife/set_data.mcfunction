@@ -1,5 +1,5 @@
 function gun/set_uuid
-data merge entity @s {damage:3.33d,crit:0b,PierceLevel:0b,Tags:["knife"]}
+data merge entity @s {damage:3.33d,crit:0b,PierceLevel:0b,Tags:["knife","particle_crit"]}
 scoreboard players set @s ArrowDamage 1
 scoreboard players set @s DamageHead 250
 scoreboard players set @s DamageLegs 100

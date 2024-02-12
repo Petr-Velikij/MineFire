@@ -9,6 +9,7 @@ scoreboard players set @a PlayerHead 0
 
 execute as @a[gamemode=!spectator] at @s if block ~ ~ ~ #no_collider run spawnpoint @s ~ ~ ~ ~ 
 
+execute as @e[type=armor_stand,tag=knife] at @s run function armor/spetsnaz/knife/armor_stand
 execute as @a[gamemode=!spectator,scores={Stun=1..}] at @s run function module/energy/stun
 execute as @a[gamemode=!spectator,scores={Stun=0}] at @s run function module/start
 execute as @a[gamemode=!spectator] at @s run function gun/start
@@ -19,7 +20,6 @@ execute as @e[type=phantom,tag=scout] at @s run function armor/hunter/scout/glob
 execute as @e[type=armor_stand,tag=turret_up] at @s run function armor/engineer/turret/global
 execute as @e[type=armor_stand,tag=Mshild] at @s run function armor/guardian/shild/global 
 execute as @e[type=armor_stand,tag=shield] at @s run function module/shield/module/test_end
-execute as @e[type=armor_stand,tag=knife] at @s run function armor/spetsnaz/knife/armor_stand
 
 execute as @a[gamemode=!spectator,scores={Heat=1..}] at @s run function heat
 execute as @a[gamemode=!spectator] run function stamina/global
