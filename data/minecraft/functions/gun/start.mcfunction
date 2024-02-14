@@ -58,6 +58,8 @@ execute if score Inventory ID.gun matches 32 if score SelectedItem ID.gun matche
 execute if score Inventory ID.gun matches 33 if score SelectedItem ID.gun matches 1 run function minecraft:gun/splitting/global
 #4 Гранатомёты и тд
 execute if score Inventory ID.gun matches 41 if score SelectedItem ID.gun matches 1 run function minecraft:gun/grenade_launcher/global
+execute if score Inventory ID.gun matches 42 run function minecraft:gun/hammer/raspredeleniye
+execute if score Inventory ID.gun matches 42 unless score @s ID.armor matches 6 run attribute @s generic.movement_speed modifier add 6b40a35f-cfa6-4474-bccd-4a606cb26d1f "slowness" -0.1 multiply
 execute if score Inventory ID.gun matches 43 run function minecraft:gun/makusya/raspredeleniye
 #5 Энергетическое
 execute if score Inventory ID.gun matches 51 run function minecraft:gun/marble/raspredeleniye
