@@ -7,6 +7,6 @@ execute if entity @s[nbt={OnGround:1b},tag=NoOnGround] run tag @s remove NoOnGro
 
 execute if data entity @s {HurtTime:9s} run playsound minecraft:item.shield.block player @a[distance=..20] ~ ~1 ~ 2 1.3
 
-execute if score @s PKM_1 matches 1 if data entity @s SelectedItem.tag.armor_active rotated ~ 0 run function armor/guardian/shild/spawn
+execute if score @s armor_cooldown matches 0 if score @s PKM_1 matches 1 if data entity @s SelectedItem.tag.armor_active rotated ~ 0 run function armor/guardian/shild/spawn
 execute unless score @s armor_cooldown matches 0 if data entity @s SelectedItem.tag.armor_active run function armor/cd
 scoreboard players remove @s[scores={armor_cooldown=1..}] armor_cooldown 1

@@ -1,4 +1,4 @@
-playsound custom.gun.grenade.shot_1d player @a[distance=..30] ~ ~ ~ 3.7 0.8
+playsound custom.gun.grenade.shot_1d player @a[distance=..30] ~ ~ ~ 3.7 0.85
 
 scoreboard players set aiming Random 20
 scoreboard players set from_hip Random 30
