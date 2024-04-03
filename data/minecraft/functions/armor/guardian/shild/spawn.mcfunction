@@ -4,6 +4,8 @@ summon marker ^-1.9 ^-0.1 ^2 {Tags:["Mshild","ld","new"]}
 summon marker ^1.9 ^-0.1 ^2 {Tags:["Mshild","rd","new"]}
 summon marker ^-1.9 ^2.8 ^2 {Tags:["Mshild","lu","new"]}
 scoreboard players operation @e[tag=new,distance=..10] ID.Owner = @s ID.Player
+scoreboard players set @e[tag=new,tag=Mshild,distance=..10] Loop 300
+scoreboard players set @e[tag=new,tag=Mshild,distance=..10] Power 50
 tag @e[tag=new,distance=..10] remove new
 
 playsound block.beacon.activate player @a[distance=..30] ~ ~1 ~ 1 1.5

@@ -10,7 +10,7 @@ scoreboard players operation *1 varTime /= *2 CONST
 scoreboard players operation *2 varTime %= *2 CONST
 scoreboard players operation *2 varTime *= *5 CONST
 
-scoreboard players set *4 varTime 8
+scoreboard players set *4 varTime 6
 execute store result score *XR varTime run data get entity @s Rotation[1] -10
 scoreboard players operation *3 varTime = *XR varTime
 scoreboard players operation *3 varTime /= *4 varTime

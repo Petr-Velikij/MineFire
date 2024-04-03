@@ -35,7 +35,7 @@ execute if score sign(crossC) varTime = sign(crossD) varTime run scoreboard play
 execute if score crossC varTime matches 0 run scoreboard players set intersection varTime 0
 execute if score crossD varTime matches 0 run scoreboard players set intersection varTime 0
 #tellraw Petr_l [{"text":"a="},{"score":{"name":"sign(crossA)","objective":"varTime"}},{"text":" b="},{"score":{"name":"sign(crossB)","objective":"varTime"}},{"text":" c="},{"score":{"name":"sign(crossC)","objective":"varTime"}},{"text":" d="},{"score":{"name":"sign(crossD)","objective":"varTime"}}]
-#execute if score sign(crossA) varTime matches 1 run scoreboard players set intersection varTime 0
+execute if score sign(crossA) varTime matches 1 run scoreboard players set intersection varTime 0
 
 execute if score intersection varTime matches 1 run function armor/guardian/shild/math/point
 execute if score Py varTime < LDy varTime run scoreboard players set intersection varTime 0

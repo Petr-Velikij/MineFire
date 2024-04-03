@@ -16,7 +16,8 @@ execute if predicate is_sneaking if score @s Pos_delta matches 0..2 if entity @a
 kill @e[type=armor_stand,tag=marcer_enemy,tag=!detected_enemy,distance=..5]
 tag @a[gamemode=!spectator,distance=10..160,tag=tested] remove tested
 
-
+effect give @a[distance=..25,scores={damage_taken=1..},gamemode=!spectator,tag=!team] glowing 1 0 false
+execute if score @s player_hurt matches 1 if entity @a[gamemode=!spectator,distance=..150,scores={damage_taken=1..},tag=!team] run function armor/predator/healt/start
 
 execute if score @s armor_cooldown2 matches 0 run scoreboard players set @s armor_cooldown2 20
 scoreboard players remove @s[scores={armor_cooldown=1..}] armor_cooldown 1
