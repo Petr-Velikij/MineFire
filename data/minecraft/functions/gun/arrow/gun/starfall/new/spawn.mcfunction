@@ -11,7 +11,7 @@ scoreboard players operation buf ID.Owner = @s ID.Owner
 scoreboard players operation *XR varTime = @s varTimeEntity1
 scoreboard players operation *YR varTime = @s varTimeEntity2
 
-scoreboard players add *XR varTime 5000
+scoreboard players add *XR varTime 10000
 
 summon minecraft:arrow ~ ~0.1 ~
 scoreboard players add *YR varTime 5000
