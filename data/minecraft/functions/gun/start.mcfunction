@@ -8,7 +8,7 @@ execute if data entity @s Inventory[{Slot:-106b}].tag.gunID run scoreboard playe
 
 scoreboard players set SelectedItem ID.gun 0
 execute if data entity @s SelectedItem.tag.gunID run scoreboard players set SelectedItem ID.gun 1
-execute if score SelectedItem ID.gun matches 1 unless entity @s[tag=SelectedGun] run scoreboard players add @s Scatter 1000
+execute if score SelectedItem ID.gun matches 1 unless entity @s[tag=SelectedGun] run function gun/swap
 tag @s remove SelectedGun
 execute if score SelectedItem ID.gun matches 1 run tag @s add SelectedGun
 
@@ -28,8 +28,6 @@ execute if score SelectedItem ID.gun matches 1 if score @s StunGun matches 1.. r
 execute if score SelectedItem ID.gun matches 1 if score @s[tag=StunGun] StunGun matches 0 run function module/energy/end_stun_gun
 
 execute if score @s no_reload matches 1.. run scoreboard players remove @s no_reload 1
-
-execute if score @s ID.module matches 1 if score Inventory ID.gun matches 51..54 if score SelectedItem ID.gun matches 1 if score @s reloadGun matches 1 if score @s module_cooldown matches 0 if entity @s[nbt={SelectedItem:{tag:{Damage:465}}}] run function module/energy/cast
 
 function minecraft:mat/pos_delta
 function minecraft:gun/scatter
@@ -67,5 +65,7 @@ execute if score Inventory ID.gun matches 51 run function minecraft:gun/marble/r
 execute if score Inventory ID.gun matches 52 run function minecraft:gun/magma/raspredeleniye
 execute if score Inventory ID.gun matches 53 run function minecraft:gun/amper/raspredeleniye
 execute if score Inventory ID.gun matches 54 run function minecraft:gun/obsidian/raspredeleniye
+#Пистолеты
+function pistol/start
 
 execute if score @s reload matches -1 run scoreboard players set @s reload 0

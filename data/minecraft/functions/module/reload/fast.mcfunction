@@ -1,5 +1,7 @@
 scoreboard players set @s reload 0
 scoreboard players set @s Supply 0
+scoreboard players set @s reload_pistol 0
+scoreboard players set @s Supply_pistol 0
 function gun/ammo
 function gun/reload_all
 function gun/mat

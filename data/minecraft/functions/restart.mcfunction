@@ -15,11 +15,14 @@ scoreboard players set @a[team=C] ID.Team 3
 scoreboard players set @a[team=D] ID.Team 4
 scoreboard objectives add ID.module dummy
 scoreboard objectives add ID.gun dummy
+scoreboard objectives add ID.pistol dummy
 scoreboard objectives add ID.armor dummy
 scoreboard objectives add ID.target dummy
 scoreboard players set @a ID.target 0
 scoreboard objectives add Supply dummy
 scoreboard players set @a Supply 0
+scoreboard objectives add Supply_pistol dummy
+scoreboard players set @a Supply_pistol 0
 scoreboard objectives add ammo dummy
 scoreboard objectives add ammo_point dummy
 scoreboard players set @a ammo_point 720
@@ -28,6 +31,8 @@ execute as @a[gamemode=!spectator] run function gun/ammo
 scoreboard objectives add price_cartridge dummy
 scoreboard objectives add reload dummy
 scoreboard players set @a reload 0
+scoreboard objectives add reload_pistol dummy
+scoreboard players set @a reload_pistol 0
 scoreboard objectives add no_reload dummy
 scoreboard players set @a no_reload 0
 scoreboard objectives add modeFire dummy
