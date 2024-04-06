@@ -20,6 +20,7 @@ execute if entity @s[tag=obsidian_exp] run function gun/arrow/gun/obsidian/bulle
 execute if entity @s[tag=shard] run tag @s add kill
 execute if entity @s[tag=bullet_anfisa] unless score @s ID.target matches 0 run function gun/arrow/gun/anfisa/bullet
 execute if entity @s[tag=neutron] run function gun/arrow/gun/neutron/bullet
+execute if entity @s[tag=gorynych] run function gun/arrow/gun/gorynych
 
 execute if entity @s[tag=pistol] if score @s ArrowLive matches 5 run scoreboard players set @s DamageHead 100
 execute if entity @s[tag=pistol] if score @s ArrowLive matches 6.. store result entity @s damage double 0.0092 run data get entity @s damage 100
@@ -32,7 +33,7 @@ execute if entity @s[tag=distorting_grenades] run function armor/grenadier/disto
 
 execute if entity @s[tag=particle_crit] run particle crit ~ ~ ~ 0 0 0 0 1 force @a[distance=..170]
 execute if score @s ArrowDamage matches 0..2 if entity @a[gamemode=!spectator,distance=..10] at @a[gamemode=!spectator,distance=..10,limit=1,sort=nearest] unless score @p ID.Player = @s ID.Owner run function gun/arrow/hit_test
-kill @s[nbt={inGround:1b},tag=!no_kill_arrow]
+kill @s[nbt={inGround:1b},tag=!no_kill_arrow,tag=!no_kill_inGround]
 
 scoreboard players add @s ArrowLive 1
 execute if score @s ArrowLive matches 200 run kill @s[tag=!no_kill_arrow]

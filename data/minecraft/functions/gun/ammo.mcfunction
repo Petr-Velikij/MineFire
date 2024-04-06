@@ -30,8 +30,8 @@ execute if score Inventory ID.gun matches 31 run scoreboard players set @s price
 execute if score Inventory ID.gun matches 32 run scoreboard players set @s price_cartridge 36
 #33  Расщепитель/8
 execute if score Inventory ID.gun matches 33 run scoreboard players set @s price_cartridge 90
-#34  Феникс/36
-execute if score Inventory ID.gun matches 34 run scoreboard players set @s price_cartridge 20
+#34  Горыныч/180
+execute if score Inventory ID.gun matches 34 run scoreboard players set @s price_cartridge 4
 #41  Бах-50А/18
 execute if score Inventory ID.gun matches 41 run scoreboard players set @s price_cartridge 40
 execute if score Inventory ID.gun matches 41 if score @s ID.armor matches 7 run scoreboard players set @s price_cartridge 30
