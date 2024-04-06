@@ -1,0 +1,12 @@
+execute if score @s Power matches 100 run title @s title {"text":"\uE010"}
+execute if score @s Power matches 101..110 run title @s title {"text":"\uE011"}
+execute if score @s Power matches 111..120 run title @s title {"text":"\uE012"}
+execute if score @s Power matches 121..130 run title @s title {"text":"\uE013"}
+execute if score @s Power matches 131..140 run title @s title {"text":"\uE014"}
+execute if score @s Power matches 141..150 run title @s title {"text":"\uE015"}
+execute if score @s Power matches 151..160 run title @s title {"text":"\uE016"}
+execute if score @s Power matches 161..170 run title @s title {"text":"\uE017"}
+execute if score @s Power matches 171..180 run title @s title {"text":"\uE018"}
+execute if score @s Power matches 181..190 run title @s title {"text":"\uE019"}
+execute if score @s Power matches 191..200 run title @s title {"text":"\uE01A"}
+execute if score @s Power matches 201.. run title @s title {"text":"\uE01B"}

@@ -6,7 +6,6 @@ scoreboard players set @s Loop 300
 execute if score @s sneak_time matches 0 positioned ~ ~1.5 ~ run function minecraft:gun/amper/heat
 execute unless score @s sneak_time matches 0 positioned ~ ~1.1 ~ run function minecraft:gun/amper/heat
 tag @a remove NOtarget
-execute if score MaxHeat varTime matches 1.. run function gun/amper/print
 
 scoreboard players set @s Loop 300
 execute if score @s sneak_time matches 0 positioned ~ ~1.5 ~ run function minecraft:gun/amper/spawn_marker

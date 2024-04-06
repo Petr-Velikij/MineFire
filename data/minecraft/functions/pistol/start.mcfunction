@@ -19,7 +19,7 @@ execute if score SelectedItem ID.pistol matches 1 if entity @s[scores={invisibil
 execute if score SelectedItem ID.pistol matches 1 if entity @s[scores={invisibility=0},tag=pistol_invisibility] run function module/invisibility/gun/remove
 
 execute if score SelectedItem ID.pistol matches 1 if score @s Supply_pistol matches 1 run function pistol/supply
-execute if score SelectedItem ID.pistol matches 1 unless score @s reload_pistol matches 0 run function minecraft:pistol/ammo
+execute if score SelectedItem ID.pistol matches 1 unless score @s reload_pistol matches 0 run function pistol/ammo
 
 execute if score Inventory ID.pistol matches 1 if score SelectedItem ID.pistol matches 1 run function pistol/silent/global
 execute if score Inventory ID.pistol matches 2 if score SelectedItem ID.pistol matches 1 run function pistol/executioner/global

@@ -49,7 +49,7 @@ data modify block 0 -64 0 Items set value [{}]
 
 execute as @e[type=item,distance=..1] if data entity @s {Item:{id:"minecraft:stone"}} run kill @s
 execute as @e[type=item,distance=..1] if data entity @s Item.tag.moduleID run kill @s
-execute as @e[type=item,distance=..1] if data entity @s Item.tag.gunID run kill @s
+execute as @e[type=item,distance=..1] if data entity @s Item.tag.gun run kill @s
 execute as @e[type=item,distance=..1] if data entity @s Item.tag.armor run kill @s
 execute as @e[type=item,distance=..1] if data entity @s Item.tag.armor_active run kill @s
 #scoreboard players operation *1 varTime = @s Pos_x3

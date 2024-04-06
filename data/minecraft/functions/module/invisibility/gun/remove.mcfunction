@@ -3,8 +3,10 @@ execute in minecraft:overworld run data modify block 0 -64 0 Items[0].id set fro
 execute in minecraft:overworld run data modify block 0 -64 0 Items[0].tag set from entity @s SelectedItem.tag
 
 execute store result score *1 varTime in minecraft:overworld run data get block 0 -64 0 Items[{Slot:0b}].tag.CustomModelData
-scoreboard players remove *1 varTime 200
+scoreboard players operation *1 varTime %= *100 CONST
+scoreboard players add *1 varTime 1000
 execute in minecraft:overworld store result block 0 -64 0 Items[{Slot:0b}].tag.CustomModelData int 1 run scoreboard players get *1 varTime
 
 execute in minecraft:overworld run loot replace entity @s weapon.mainhand 1 mine 0 -64 0 air{drop_contents:1b}
 tag @s remove gun_invisibility
+tag @s add no_scope

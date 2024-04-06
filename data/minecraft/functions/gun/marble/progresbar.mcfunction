@@ -1,0 +1,15 @@
+execute if score @s Power matches 100 run title @s title {"text":"\uE02E","color": "#4e5c24"}
+execute if score @s Power matches 92..99 run title @s title {"text":"\uE02D","color": "#4e5c24"}
+execute if score @s Power matches 85..91 run title @s title {"text":"\uE02C","color": "#4e5c24"}
+execute if score @s Power matches 77..84 run title @s title {"text":"\uE02B","color": "#4e5c24"}
+execute if score @s Power matches 69..76 run title @s title {"text":"\uE02A","color": "#4e5c24"}
+execute if score @s Power matches 62..68 run title @s title {"text":"\uE029","color": "#4e5c24"}
+execute if score @s Power matches 54..61 run title @s title {"text":"\uE028","color": "#4e5c24"}
+execute if score @s Power matches 46..53 run title @s title {"text":"\uE027","color": "#4e5c24"}
+execute if score @s Power matches 38..45 run title @s title {"text":"\uE026","color": "#4e5c24"}
+execute if score @s Power matches 31..37 run title @s title {"text":"\uE025","color": "#4e5c24"}
+execute if score @s Power matches 23..30 run title @s title {"text":"\uE024","color": "#4e5c24"}
+execute if score @s Power matches 15..22 run title @s title {"text":"\uE023","color": "#4e5c24"}
+execute if score @s Power matches 8..14 run title @s title {"text":"\uE022","color": "#4e5c24"}
+execute if score @s Power matches 1..7 run title @s title {"text":"\uE021","color": "#4e5c24"}
+execute if score @s Power matches 0 run title @s title {"text":"\uE020","color": "#4e5c24"}

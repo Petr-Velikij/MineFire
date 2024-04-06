@@ -39,10 +39,10 @@ tag @s remove NOtarget
 tag @e[type=arrow,tag=my_amper] remove my_amper
 tag @s remove Owner
 
-execute if score @s ID.module matches 1 if score @s modeFire matches 1 run scoreboard players set @s Supply -20
+execute if score @s ID.module matches 1 if score @s modeFire matches 1 run scoreboard players set @s Supply -6
 execute if score @s ID.module matches 1 if score @s modeFire matches 1 run playsound minecraft:custom.gun.amper.overheating_2d player @s ~ ~ ~ 0.4 1.5
 
-execute if score @s ID.module matches 1 if score @s modeFire matches 2 run scoreboard players set @s Supply -40
+execute if score @s ID.module matches 1 if score @s modeFire matches 2 run scoreboard players set @s Supply -12
 execute if score @s ID.module matches 1 if score @s modeFire matches 2 run playsound minecraft:custom.gun.amper.overheating_2d player @s ~ ~ ~ 0.6 1
 
 
