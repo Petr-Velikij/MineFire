@@ -1,3 +1,4 @@
+execute if score @s Supply_pistol matches 3 run function pistol/cicada/shot3
 execute if score @s PKM_2 matches 1.. run function pistol/cicada/shot
 
 execute if entity @s[tag=!no_scope] unless entity @s[scores={sneak_time=1..}] run function gun/model_no_pritsel

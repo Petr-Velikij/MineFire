@@ -12,7 +12,8 @@ function minecraft:vector/get_vec
 scoreboard players operation buf ID.Owner = @s ID.Player
 execute at @s positioned ~ ~1 ~ as @e[type=arrow,tag=,sort=nearest,limit=1] run function pistol/cicada/shot2
 
+execute if score @s Supply_pistol matches 0 run scoreboard players set @s Supply_pistol 4
 function pistol/shot
-scoreboard players add @s Scatter 50
+scoreboard players add @s Scatter 25
 
 tp @s ~ ~ ~ ~ ~-1.5

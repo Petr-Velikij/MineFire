@@ -1,6 +1,6 @@
-data merge entity @s {damage:0.85d,crit:0b,PierceLevel:0b,Tags:["silent","pistol"],SoundEvent:"minecraft:entity.vex.hurt"}
+data merge entity @s {damage:0.68d,crit:0b,PierceLevel:0b,Tags:["silent","pistol"],SoundEvent:"minecraft:entity.vex.hurt"}
 scoreboard players set @s ArrowDamage 1
-scoreboard players set @s DamageHead 180
+scoreboard players set @s DamageHead 200
 scoreboard players set @s DamageLegs 80
 scoreboard players operation @s ID.Owner = buf ID.Owner
 execute store result entity @s Motion[0] double 0.0006 run scoreboard players get *X varTime
