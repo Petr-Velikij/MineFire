@@ -18,7 +18,7 @@ kill @e[type=ender_pearl]
 kill @e[type=minecraft:armor_stand,tag=!NO]
 kill @e[type=minecraft:item,tag=!NO]
 kill @e[type=minecraft:husk,tag=!NO]
-kill @e[type=minecraft:chicken,tag=!NO]
+kill @e[type=minecraft:wolf,tag=!NO]
 kill @e[type=minecraft:phantom,tag=!NO]
 
 tp @a[gamemode=!creative] -1 83 0 

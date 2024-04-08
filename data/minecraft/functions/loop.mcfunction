@@ -17,7 +17,7 @@ execute as @e[type=arrow] at @s run function gun/arrow/arrow
 execute as @a[gamemode=!spectator] at @s run function armor/start
 execute as @e[type=marker,tag=makusya_point] at @s run function gun/makusya/point
 execute as @e[type=phantom,tag=scout] at @s run function armor/hunter/scout/global
-execute as @e[type=armor_stand,tag=turret_up] at @s run function armor/engineer/turret/global
+execute as @e[type=armor_stand,tag=turret_up] at @s run function armor/engineer/turret/preparation
 execute as @e[type=armor_stand,tag=Mshild] at @s run function armor/guardian/shild/global 
 execute as @e[type=armor_stand,tag=shield] at @s run function module/shield/module/test_end
 
