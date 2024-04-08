@@ -10,7 +10,7 @@ scoreboard players set NameExplosion varTime 1
 execute if entity @s[tag=up] run function armor/grenadier/up
 function gun/explosion/start
 
-execute if score @s ArrowLive matches 40.. as @e[type=#target,distance=..10] run damage @s 10 explosion by @p[tag=Owner]
+execute if score @s ArrowLive matches 40.. as @e[type=#target,distance=..10] run damage @s 4 explosion by @p[tag=Owner]
 tag @a remove Owner
 
 particle minecraft:explosion_emitter ~ ~ ~ 0 0 0 0 1 force @a[distance=..250]

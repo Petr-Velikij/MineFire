@@ -6,7 +6,8 @@ scoreboard players set from_hip Random 30
 scoreboard players set running Random 80
 function gun/scatter_modifier
 
-scoreboard players set *YR.correct varTime 25000
+#scoreboard players set *YR.correct varTime 25000
+scoreboard players set *YR.correct varTime 12500
 function minecraft:vector/get_vec
 
 scoreboard players operation buf ID.Owner = @s ID.Player

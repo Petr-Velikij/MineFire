@@ -1,3 +1,5 @@
+function gun/anfisa/ii/global
+
 execute if score @s Supply matches 1.. run scoreboard players remove @s Supply 1
 
 execute if score @s PKM_2 matches 1.. run function minecraft:gun/anfisa/shot
