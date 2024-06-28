@@ -6,5 +6,8 @@ scoreboard players operation *1 varTime = i varTime
 scoreboard players operation *2 varTime = *1 varTime
 scoreboard players operation *2 varTime *= *5 CONST
 scoreboard players operation @s armor_cooldown += *2 varTime
+execute if entity @s[tag=custom_invisibility] run scoreboard players add @s armor_cooldown 400
 scoreboard players operation *1 varTime *= *8 CONST
-scoreboard players operation @s stamina -= *1 varTime
+
+execute unless entity @s[tag=custom_invisibility] run scoreboard players operation @s stamina -= *1 varTime
+execute if entity @s[tag=custom_invisibility] run function armor/flickering/invisibility/remove

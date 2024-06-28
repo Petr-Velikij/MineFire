@@ -1,4 +1,4 @@
-scoreboard players set coefficient Random 60
+scoreboard players set coefficient Random 80
 playsound entity.iron_golem.hurt player @a[distance=1..40] ~ ~ ~ 2.5 2
 scoreboard players set *YR.correct varTime 0
 function minecraft:vector/get_vec

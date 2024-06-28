@@ -7,6 +7,6 @@ execute if score buf ID.armor matches 7 run tag @s add exp_up
 execute if score buf ID.module matches 1 run function module/energy/up_damage
 scoreboard players operation @s ID.Owner = buf ID.Owner
 scoreboard players operation @s Power = buf Power
-execute store result entity @s Motion[0] double 0.00025 run scoreboard players get *X varTime
-execute store result entity @s Motion[1] double 0.00025 run scoreboard players get *Y varTime
-execute store result entity @s Motion[2] double 0.00025 run scoreboard players get *Z varTime
+execute store result entity @s Motion[0] double 0.0003 run scoreboard players get *X varTime
+execute store result entity @s Motion[1] double 0.0003 run scoreboard players get *Y varTime
+execute store result entity @s Motion[2] double 0.0003 run scoreboard players get *Z varTime

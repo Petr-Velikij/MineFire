@@ -1,7 +1,5 @@
-data merge entity @s {NoGravity:1b,damage:0.0d,crit:0b,PierceLevel:0b,Tags:["magma"],SoundEvent:"entity.blaze.shoot"}
-execute store result entity @s damage double 0.005 run scoreboard players get buf Power
+data merge entity @s {NoGravity:0b,damage:0.68d,crit:0b,PierceLevel:0b,Tags:["magma"],SoundEvent:"entity.blaze.shoot"}
 
-execute if score buf Power matches 150.. run data modify entity @s Fire set value 30
 execute if score buf ID.module matches 1 run tag @s add up
 execute if score buf ID.module matches 1 run function module/energy/up_damage
 

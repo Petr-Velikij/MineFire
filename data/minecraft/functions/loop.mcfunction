@@ -20,6 +20,7 @@ execute as @e[type=phantom,tag=scout] at @s run function armor/hunter/scout/glob
 execute as @e[type=armor_stand,tag=turret_up] at @s run function armor/engineer/turret/preparation
 execute as @e[type=armor_stand,tag=Mshild] at @s run function armor/guardian/shild/global 
 execute as @e[type=armor_stand,tag=shield] at @s run function module/shield/module/test_end
+execute as @e[type=skeleton,tag=bait] at @s run function armor/flickering/bait/simulation
 
 execute as @a[gamemode=!spectator,scores={Heat=1..}] at @s run function heat
 execute as @a[gamemode=!spectator] run function stamina/global

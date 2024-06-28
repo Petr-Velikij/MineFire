@@ -10,16 +10,12 @@ function gun/scatter_modifier
 scoreboard players set *YR.correct varTime 0
 execute if score @s sneak_time matches 1.. run scoreboard players set *YR.correct varTime 1350
 function minecraft:vector/get_vec
-scoreboard players operation *1 varTime = @s Power
+scoreboard players operation Power varTime = @s Power
 scoreboard players operation buf ID.Owner = @s ID.Player
 execute positioned ~ ~1 ~ as @e[type=arrow,tag=,sort=nearest,limit=1] run function minecraft:gun/armature/shot2
 
 scoreboard players set @s Supply 3
+scoreboard players set @s Power 100
 function minecraft:gun/shot
-scoreboard players operation *1 varTime = @s Power
-execute unless score @s ID.module matches 1 run scoreboard players operation *1 varTime *= *20 CONST
-execute if score @s ID.module matches 1 run scoreboard players operation *1 varTime *= *26 CONST
-scoreboard players operation *1 varTime /= *100 CONST
-scoreboard players operation @s Power -= *1 varTime
 
 tp @s ~ ~ ~ ~ ~-5

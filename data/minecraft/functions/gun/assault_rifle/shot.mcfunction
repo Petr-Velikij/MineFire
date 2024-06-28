@@ -1,4 +1,4 @@
-scoreboard players set aiming Random 7
+scoreboard players set aiming Random 10
 scoreboard players set from_hip Random 20
 scoreboard players set running Random 60
 

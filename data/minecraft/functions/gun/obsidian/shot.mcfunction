@@ -1,8 +1,8 @@
-execute if score @s Power matches 100 run playsound block.ender_chest.open player @a[distance=..30] ~ ~ ~ 3.7 1.5
-execute if score @s Power matches 101..150 run playsound block.ender_chest.open player @a[distance=..30] ~ ~ ~ 3.7 1.1
-execute if score @s Power matches 151.. run playsound block.ender_chest.open player @a[distance=..30] ~ ~ ~ 3.7 0.8
+execute if score @s Power matches 100 run playsound block.ender_chest.open player @a[distance=..30] ~ ~ ~ 2.7 1.5
+execute if score @s Power matches 101..150 run playsound block.ender_chest.open player @a[distance=..60] ~ ~ ~ 3.8 1.1
+execute if score @s Power matches 151.. run playsound block.ender_chest.open player @a[distance=..90] ~ ~ ~ 6 0.8
 
-scoreboard players set aiming Random 15
+scoreboard players set aiming Random 10
 scoreboard players set from_hip Random 30
 scoreboard players set running Random 90
 function gun/scatter_modifier

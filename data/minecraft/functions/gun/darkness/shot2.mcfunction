@@ -1,4 +1,4 @@
-data merge entity @s {damage:0.89d,crit:0b,PierceLevel:0b,Tags:["darkness","particle_crit"],CustomPotionEffects:[{Id:15,Amplifier:0b,Duration:30}]}
+data merge entity @s {damage:0.89d,crit:0b,PierceLevel:0b,Tags:["darkness","particle_crit"],CustomPotionEffects:[{Id:15,Amplifier:0b,Duration:10}]}
 scoreboard players set @s ArrowDamage 1
 scoreboard players set @s DamageHead 150
 scoreboard players set @s DamageLegs 50

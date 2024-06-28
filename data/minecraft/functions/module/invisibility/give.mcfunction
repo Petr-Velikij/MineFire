@@ -1,3 +1,4 @@
+effect clear @s glowing
 scoreboard players set @s invisibility 140
 function armor/save
 function module/invisibility/set

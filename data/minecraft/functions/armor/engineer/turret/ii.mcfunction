@@ -1,7 +1,9 @@
 scoreboard players set distance varTime 60
-execute positioned ~ ~0.25 ~ facing entity @p[gamemode=!spectator,tag=owner,distance=..30] feet run function armor/engineer/turret/ray_owner
+execute at @p[gamemode=!spectator,tag=owner,distance=..30] positioned ~ ~1 ~ facing entity @s eyes run function armor/engineer/turret/ray_owner
 execute if entity @p[gamemode=!spectator,tag=owner,distance=..5] if score hp varTime matches ..19 as @e[tag=turret_collider,distance=..1,limit=1] unless data entity @s ActiveEffects[{Id:10}] run effect give @s regeneration 2 1
 
+scoreboard players operation ID.Team varTime = @s ID.Team
+execute as @a[gamemode=!spectator,distance=..30] if score @s ID.Team = ID.Team varTime run tag @s add no_target
 execute positioned ~ ~0.5 ~ if entity @a[gamemode=!spectator,distance=..30,tag=!owner,tag=!no_target,scores={invisibility=0}] run function armor/engineer/turret/search_enemy
 execute unless entity @a[gamemode=!spectator,tag=target,distance=..50] run tag @p[tag=owner,distance=..5] add target
 tp @s ~ ~ ~ facing entity @p[gamemode=!spectator,tag=target,distance=..50] eyes

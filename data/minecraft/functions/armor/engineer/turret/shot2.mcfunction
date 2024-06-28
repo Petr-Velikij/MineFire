@@ -8,6 +8,6 @@ execute store result entity @s Motion[1] double 0.00075 run scoreboard players g
 execute store result entity @s Motion[2] double 0.00075 run scoreboard players get *Z varTime
 
 setblock 0 -63 0 air
-setblock 0 -63 0 oak_sign{Color:"-1",Text1:'[{"text":"турелью "},{"selector":"@p[tag=owner]"}]'} replace
+setblock 0 -63 0 oak_sign{Color:"-1",Text1:'[{"text":"дроном "},{"selector":"@p[tag=owner]"}]'} replace
 data modify entity @s CustomName set from block 0 -63 0 Text1
 tag @a remove Owner

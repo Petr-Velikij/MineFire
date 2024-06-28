@@ -1,7 +1,13 @@
 function armor/hunter/scout/target_search
-execute if entity @a[tag=target] if entity @a[tag=Owner,distance=..170] run function armor/hunter/scout/target_run
-execute unless entity @a[tag=target] run function armor/hunter/scout/owner_run
-execute if entity @a[tag=Owner,distance=170..] run function armor/hunter/scout/owner_run
+execute if score @s Loop matches ..200 run function armor/hunter/scout/owner_run
+execute if score @s Loop matches 1200..1500 run function armor/hunter/scout/owner_run
+execute if score @s Loop matches 1500..1800 run function armor/hunter/scout/owner_return
+execute if score @s Loop matches 1500.. if entity @p[tag=Owner,distance=..2] run kill @s
+execute if score @s Loop matches 1800 run kill @s
+
+execute if entity @p[tag=target] if entity @p[tag=Owner,distance=..170] if score @s Loop matches 200..1200 run function armor/hunter/scout/target_run
+execute unless entity @p[tag=target] run function armor/hunter/scout/owner_run
+execute if entity @p[tag=Owner,distance=170..] run function armor/hunter/scout/owner_run
 
 scoreboard players operation *2 varTime = @s Loop
 scoreboard players operation *2 varTime %= *270 CONST
@@ -15,4 +21,3 @@ tag @a remove Owner
 tag @a remove Team
 
 scoreboard players add @s Loop 1
-execute if score @s Loop matches 1000 run scoreboard players set @s Loop 0

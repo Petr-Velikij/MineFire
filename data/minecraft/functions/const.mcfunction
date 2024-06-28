@@ -35,4 +35,4 @@ scoreboard players set *32 CONST 32
 scoreboard players set ammoStart CONST 720
 scoreboard players set upDamageEW CONST 120
 scoreboard players set marlinDamage CONST 92
-scoreboard players set magmaCooling CONST 98
+scoreboard players set magmaCooling CONST 97

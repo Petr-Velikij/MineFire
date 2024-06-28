@@ -9,4 +9,4 @@ scoreboard players set @e[tag=new,tag=Mshild,distance=..10] Power 50
 tag @e[tag=new,distance=..10] remove new
 
 playsound block.beacon.activate player @a[distance=..30] ~ ~1 ~ 1 1.5
-scoreboard players set @s armor_cooldown 900
+scoreboard players set @s armor_cooldown 400
