@@ -1,0 +1,1 @@
+execute if score @s ArrowLive matches 2.. store result entity @s damage double 0.0085 run data get entity @s damage 100

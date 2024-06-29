@@ -3,7 +3,7 @@ execute if data entity @s SelectedItem.tag.armor_active run function armor/phoen
 scoreboard players remove @s[scores={armor_cooldown=1..}] armor_cooldown 1
 
 execute if score @s armor_cooldown2 matches 0 if score @s deathCount matches 1 run function armor/phoenix/revive
-execute if score @s armor_cooldown2 matches 1 run tellraw @s [{"text":"Вы сногва готвы всотать из пепла","color":"#FF7700"}]
+execute if score @s armor_cooldown2 matches 1 run tellraw @s [{"text":"Вы снова готовы востать из пепла","color":"#FF7700"}]
 scoreboard players remove @s[scores={armor_cooldown2=1..}] armor_cooldown2 1
 
 execute if score @s armor_cooldown3 matches 399 run effect give @s absorption 10 1 true

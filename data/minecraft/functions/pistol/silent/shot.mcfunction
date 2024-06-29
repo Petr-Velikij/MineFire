@@ -8,7 +8,6 @@ playsound minecraft:custom.gun.shtil.echo_1d player @a[distance=..10] ~ ~ ~ 0.5 
 function gun/scatter_modifier
 #25 блоков
 scoreboard players set *YR.correct varTime 950
-scoreboard players set coefficient Random 0
 function minecraft:vector/get_vec
 scoreboard players operation buf ID.Owner = @s ID.Player
 execute at @s positioned ~ ~1 ~ as @e[type=arrow,tag=,sort=nearest,limit=1] run function pistol/silent/shot2

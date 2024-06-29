@@ -11,7 +11,6 @@ scoreboard players set running Random 300
 function gun/scatter_modifier
 
 scoreboard players set *YR.correct varTime 0
-execute if score @s sneak_time matches 1.. run scoreboard players set *YR.correct varTime 720
 function minecraft:vector/get_vec
 
 scoreboard players operation buf ID.Owner = @s ID.Player
@@ -20,4 +19,4 @@ execute as @e[type=arrow,tag=,sort=nearest,limit=1] run function minecraft:gun/s
 scoreboard players set @s Supply 50
 function minecraft:gun/shot
 
-tp @s ~ ~ ~ ~-1 ~-5
+tp @s ~ ~ ~ ~-1 ~-3

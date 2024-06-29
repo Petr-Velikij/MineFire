@@ -6,5 +6,11 @@ execute if score Inventory ID.pistol matches 1 run scoreboard players set @s pri
 execute if score Inventory ID.pistol matches 2 run scoreboard players set @s price_cartridge 15
 #03 Цикада/360
 execute if score Inventory ID.pistol matches 3 run scoreboard players set @s price_cartridge 2
+#04 Джентельмен/36
+execute if score Inventory ID.pistol matches 4 run scoreboard players set @s price_cartridge 20
+#05 Сверчок/120
+execute if score Inventory ID.pistol matches 5 run scoreboard players set @s price_cartridge 6
+#06 Озарение/60
+execute if score Inventory ID.pistol matches 6 run scoreboard players set @s price_cartridge 12
 
 execute unless score @s price_cartridge matches -1 run function gun/mat

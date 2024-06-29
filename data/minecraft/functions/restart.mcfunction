@@ -132,3 +132,5 @@ tag @a remove no_scope
 tag @a remove armor
 tag @a remove crawl
 tag @a remove StunGun
+tag @a remove custom_invisibility
+tag @a remove bad_custom_invisibility

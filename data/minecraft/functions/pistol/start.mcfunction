@@ -24,5 +24,8 @@ execute if score SelectedItem ID.pistol matches 1 unless score @s reload_pistol 
 execute if score Inventory ID.pistol matches 1 if score SelectedItem ID.pistol matches 1 run function pistol/silent/global
 execute if score Inventory ID.pistol matches 2 if score SelectedItem ID.pistol matches 1 run function pistol/executioner/global
 execute if score Inventory ID.pistol matches 3 if score SelectedItem ID.pistol matches 1 run function pistol/cicada/global
+execute if score Inventory ID.pistol matches 4 if score SelectedItem ID.pistol matches 1 run function pistol/gentleman/global
+execute if score Inventory ID.pistol matches 5 if score SelectedItem ID.pistol matches 1 run function pistol/cricket/global
+execute if score Inventory ID.pistol matches 6 if score SelectedItem ID.pistol matches 1 run function pistol/epiphany/global
 
 execute if score @s reload_pistol matches -1 run scoreboard players set @s reload_pistol 0
