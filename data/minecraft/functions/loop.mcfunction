@@ -21,6 +21,7 @@ execute as @e[type=armor_stand,tag=turret_up] at @s run function armor/engineer/
 execute as @e[type=armor_stand,tag=Mshild] at @s run function armor/guardian/shild/global 
 execute as @e[type=armor_stand,tag=shield] at @s run function module/shield/module/test_end
 execute as @e[type=skeleton,tag=bait] at @s run function armor/flickering/bait/simulation
+execute as @e[type=chest_minecart,tag=airdrop] at @s run function module/ammunition/airdrop
 
 execute as @a[gamemode=!spectator,scores={Heat=1..}] at @s run function heat
 execute as @a[gamemode=!spectator] run function stamina/global

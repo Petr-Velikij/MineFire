@@ -26,5 +26,5 @@ execute if score @s Power matches 201.. run playsound minecraft:custom.gun.amper
 execute if score @s Supply matches 0 run scoreboard players set @s Supply 4
 execute if score @s Supply matches 4 run function gun/shot
 
-execute if score @s Supply matches 4 run tp @s ~ ~ ~ ~-0.3 ~-0.5
-execute unless score @s Supply matches 4 run tp @s ~ ~ ~ ~0.3 ~-1
+execute if score @s Supply matches 4 run tp @s[tag=!NoKickback] ~ ~ ~ ~-0.3 ~-0.5
+execute unless score @s Supply matches 4 run tp @s[tag=!NoKickback] ~ ~ ~ ~0.3 ~-1

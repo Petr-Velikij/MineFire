@@ -19,4 +19,4 @@ scoreboard players set @s Anfisa 30
 scoreboard players set @s Supply 20
 function minecraft:gun/shot
 
-tp @s ~ ~ ~ ~-2 ~-7
+tp @s[tag=!NoKickback] ~ ~ ~ ~-2 ~-7

@@ -18,4 +18,4 @@ scoreboard players set @s Supply 3
 scoreboard players set @s Power 100
 function minecraft:gun/shot
 
-tp @s ~ ~ ~ ~ ~-5
+tp @s[tag=!NoKickback] ~ ~ ~ ~ ~-5

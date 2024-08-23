@@ -36,4 +36,4 @@ scoreboard players set @s Supply_pistol 6
 execute if score @s ID.module matches 1 run playsound minecraft:custom.gun.amper.overheating_2d player @s ~ ~ ~ 0.4 2
 execute if score @s ID.module matches 1 run scoreboard players set @s Supply_pistol 8
 function pistol/shot
-tp @s ~ ~ ~ ~0.1 ~-1
+tp @s[tag=!NoKickback] ~ ~ ~ ~0.1 ~-1

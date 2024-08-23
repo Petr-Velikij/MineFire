@@ -16,4 +16,4 @@ execute if score @s Supply_pistol matches 0 run scoreboard players set @s Supply
 function pistol/shot
 scoreboard players add @s Scatter 25
 
-tp @s ~ ~ ~ ~ ~-1.5
+tp @s[tag=!NoKickback] ~ ~ ~ ~ ~-1.5

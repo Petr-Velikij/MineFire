@@ -17,5 +17,5 @@ function minecraft:gun/shot
 scoreboard players add @s Scatter 20
 execute if score *InHolder varTime matches 0 run scoreboard players set @s Supply 0
 
-execute if score @s Supply matches 2 run tp @s ~ ~ ~ ~0.1 ~-0.5
-execute if score @s Supply matches 3 run tp @s ~ ~ ~ ~-0.2 ~-0.5
+execute if score @s Supply matches 2 run tp @s[tag=!NoKickback] ~ ~ ~ ~0.1 ~-0.5
+execute if score @s Supply matches 3 run tp @s[tag=!NoKickback] ~ ~ ~ ~-0.2 ~-0.5

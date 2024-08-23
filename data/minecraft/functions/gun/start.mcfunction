@@ -2,6 +2,7 @@ execute if score @s[tag=SelectedGun] reloadGun matches 1 run function gun/reload
 execute if score @s[tag=SelectedGun] reloadGun matches 1 if score @s ID.module matches 8 if score @s reload matches 1.. if score @s module_cooldown matches 0 run function module/reload/fast
 
 execute store result score Inventory ID.gun run data get entity @s Inventory[{}].tag.gunID
+scoreboard players operation @s ID.gun = Inventory ID.gun
 scoreboard players set Offhand ID.gun 0
 execute if data entity @s Inventory[{Slot:-106b}].tag.gunID run scoreboard players set Offhand ID.gun 1
 

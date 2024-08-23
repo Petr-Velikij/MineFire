@@ -17,4 +17,4 @@ function pistol/shot
 
 scoreboard players add @s Scatter 100
 
-tp @s ~ ~ ~ ~3 ~-10
+tp @s[tag=!NoKickback] ~ ~ ~ ~3 ~-10

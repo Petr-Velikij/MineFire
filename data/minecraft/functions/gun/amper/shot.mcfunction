@@ -46,4 +46,4 @@ execute if score @s ID.module matches 1 if score @s modeFire matches 2 run score
 execute if score @s ID.module matches 1 if score @s modeFire matches 2 run playsound minecraft:custom.gun.amper.overheating_2d player @s ~ ~ ~ 0.6 1
 
 
-tp @s ~ ~ ~ ~1 ~-4
+tp @s[tag=!NoKickback] ~ ~ ~ ~1 ~-4

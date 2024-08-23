@@ -26,7 +26,6 @@ scoreboard players set @a Supply_pistol 0
 scoreboard objectives add ammo dummy
 scoreboard objectives add ammo_point dummy
 scoreboard players set @a ammo_point 720
-scoreboard players set @a[scores={ID.module=7}] ammo_point 2160
 execute as @a[gamemode=!spectator] run function gun/ammo
 scoreboard objectives add price_cartridge dummy
 scoreboard objectives add reload dummy
@@ -58,12 +57,16 @@ scoreboard objectives add StunGun dummy
 scoreboard players set @a StunGun 0
 kill @e[tag=Mshild]
 kill @e[type=armor_stand,tag=knife]
+kill @e[type=skeleton,tag=bait]
+tp @e[type=chest_minecart,tag=airdrop] 0 -1000 0
 
 scoreboard objectives add invisibility dummy
 execute as @a[scores={invisibility=1..}] run function module/invisibility/remove
 scoreboard players set @a invisibility 0
 scoreboard objectives add module_cooldown dummy
 scoreboard players set @a module_cooldown 0
+scoreboard objectives add module_effect dummy
+scoreboard players set @a module_effect 0
 
 scoreboard objectives add breath dummy
 scoreboard players set @a breath 0
@@ -134,3 +137,4 @@ tag @a remove crawl
 tag @a remove StunGun
 tag @a remove custom_invisibility
 tag @a remove bad_custom_invisibility
+tag @a remove NoKickback

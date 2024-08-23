@@ -19,4 +19,4 @@ execute as @e[type=arrow,tag=,sort=nearest,limit=1] run function minecraft:gun/s
 scoreboard players set @s Supply 50
 function minecraft:gun/shot
 
-tp @s ~ ~ ~ ~-1 ~-3
+tp @s[tag=!NoKickback] ~ ~ ~ ~-1 ~-3

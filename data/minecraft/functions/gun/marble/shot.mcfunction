@@ -19,4 +19,4 @@ execute if score @s ID.module matches 1 run scoreboard players remove @s Power 2
 execute if score @s Power matches ..0 run scoreboard players set @s Power 0
 function gun/marble/shot_mat
 
-tp @s ~ ~ ~ ~ ~-0.7
+tp @s[tag=!NoKickback] ~ ~ ~ ~ ~-0.7

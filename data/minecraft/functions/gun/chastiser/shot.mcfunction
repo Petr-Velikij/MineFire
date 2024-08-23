@@ -21,6 +21,6 @@ execute if score *InHolder varTime matches 0 run scoreboard players set @s Suppl
 scoreboard players add @s Power 20
 
 function minecraft:random/number
-execute if score Number Random matches ..32 run tp @s ~ ~ ~ ~0.4 ~-0.6
-execute unless score Number Random matches ..32 run tp @s ~ ~ ~ ~-0.4 ~-0.6
+execute if score Number Random matches ..32 run tp @s[tag=!NoKickback] ~ ~ ~ ~0.4 ~-0.6
+execute unless score Number Random matches ..32 run tp @s[tag=!NoKickback] ~ ~ ~ ~-0.4 ~-0.6
 effect give @s slowness 1 3 true

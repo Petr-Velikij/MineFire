@@ -16,6 +16,6 @@ execute as @e[type=arrow,tag=,sort=nearest,limit=1] run function minecraft:gun/h
 scoreboard players set @s Supply 0
 function minecraft:gun/shot
 
-execute if score @s Power matches 100..140 run tp @s ~ ~ ~ ~0.5 ~-3
-execute if score @s Power matches 141..199 run tp @s ~ ~ ~ ~-0.3 ~-2
-execute if score @s Power matches 200 run tp @s ~ ~ ~ ~0.1 ~-1
+execute if score @s Power matches 100..140 run tp @s[tag=!NoKickback] ~ ~ ~ ~0.5 ~-3
+execute if score @s Power matches 141..199 run tp @s[tag=!NoKickback] ~ ~ ~ ~-0.3 ~-2
+execute if score @s Power matches 200 run tp @s[tag=!NoKickback] ~ ~ ~ ~0.1 ~-1

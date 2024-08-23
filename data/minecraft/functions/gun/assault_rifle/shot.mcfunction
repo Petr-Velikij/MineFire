@@ -15,4 +15,4 @@ execute at @s positioned ~ ~1 ~ as @e[type=arrow,tag=,sort=nearest,limit=1] run 
 function minecraft:gun/shot
 scoreboard players add @s Scatter 40
 
-tp @s ~ ~ ~ ~ ~-1.7
+tp @s[tag=!NoKickback] ~ ~ ~ ~ ~-1.7

@@ -21,5 +21,5 @@ function minecraft:gun/obsidian/remove_ammo
 
 scoreboard players set @s Power 100
 
-execute if score @s modeFire matches 1 run tp @s ~ ~ ~ ~ ~-1
-execute if score @s modeFire matches 2 run tp @s ~ ~ ~ ~2 ~-7
+execute if score @s modeFire matches 1 run tp @s[tag=!NoKickback] ~ ~ ~ ~ ~-1
+execute if score @s modeFire matches 2 run tp @s[tag=!NoKickback] ~ ~ ~ ~2 ~-7

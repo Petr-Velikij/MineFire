@@ -17,4 +17,4 @@ execute at @s positioned ~ ~1 ~ as @e[type=arrow,tag=,sort=nearest,limit=1] run 
 scoreboard players set @s Supply_pistol 30
 function pistol/shot
 
-#tp @s ~ ~ ~ ~ ~-0.7
+tp @s[tag=!NoKickback] ~ ~ ~ ~ ~-3

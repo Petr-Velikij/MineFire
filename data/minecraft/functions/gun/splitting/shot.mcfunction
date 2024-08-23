@@ -16,4 +16,4 @@ scoreboard players operation buf ID.Owner = @s ID.Player
 execute positioned ~ ~1 ~ as @e[type=arrow,tag=,sort=nearest,limit=1] run function minecraft:gun/splitting/shot2
 
 function minecraft:gun/shot
-tp @s ~ ~ ~ ~ ~-30
+tp @s[tag=!NoKickback] ~ ~ ~ ~ ~-30
