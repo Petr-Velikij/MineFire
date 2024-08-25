@@ -2,7 +2,6 @@ clear @a[gamemode=!spectator] #clear_artifacts
 execute as @a[gamemode=!spectator] unless score @s ID.armor matches 8 run clear @s ender_pearl
 
 execute as @a[gamemode=!spectator] unless score @s damage_absorbed matches 0 run scoreboard players operation @s damage_taken += @s damage_absorbed
-scoreboard players set @a damage_absorbed 0
 
 execute as @a[gamemode=!spectator,scores={PlayerHead=1,player_hurt=1..}] at @s run playsound entity.player.attack.crit player @s ~ ~100 ~ 100 1
 scoreboard players set @a PlayerHead 0
@@ -45,6 +44,7 @@ scoreboard players set @a aviate_one_cm 0
 scoreboard players set @a reloadGun 0
 scoreboard players set @a jump 0
 scoreboard players set @a damage_taken 0
+scoreboard players set @a damage_absorbed 0
 
 execute if score #auto Zona matches 1 if score Стадия Zona matches 0 run function game/auto/zona
 execute if score Стадия Zona matches 2 as @e[type=marker,tag=game_zone,limit=1] at @s run function minecraft:game/zona/move

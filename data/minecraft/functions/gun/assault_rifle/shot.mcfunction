@@ -3,7 +3,8 @@ scoreboard players set from_hip Random 20
 scoreboard players set running Random 60
 
 playsound custom.gun.assault_rifle.shot_2d player @s ~ ~ ~ 1 1
-playsound custom.gun.assault_rifle.shot_1d player @a[distance=1..75] ~ ~ ~ 4.7 1
+playsound custom.gun.assault_rifle.shot_1d player @a[distance=1..75] ~ ~ ~ 12.2 1
+playsound custom.gun.assault_rifle.shot_1d player @a[distance=75..200] ~ ~ ~ 12.2 0.8
 
 
 function gun/scatter_modifier

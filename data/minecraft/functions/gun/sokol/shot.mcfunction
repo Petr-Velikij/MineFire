@@ -1,8 +1,8 @@
-playsound custom.gun.sokol.shot_2d player @s ~ ~1.6 ~ 3.7 1
-playsound custom.gun.sokol.shot_2d player @s ~ ~1.6 ~ 3.7 1
-playsound custom.gun.sokol.shot_1d player @a[distance=1..75] ~ ~1.6 ~ 5.2 1
-playsound custom.gun.sokol.shot_1d player @a[distance=1..75] ~ ~1.6 ~ 5.2 1
-playsound custom.gun.sokol.echo_1d player @a[distance=..150] ^ ^ ^20 8.5 0.8
+playsound custom.gun.sokol.shot_2d player @s ~ ~1.6 ~ 15.6 1
+playsound custom.gun.sokol.shot_2d player @s ~ ~1.6 ~ 15.6 1
+playsound custom.gun.sokol.shot_1d player @a[distance=1..75] ~ ~1.6 ~ 15.6 1
+playsound custom.gun.sokol.shot_1d player @a[distance=75..125] ~ ~ ~ 7.6 0.8
+playsound custom.gun.sokol.echo_1d player @a[distance=..250] ^ ^ ^20 15.6 0.8
 
 
 scoreboard players set aiming Random 1

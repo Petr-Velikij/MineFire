@@ -1,5 +1,5 @@
-playsound custom.gun.leaves.shot_1d player @a[distance=..90] ^ ^ ^1 3.7 1
-playsound custom.gun.leaves.shot_1d player @a[distance=..90] ^ ^ ^1 3.7 1
+playsound custom.gun.leaves.shot_1d player @a[distance=..200] ^ ^ ^1 12.2 1
+playsound custom.gun.leaves.shot_1d player @a[distance=..200] ^ ^ ^1 12.2 1
 
 
 scoreboard players set aiming Random 1

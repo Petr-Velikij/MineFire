@@ -4,6 +4,7 @@ playsound custom.gun.railgun.shot_2d player @s ~ ~ ~ 2 1
 playsound custom.gun.railgun.shot_1d player @a[distance=0.1..170] ~ ~1 ~ 3.6 1
 playsound custom.gun.railgun.shot_1d player @a[distance=0.1..170] ~ ~1 ~ 7.1 1
 playsound custom.gun.railgun.shot_1d player @a[distance=0.1..170] ~ ~1 ~ 10.8 1
+playsound custom.gun.railgun.shot_1d player @a[distance=170..250] ~ ~ ~ 15.6 0.7
 
 
 scoreboard players set aiming Random 3

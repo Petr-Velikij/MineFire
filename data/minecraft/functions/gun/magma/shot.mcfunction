@@ -4,8 +4,8 @@ scoreboard players set running Random 70
 
 execute unless score @s ID.module matches 1 run playsound minecraft:custom.gun.magma.shot_2d player @s ~ ~ ~ 1 0.95
 execute if score @s ID.module matches 1 run playsound minecraft:custom.gun.magma.shot_2d player @s ~ ~ ~ 1 1.1
-execute unless score @s ID.module matches 1 run playsound minecraft:custom.gun.magma.shot_1d player @a[distance=0.1..50] ~ ~1.6 ~ 5 0.95
-execute if score @s ID.module matches 1 run playsound minecraft:custom.gun.magma.shot_1d player @a[distance=0.1..50] ~ ~1.6 ~ 5 1.1
+execute unless score @s ID.module matches 1 run playsound minecraft:custom.gun.magma.shot_1d player @a[distance=0.1..125] ~ ~1.6 ~ 7.8 0.95
+execute if score @s ID.module matches 1 run playsound minecraft:custom.gun.magma.shot_1d player @a[distance=0.1..125] ~ ~1.6 ~ 7.8 1.1
 
 execute if score @s ID.module matches 1 run stopsound @s player minecraft:custom.gun.magma.end_2d
 execute if score @s ID.module matches 1 run stopsound @a[distance=0.1..10] player minecraft:custom.gun.magma.end_1d

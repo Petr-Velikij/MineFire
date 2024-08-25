@@ -1,5 +1,5 @@
-playsound minecraft:custom.gun.anfisa.shot_2d player @s ~ ~ ~ 1 1
-playsound minecraft:custom.gun.anfisa.shot_1d player @a[distance=0.1..75] ~ ~ ~ 4.7 0.7
+playsound custom.gun.anfisa.shot_2d player @s ~ ~ ~ 1 1
+playsound custom.gun.anfisa.shot_1d player @a[distance=0.1..75] ~ ~ ~ 4.7 0.7
 
 
 scoreboard players set aiming Random 5

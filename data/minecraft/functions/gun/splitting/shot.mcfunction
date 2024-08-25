@@ -1,6 +1,7 @@
-playsound minecraft:entity.generic.explode player @a[distance=..75] ~ ~1 ~ 4.7 0.6
+playsound minecraft:entity.generic.explode player @a[distance=..75] ~ ~1 ~ 12.2 0.6
 playsound minecraft:entity.generic.explode player @a[distance=..35] ~ ~1 ~ 2 0.8
 playsound minecraft:entity.generic.explode player @a[distance=1..35] ~ ~1 ~ 2 0.8
+playsound minecraft:entity.generic.explode player @a[distance=75..200] ~ ~1 ~ 12.2 0.5
 
 
 scoreboard players set aiming Random 30
@@ -16,4 +17,4 @@ scoreboard players operation buf ID.Owner = @s ID.Player
 execute positioned ~ ~1 ~ as @e[type=arrow,tag=,sort=nearest,limit=1] run function minecraft:gun/splitting/shot2
 
 function minecraft:gun/shot
-tp @s[tag=!NoKickback] ~ ~ ~ ~ ~-30
+tp @s[tag=!NoKickback] ~ ~ ~ ~ ~-10

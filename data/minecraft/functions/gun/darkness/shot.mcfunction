@@ -1,5 +1,7 @@
 playsound custom.gun.timetick.shot_1d player @a[distance=..75] ~ ~ ~ 4.7 1
-playsound custom.gun.timetick.shot_1d player @a[distance=..75] ~ ~ ~ 4.7 1
+playsound custom.gun.timetick.shot_1d player @a[distance=..75] ~ ~ ~ 15.6 1
+playsound custom.gun.timetick.shot_1d player @a[distance=75..200] ~ ~ ~ 15.6 0.8
+playsound custom.gun.timetick.shot_1d player @a[distance=200..250] ~ ~ ~ 15.6 0.7
 
 
 scoreboard players set aiming Random 3

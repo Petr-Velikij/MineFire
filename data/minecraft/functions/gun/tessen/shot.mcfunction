@@ -1,4 +1,5 @@
-playsound custom.gun.tessen.shot_1d player @a[distance=1..75] ~ ~1 ~ 4.7 1
+playsound custom.gun.tessen.shot_1d player @a[distance=1..75] ~ ~1 ~ 12.2 1
+playsound custom.gun.tessen.shot_1d player @a[distance=75..200] ~ ~1 ~ 12.2 0.9
 playsound custom.gun.tessen.shot_2d player @a[distance=..1] ~ ~1 ~ 2 1
 
 

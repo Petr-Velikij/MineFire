@@ -12,7 +12,6 @@ execute if entity @s[tag=up] run function module/energy/up_damage_exp
 scoreboard players set NameExplosion varTime 1
 execute if entity @s[tag=exp_up] run function armor/grenadier/up
 function gun/explosion/start
-execute if score @s Power matches 175 as @a[distance=..5,gamemode=!spectator] run function module/energy/give_stun
 
 particle minecraft:explosion_emitter ~ ~ ~ 0 0 0 0 1 force @a[distance=..100]
 particle minecraft:dust_color_transition 0.7 0 0.7 2 0.5 0 0.5 ~ ~ ~ 1 1 1 0 100 force @a[distance=..125]

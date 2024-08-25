@@ -1,6 +1,6 @@
 playsound minecraft:custom.gun.shtil.shot_2d player @s ~ ~ ~ 1 1
 playsound minecraft:custom.gun.shtil.echo_1d player @a[distance=..10] ~ ~ ~ 1 1
-playsound minecraft:custom.gun.shtil.echo_1d player @a[distance=..35] ^ ^ ^7 1 1
+playsound minecraft:custom.gun.shtil.echo_1d player @a[distance=..75] ^ ^ ^7 4.8 1
 
 
 scoreboard players set aiming Random 3

@@ -4,8 +4,8 @@ scoreboard players set running Random 70
 
 execute unless score @s ID.module matches 1 run playsound minecraft:custom.gun.marble.shot_2d player @s ~ ~1.6 ~ 0.7 1
 execute if score @s ID.module matches 1 run playsound minecraft:custom.gun.marble.shot_2d player @s ~ ~1.6 ~ 0.7 1.2
-execute unless score @s ID.module matches 1 run playsound minecraft:custom.gun.marble.shot_1d player @a[distance=0.1..50] ~ ~1.6 ~ 5 1
-execute if score @s ID.module matches 1 run playsound minecraft:custom.gun.marble.shot_1d player @a[distance=0.1..50] ~ ~1.6 ~ 5 1.2
+execute unless score @s ID.module matches 1 run playsound minecraft:custom.gun.marble.shot_1d player @a[distance=0.1..125] ~ ~1.6 ~ 7.8 1
+execute if score @s ID.module matches 1 run playsound minecraft:custom.gun.marble.shot_1d player @a[distance=0.1..125] ~ ~1.6 ~ 7.8 1.2
 
 
 function gun/scatter_modifier

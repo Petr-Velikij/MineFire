@@ -3,7 +3,7 @@ scoreboard players set from_hip Random 90
 scoreboard players set running Random 200
 
 playsound minecraft:entity.iron_golem.repair player @a[distance=..75] ~ ~ ~ 6.5 1.7
-playsound minecraft:entity.shulker.open player @a[distance=75..130] ~ ~ ~ 8.5 1.3
+playsound minecraft:entity.shulker.open player @a[distance=75..200] ~ ~ ~ 12.2 1.3
 
 function gun/scatter_modifier
 scoreboard players set *YR.correct varTime 0
