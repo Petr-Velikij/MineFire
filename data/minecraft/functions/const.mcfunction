@@ -3,6 +3,7 @@ scoreboard objectives add CONST dummy
 scoreboard players set *-10000 CONST -10000
 scoreboard players set *-1000 CONST -1000
 scoreboard players set *10000 CONST 10000
+scoreboard players set *5000 CONST 5000
 scoreboard players set *1080 CONST 1080
 scoreboard players set *1000 CONST 1000
 scoreboard players set *270 CONST 270

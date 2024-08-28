@@ -35,15 +35,12 @@ execute if score Inventory ID.gun matches 34 run scoreboard players set @s price
 #41  Бах-50А/18
 execute if score Inventory ID.gun matches 41 run scoreboard players set @s price_cartridge 40
 execute if score Inventory ID.gun matches 41 if score @s ID.armor matches 7 run scoreboard players set @s price_cartridge 30
-#42  Молот/144
-execute if score Inventory ID.gun matches 42 run scoreboard players set @s price_cartridge 5
-execute if score Inventory ID.gun matches 42 if score @s ID.armor matches 7 run scoreboard players set @s price_cartridge 4
 #43  Макуся/8
 execute if score Inventory ID.gun matches 43 run scoreboard players set @s price_cartridge 90
 execute if score Inventory ID.gun matches 43 if score @s ID.armor matches 7 run scoreboard players set @s price_cartridge 60
-#44  Звёздочёт/18
-execute if score Inventory ID.gun matches 44 run scoreboard players set @s price_cartridge 40
-execute if score Inventory ID.gun matches 44 if score @s ID.armor matches 7 run scoreboard players set @s price_cartridge 30
+#44  Звёздочёт/24
+execute if score Inventory ID.gun matches 44 run scoreboard players set @s price_cartridge 30
+execute if score Inventory ID.gun matches 44 if score @s ID.armor matches 7 run scoreboard players set @s price_cartridge 24
 #51  Мрамор/120
 execute if score Inventory ID.gun matches 51 run scoreboard players set @s price_cartridge 6
 #52  Магма/144

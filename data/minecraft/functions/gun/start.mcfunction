@@ -30,7 +30,6 @@ execute if score SelectedItem ID.gun matches 1 if score @s[tag=StunGun] StunGun 
 
 execute if score @s no_reload matches 1.. run scoreboard players remove @s no_reload 1
 
-function minecraft:mat/pos_delta
 function minecraft:gun/scatter
 attribute @s generic.movement_speed modifier remove 6b40a35f-cfa6-4474-bccd-4a606cb26d1f
 #0 Автоматы
@@ -59,6 +58,7 @@ execute if score Inventory ID.gun matches 34 if score SelectedItem ID.gun matche
 #4 Гранатомёты и тд
 execute if score Inventory ID.gun matches 41 if score SelectedItem ID.gun matches 1 run function minecraft:gun/grenade_launcher/global
 execute if score Inventory ID.gun matches 43 run function minecraft:gun/makusya/raspredeleniye
+execute if score Inventory ID.gun matches 44 if score SelectedItem ID.gun matches 1 run function minecraft:gun/starfall/global
 #5 Энергетическое
 execute if score Inventory ID.gun matches 51 run function minecraft:gun/marble/raspredeleniye
 execute if score Inventory ID.gun matches 52 run function minecraft:gun/magma/raspredeleniye

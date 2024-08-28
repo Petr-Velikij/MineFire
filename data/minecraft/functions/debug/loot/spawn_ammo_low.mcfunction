@@ -1,2 +1,0 @@
-summon armor_stand ~ ~-0.8 ~ {NoGravity:1b,Invulnerable:1b,Marker:1b,Invisible:1b,Tags:["NO","loot","ammo_small"],Pose:{RightArm:[0f,-120f,0f]},DisabledSlots:4144959,ArmorItems:[{},{},{},{id:"minecraft:carrot_on_a_stick",Count:1b,tag:{CustomModelData:801}}]}
-function debug/loot/rotate

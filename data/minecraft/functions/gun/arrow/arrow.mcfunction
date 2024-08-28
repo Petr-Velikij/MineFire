@@ -19,6 +19,7 @@ execute if entity @s[tag=shard] run tag @s add kill
 execute if entity @s[tag=bullet_anfisa] unless score @s ID.target matches 0 run function gun/arrow/gun/anfisa/bullet
 execute if entity @s[tag=neutron] run function gun/arrow/gun/neutron/bullet
 execute if entity @s[tag=gorynych] run function gun/arrow/gun/gorynych
+execute if entity @s[tag=starfall] run function gun/arrow/gun/starfall/bullet
 
 execute if entity @s[tag=pistol] if score @s ArrowLive matches 5 run scoreboard players set @s DamageHead 100
 execute if entity @s[tag=pistol] if score @s ArrowLive matches 6.. store result entity @s damage double 0.0092 run data get entity @s damage 100
@@ -26,6 +27,9 @@ execute if entity @s[tag=pistol] if score @s ArrowLive matches 12 run kill @s
 execute if entity @s[tag=gentleman] run function gun/arrow/pistol/gentleman
 execute if entity @s[tag=cricket] run tag @s add kill
 execute if entity @s[tag=epiphany] run function gun/arrow/pistol/epiphany
+
+execute if entity @s[tag=grenade] run function grenade/math/move
+execute if entity @s[tag=fragmentation_grenade] run function grenade/fragmentation/arrow
 
 execute if entity @s[tag=knife] run function armor/spetsnaz/knife/arrow
 execute if entity @s[tag=flame_cust] run function armor/phoenix/fire/arrow_cust

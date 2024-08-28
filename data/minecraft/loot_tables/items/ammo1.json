@@ -6,21 +6,6 @@
       "entries": [
         {
           "type": "item",
-          "weight": 4,
-          "name": "minecraft:carrot_on_a_stick",
-          "functions": [
-            {
-              "function": "set_count",
-              "count": 1
-            },
-            {
-              "function": "set_nbt",
-              "tag": "{display:{Name:'{\"text\":\"Патроны\",\"italic\":false}',Lore:['{\"text\":\"+50% к базовым\",\"italic\":false}']},CustomModelData:802,ammo:350,the_ammo:1b}"
-            }
-          ]
-        },
-        {
-          "type": "item",
           "weight": 1,
           "name": "minecraft:carrot_on_a_stick",
           "functions": [

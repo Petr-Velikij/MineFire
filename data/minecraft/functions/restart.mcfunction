@@ -39,6 +39,8 @@ scoreboard players set @a modeFire 1
 scoreboard objectives add Loop dummy
 scoreboard objectives add Power dummy
 scoreboard players set @a Power 100
+scoreboard objectives add MotionGrenade dummy
+scoreboard players set @a MotionGrenade 0
 scoreboard objectives add Heat dummy
 scoreboard players set @a Heat 0
 scoreboard objectives add health_cooldown dummy
@@ -83,6 +85,9 @@ scoreboard objectives add Pos_z dummy
 scoreboard objectives add Pos_x2 dummy
 scoreboard objectives add Pos_y2 dummy
 scoreboard objectives add Pos_z2 dummy
+scoreboard objectives add Pos_dx dummy
+scoreboard objectives add Pos_dy dummy
+scoreboard objectives add Pos_dz dummy
 scoreboard objectives add Pos_delta dummy
 scoreboard objectives add East_x dummy
 scoreboard objectives add East_x2 dummy
