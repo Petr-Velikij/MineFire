@@ -7,6 +7,7 @@ execute as @a[gamemode=!spectator,scores={PlayerHead=1,player_hurt=1..}] at @s r
 scoreboard players set @a PlayerHead 0
 
 execute as @a[gamemode=!spectator] at @s if block ~ ~ ~ #no_collider run spawnpoint @s ~ ~ ~ ~ 
+execute as @a[gamemode=!spectator] at @s run function sound/master
 
 execute as @e[type=armor_stand,tag=knife] at @s run function armor/spetsnaz/knife/armor_stand
 execute as @a[gamemode=!spectator,scores={Stun=1..}] at @s run function module/energy/stun
@@ -39,6 +40,7 @@ scoreboard players set @a PKM_2 0
 scoreboard players set @a player_hurt 0
 scoreboard players set @a sneak_time 0
 scoreboard players set @a crouch_one_cm 0
+scoreboard players set @a walk_one_cm 0
 scoreboard players set @a sprint_one_cm 0
 scoreboard players set @a aviate_one_cm 0
 scoreboard players set @a reloadGun 0

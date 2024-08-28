@@ -93,6 +93,7 @@ scoreboard objectives add Debug dummy
 
 scoreboard objectives add sneak_time minecraft.custom:minecraft.sneak_time
 scoreboard objectives add crouch_one_cm minecraft.custom:minecraft.crouch_one_cm
+scoreboard objectives add walk_one_cm minecraft.custom:minecraft.walk_one_cm
 scoreboard objectives add sprint_one_cm minecraft.custom:minecraft.sprint_one_cm
 scoreboard objectives add jump minecraft.custom:minecraft.jump
 scoreboard objectives add damage_taken minecraft.custom:damage_taken
@@ -122,6 +123,8 @@ scoreboard objectives add varTimeEntity1 dummy
 scoreboard objectives add varTimeEntity2 dummy
 scoreboard objectives add varTimeEntity3 dummy
 scoreboard objectives add Random dummy
+scoreboard objectives add MoveSound dummy
+scoreboard objectives add AmbientSound dummy
 
 scoreboard objectives add Anfisa dummy
 scoreboard players set @a Anfisa 0
