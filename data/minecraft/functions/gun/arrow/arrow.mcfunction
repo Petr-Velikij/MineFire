@@ -30,6 +30,8 @@ execute if entity @s[tag=epiphany] run function gun/arrow/pistol/epiphany
 
 execute if entity @s[tag=grenade] run function grenade/math/move
 execute if entity @s[tag=fragmentation_grenade] run function grenade/fragmentation/arrow
+execute if entity @s[tag=emp_grenade] run function grenade/emp/arrow
+execute if entity @s[tag=smoke_grenade] run function grenade/smoke/arrow
 
 execute if entity @s[tag=knife] run function armor/spetsnaz/knife/arrow
 execute if entity @s[tag=flame_cust] run function armor/phoenix/fire/arrow_cust

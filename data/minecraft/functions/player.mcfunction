@@ -18,3 +18,5 @@ function heat
 function stamina/global
 execute if score @s PKM_1 matches 1 if data entity @s SelectedItem.tag.ammo at @s run function game/loot/give_ammo
 function health/global
+
+execute if score @s[tag=!custom_invisibility] invisibility matches 1.. run function module/invisibility/effect

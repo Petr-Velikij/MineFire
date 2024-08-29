@@ -1,0 +1,55 @@
+{
+  "type": "generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "weight": 1,
+          "name": "minecraft:carrot_on_a_stick",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{display:{Name:'{\"translate\":\"gren[3].name\",\"color\":\"dark_red\",\"italic\":false}'},CustomModelData:903,gren:3b,grenID:3b}"
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "weight": 1,
+          "name": "minecraft:carrot_on_a_stick",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{display:{Name:'{\"translate\":\"gren[2].name\",\"color\":\"dark_red\",\"italic\":false}'},CustomModelData:902,gren:2b,grenID:2b}"
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "weight": 1,
+          "name": "minecraft:carrot_on_a_stick",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{display:{Name:'{\"translate\":\"gren[1].name\",\"color\":\"dark_red\",\"italic\":false}'},CustomModelData:901,gren:1b,grenID:1b}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

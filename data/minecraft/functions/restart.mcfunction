@@ -19,6 +19,9 @@ scoreboard objectives add ID.pistol dummy
 scoreboard objectives add ID.armor dummy
 scoreboard objectives add ID.target dummy
 scoreboard players set @a ID.target 0
+scoreboard objectives add ID.grenade dummy
+scoreboard players set ID.global ID.grenade 1
+scoreboard objectives add rebound.count dummy
 scoreboard objectives add Supply dummy
 scoreboard players set @a Supply 0
 scoreboard objectives add Supply_pistol dummy

@@ -1,5 +1,0 @@
-# Лут
-summon minecraft:armor_stand ~ ~-0.8 ~ {NoGravity:1b,Invulnerable:1b,Invisible:1b,Tags:["NO","loot"],Pose:{RightArm:[0f,-120f,0f]},DisabledSlots:4144703,HandItems:[{id:"minecraft:cooked_beef",Count:1b},{}]}
-
-# Звук леса
-give @p minecraft:command_block{display:{Name:'{"text":"Звук леса","color":"green","bold":true,"italic":false}'},BlockEntityTag:{Command:'summon minecraft:area_effect_cloud ~ ~ ~ {Radius:0f,Duration:2147483647,Rotation:[0F,-90F],Tags:["ambient.les"]}'ckOutput:0b,auto:1b}} 1

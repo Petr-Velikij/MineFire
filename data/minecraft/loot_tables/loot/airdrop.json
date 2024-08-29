@@ -7,7 +7,21 @@
         {
           "type": "loot_table",
           "weight": 1,
-          "name": "loot/ammo2",
+          "name": "loot/level2",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 2,
+                "max": 3
+              }
+            }
+          ]
+        },
+        {
+          "type": "loot_table",
+          "weight": 4,
+          "name": "loot/level3",
           "functions": [
             {
               "function": "set_count",
@@ -17,19 +31,8 @@
         },
         {
           "type": "loot_table",
-          "weight": 3,
-          "name": "loot/ammo1",
-          "functions": [
-            {
-              "function": "set_count",
-              "count": 1
-            }
-          ]
-        },
-        {
-          "type": "loot_table",
-          "weight": 1,
-          "name": "loot/food3",
+          "weight": 2,
+          "name": "item/grenade",
           "functions": [
             {
               "function": "set_count",

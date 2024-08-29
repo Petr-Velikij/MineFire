@@ -13,7 +13,7 @@ execute store result score Ay varTime run data get entity @e[tag=metka,sort=near
 scoreboard players remove Ay varTime 15
 execute store result score Az varTime run data get entity @e[tag=metka,sort=nearest,limit=1] Pos[2] 10
 
-execute as @e[distance=..10,type=!marker,type=!arrow] at @s run function gun/explosion/test_dist
+execute as @e[distance=..20,type=#target] at @s run function gun/explosion/test_dist
 scoreboard players set *YR.correct varTime 0
 scoreboard players set coefficient Random 0
 execute as @e[tag=metka,sort=nearest,limit=1] at @e[type=marker,distance=..20,tag=metka_player] run function gun/explosion/summon_arrow
