@@ -28,7 +28,10 @@ effect give @a[gamemode=!spectator] minecraft:instant_health 1 9 true
 effect give @a[gamemode=!spectator] minecraft:saturation 1 29 true
 clear @a[gamemode=!spectator] #clear_start
 clear @a[gamemode=adventure] carrot_on_a_stick{the_ammo:1b}
-give @a[gamemode=!spectator] minecraft:bread 5
+give @a[gamemode=!spectator] bread 2
+loot give @a[gamemode=!spectator] loot item/grenade
+loot give @a[gamemode=!spectator] loot item/grenade
+loot give @a[gamemode=!spectator] loot item/grenade
 function minecraft:restart
 execute as @a[gamemode=!spectator] run function minecraft:gun/reload_fast
 kill @e[type=minecraft:arrow]

@@ -10,3 +10,4 @@ execute if score @s food matches 10..19 if score hp varTime matches 2.. if score
 
 execute if score @s damage_taken matches 1.. run function health/damage
 execute if score @s health_cooldown matches 1.. run scoreboard players remove @s health_cooldown 1
+execute if score @s health_cooldown matches 1.. if score @s ID.module matches 2 run scoreboard players remove @s health_cooldown 1
