@@ -5,18 +5,18 @@ execute store result score UUID[3] varTime run data get entity @s Owner[3]
 scoreboard players operation *1 varTime = @s varTimeEntity1
 scoreboard players operation *2 varTime = @s varTimeEntity2
 
-summon minecraft:arrow ~ ~ ~ 
-summon minecraft:arrow ~ ~ ~ 
-summon minecraft:arrow ~ ~ ~ 
-summon minecraft:arrow ~ ~ ~ 
-summon minecraft:arrow ~ ~ ~ 
-summon minecraft:arrow ~ ~ ~ 
-summon minecraft:arrow ~ ~ ~ 
-summon minecraft:arrow ~ ~ ~ 
-summon minecraft:arrow ~ ~ ~ 
-summon minecraft:arrow ~ ~ ~ 
-summon minecraft:arrow ~ ~ ~ 
-summon minecraft:arrow ~ ~ ~ 
+summon minecraft:arrow ~ ~ ~
+summon minecraft:arrow ~ ~ ~
+summon minecraft:arrow ~ ~ ~
+summon minecraft:arrow ~ ~ ~
+summon minecraft:arrow ~ ~ ~
+summon minecraft:arrow ~ ~ ~
+summon minecraft:arrow ~ ~ ~
+summon minecraft:arrow ~ ~ ~
+summon minecraft:arrow ~ ~ ~
+summon minecraft:arrow ~ ~ ~
+summon minecraft:arrow ~ ~ ~
+summon minecraft:arrow ~ ~ ~
 
 scoreboard players set *YR.correct varTime 0
 scoreboard players set coefficient Random 100

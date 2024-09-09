@@ -30,6 +30,8 @@ execute if score Стадия Zona matches 2 if score Размер Zona matches 
 
 execute if score Стадия Zona matches 20 run tellraw @a {"text":"Зона начала движение!","bold":true,"color":"aqua"}
 execute if score Стадия Zona matches 10 run tellraw @a {"text":"Зона остановилась!","bold":true,"color":"aqua"}
+execute if score Стадия Zona matches 10 run loot give @a[gamemode=!spectator,scores={ID.armor=7}] loot item/grenade
+execute if score Стадия Zona matches 10 run loot give @a[gamemode=!spectator,scores={ID.armor=7}] loot item/grenade
 
 execute if score Стадия Zona matches 10 if score Размер Zona matches 1..5 run scoreboard players set Время Zona 40
 execute if score Стадия Zona matches 20 if score Размер Zona matches 1..5 run scoreboard players set Время Zona 30

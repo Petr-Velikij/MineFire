@@ -1,4 +1,4 @@
-execute if entity @s[x_rotation=-90..-30] if score @s jump matches 1.. run playsound minecraft:block.piston.extend player @a[distance=..20] ~ ~ ~ 1 2 
+execute if entity @s[x_rotation=-90..-30] if score @s jump matches 1.. run playsound minecraft:block.piston.extend player @a[distance=..20] ~ ~ ~ 1 2
 execute if entity @s[x_rotation=-90..-30] run effect give @s jump_boost 1 1 true
 
 scoreboard players set detected varTime 0

@@ -1,4 +1,5 @@
 execute as @a[gamemode=!spectator] at @s run function player
+execute as @a[gamemode=spectator,tag=ethereal] at @s run function armor/flickering/blink/teleport
 
 execute as @e[type=armor_stand,tag=knife] at @s run function armor/spetsnaz/knife/armor_stand
 execute as @e[type=arrow] at @s run function gun/arrow/arrow

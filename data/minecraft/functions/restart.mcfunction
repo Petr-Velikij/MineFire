@@ -112,7 +112,7 @@ scoreboard objectives add health health
 scoreboard objectives add deathCount deathCount
 scoreboard objectives add PKM_1 minecraft.used:minecraft.carrot_on_a_stick
 scoreboard objectives add PKM_2 minecraft.used:minecraft.crossbow
-scoreboard objectives add Time_PKM_2 dummy 
+scoreboard objectives add Time_PKM_2 dummy
 scoreboard players set @a Time_PKM_2 99
 scoreboard objectives add player_hurt dummy
 scoreboard objectives add reloadGun minecraft.dropped:minecraft.crossbow

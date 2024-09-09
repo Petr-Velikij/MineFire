@@ -21,7 +21,7 @@ kill @e[type=minecraft:husk,tag=!NO]
 kill @e[type=minecraft:wolf,tag=!NO]
 kill @e[type=minecraft:phantom,tag=!NO]
 
-tp @a[gamemode=!creative] -1 83 0 
+tp @a[gamemode=!creative] -1 83 0
 clear @a minecraft:potion
 clear @a minecraft:carrot_on_a_stick{gren:1b}
 

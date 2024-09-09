@@ -92,7 +92,6 @@ execute if score pos varTime matches 1 unless score @s ArrowDamage matches 0 if 
 execute if predicate bk if score pos varTime matches 2 if score dx varTime matches -70..70 if score dz varTime matches -70..70 if score dy varTime matches 71..90 as @p[tag=hit_test] if score @s ID.module matches 7 at @s run function module/ammunition/explosion
 execute if predicate bk if score pos varTime matches 1 if score dx varTime matches -70..70 if score dz varTime matches -70..70 if score dy varTime matches 40..60 as @p[tag=hit_test] if score @s ID.module matches 7 at @s run function module/ammunition/explosion
 execute if score @p[tag=hit_test] aviate_one_cm matches 1.. unless score @s ArrowDamage matches 2 run function gun/arrow/hit/head
-execute if score @p[tag=hit_test] aviate_one_cm matches 1.. unless entity @s[tag=double_damage] run function armor/hawk/double_damage
 
 tag @p[tag=hit_test] remove hit_test
 kill @e[distance=..10,type=area_effect_cloud,tag=metka]

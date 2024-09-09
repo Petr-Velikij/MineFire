@@ -17,7 +17,7 @@ scoreboard players operation *X varTime += *1 varTime
 scoreboard players operation *Y varTime += *2 varTime
 scoreboard players operation *Z varTime += *3 varTime
 
-summon item ~ ~1 ~ {NoGravity:1b,PickupDelay:32767,Tags:["item_grenade","new"],Item:{id:"minecraft:carrot_on_a_stick",Count:1b}}
+summon item ~ ~1 ~ {NoGravity:1b,Age:5500,PickupDelay:32767,Tags:["item_grenade","new"],Item:{id:"minecraft:carrot_on_a_stick",Count:1b}}
 execute positioned ~ ~1 ~ as @e[type=arrow,tag=,sort=nearest,limit=1] run function gun/set_uuid
 data modify entity @e[type=item,tag=new,sort=nearest,limit=1] Item.tag set from entity @s SelectedItem.tag
 scoreboard players operation @e[type=item,tag=new,sort=nearest,limit=1] ID.grenade = ID.global ID.grenade
