@@ -8,6 +8,7 @@ execute if score Время Zona matches 0 if score Стадия Zona matches 1.
 
 scoreboard players set Игроков Zona 0
 execute at @a[gamemode=adventure] run scoreboard players add Игроков Zona 1
+execute at @a[gamemode=spectator,tag=ethereal] run scoreboard players add Игроков Zona 1
 execute if score Стадия Zona matches 1..2 run function minecraft:game/test_end
 execute if score Время Zona matches ..0 if score Стадия Zona matches 3 run function minecraft:game/stop
 
