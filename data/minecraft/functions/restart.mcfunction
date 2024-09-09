@@ -17,6 +17,8 @@ scoreboard objectives add ID.module dummy
 scoreboard objectives add ID.gun dummy
 scoreboard objectives add ID.pistol dummy
 scoreboard objectives add ID.armor dummy
+gamemode adventure @a[gamemode=spectator,tag=ethereal]
+tag @a[tag=ethereal] remove ethereal
 scoreboard objectives add ID.target dummy
 scoreboard players set @a ID.target 0
 scoreboard objectives add ID.grenade dummy
@@ -62,6 +64,8 @@ scoreboard objectives add StunGun dummy
 scoreboard players set @a StunGun 0
 kill @e[tag=Mshild]
 kill @e[type=armor_stand,tag=knife]
+kill @e[type=armor_stand,tag=blink]
+kill @e[type=marker,tag=blink_to]
 kill @e[type=skeleton,tag=bait]
 tp @e[type=chest_minecart,tag=airdrop] 0 -1000 0
 

@@ -1,5 +1,7 @@
 kill @s[tag=kill]
 kill @s[tag=]
+execute if entity @s[tag=grenade] run function grenade/math/move
+
 execute if entity @s[tag=bullet_sokol] run function gun/arrow/gun/sokol
 execute if entity @s[tag=bullet_leaves] run function gun/arrow/gun/leaves
 execute if entity @s[tag=bullet_ripper] if score @s ArrowLive matches 4 run scoreboard players set @s DamageHead 100
@@ -28,7 +30,6 @@ execute if entity @s[tag=gentleman] run function gun/arrow/pistol/gentleman
 execute if entity @s[tag=cricket] run tag @s add kill
 execute if entity @s[tag=epiphany] run function gun/arrow/pistol/epiphany
 
-execute if entity @s[tag=grenade] run function grenade/math/move
 execute if entity @s[tag=fragmentation_grenade] run function grenade/fragmentation/arrow
 execute if entity @s[tag=emp_grenade] run function grenade/emp/arrow
 execute if entity @s[tag=smoke_grenade] run function grenade/smoke/arrow

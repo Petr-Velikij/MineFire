@@ -1,6 +1,6 @@
 scoreboard players set @s armor_cooldown 0
 
-function armor/flickering/bait/summon
+execute unless data entity @s SelectedItem.tag.gun run function armor/flickering/bait/summon
 
 execute if score @s invisibility matches 0 run function armor/save
 scoreboard players operation @s invisibility += @s damage_taken

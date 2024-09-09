@@ -1,4 +1,8 @@
 scoreboard players set #Team Zona 0
+execute if entity @a[gamemode=spectator,tag=ethereal,team=A] run scoreboard players add #Team Zona 1
+execute if entity @a[gamemode=spectator,tag=ethereal,team=B] run scoreboard players add #Team Zona 1
+execute if entity @a[gamemode=spectator,tag=ethereal,team=C] run scoreboard players add #Team Zona 1
+execute if entity @a[gamemode=spectator,tag=ethereal,team=D] run scoreboard players add #Team Zona 1
 execute if entity @a[gamemode=adventure,team=A] run scoreboard players add #Team Zona 1
 execute if entity @a[gamemode=adventure,team=B] run scoreboard players add #Team Zona 1
 execute if entity @a[gamemode=adventure,team=C] run scoreboard players add #Team Zona 1

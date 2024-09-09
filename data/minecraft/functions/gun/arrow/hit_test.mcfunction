@@ -79,6 +79,7 @@ scoreboard players set pos varTime 2
 execute as @p[tag=hit_test] if predicate is_sneaking run scoreboard players set pos varTime 1
 
 execute if entity @s[tag=amper] if score dx varTime matches -70..70 if score dz varTime matches -70..70 if score dy varTime matches -10..210 run function gun/arrow/gun/amper
+execute if entity @s[tag=magma] if score dx varTime matches -70..70 if score dz varTime matches -70..70 if score dy varTime matches -10..210 run function gun/arrow/gun/magma
 execute if score dx varTime matches -65..65 if score dz varTime matches -65..65 if score dy varTime matches 0..220 run function gun/arrow/hit_marcer
 
 execute if score pos varTime matches 2 unless score @s ArrowDamage matches 1 if score dx varTime matches -70..70 if score dz varTime matches -70..70 if score dy varTime matches 81..210 run function gun/arrow/hit/torss

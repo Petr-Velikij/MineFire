@@ -12,7 +12,7 @@ function minecraft:vector/get_vec
 scoreboard players operation buf ID.Owner = @s ID.Player
 scoreboard players set *1 varTime 0
 execute if score @s ID.armor matches 7 run scoreboard players set *1 varTime 1
-execute as @e[type=arrow,tag=,sort=nearest,limit=1] run function minecraft:gun/starfall/shot2
+execute as @e[type=arrow,tag=,sort=nearest,limit=1] at @s run function minecraft:gun/starfall/shot2
 
 scoreboard players set @s Supply 5
 function minecraft:gun/shot
