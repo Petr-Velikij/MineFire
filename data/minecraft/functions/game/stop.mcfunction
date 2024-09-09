@@ -23,6 +23,7 @@ kill @e[type=minecraft:phantom,tag=!NO]
 
 tp @a[gamemode=!creative] -1 83 0 
 clear @a minecraft:potion
+clear @a minecraft:carrot_on_a_stick{gren:1b}
 
 execute if entity @s run tellraw @a ["",{"text":"\u0418\u0433\u0440\u043e\u043a ","bold":true,"color":"green"},{"selector":"@s","bold":true},{"text":" \u0437\u0430\u0432\u0435\u0440\u0448\u0438\u043b \u0438\u0433\u0440\u0443","bold":true,"color":"green"}]
 execute unless entity @s run tellraw @a {"text":"\u0418\u0433\u0440\u0430 \u0437\u0430\u0432\u0435\u0440\u0448\u0435\u043d\u0430","bold":true,"color":"green"}
